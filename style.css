@@ -13,8 +13,9 @@ body {
   line-height: 1.5;
 }
 a:hover{
-  background-color: #F0F0F0;
+  background: #F0F0F0;
   color: #080808;
+  text-decoration-color: #F0F0F0;
 }
 h1{
   margin: 0px;
