@@ -12,6 +12,9 @@ body {
   border-radius: 30px;
   line-height: 1.5;
 }
+a{
+  color: #F0F0F0;
+}
 a:hover{
   background: #F0F0F0;
   color: #080808;
