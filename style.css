@@ -85,3 +85,8 @@ h1{
 ul {
     list-style-type: "↳ ";
 }
+hr{
+  border: 0;
+  border-top: 2px solid #F0F0F0;
+  width: 50%;
+}
