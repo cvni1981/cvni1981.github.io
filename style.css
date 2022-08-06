@@ -23,11 +23,8 @@ body {
   border-radius: 30px;
   line-height: 1.5;}
 .text-container{
-  position: absolute;
-  left: 50%;
-  bottom: 50%;
-  transform: translate(-50%, 50%);
   width: 500px;
+  margin: 10px auto;
   padding: 20px;
   border: dashed #F0F0F0 2px;
   line-height: 1.5;}
