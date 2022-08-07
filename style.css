@@ -37,41 +37,32 @@ body {
   padding: 20px;
   border: dashed #F0F0F0 2px;
   line-height: 1.5;}
-a{
-  color: #F0F0F0;
-}
+p.large{font-size: large;}
+a{color: #F0F0F0;}
 a:hover{
   background: #F0F0F0;
   color: #080808;
   text-decoration-color: #F0F0F0;
 }
-a.discord{
-  color:#303eff;
-}
+a.discord{color:#303eff;}
 a.discord:hover{
   background: #303eff;
   color: #080808;
   text-decoration-color: #303eff;
 }
-a.bandcamp{
-  color: #00a2ff;
-}
+a.bandcamp{color: #00a2ff;}
 a.bandcamp:hover{
   background: #00a2ff;
   color: #080808;
   text-decoration-color: #00a2ff;
 }
-a.spotify{
-  color: #00FF00;
-}
+a.spotify{color: #00FF00;}
 a.spotify:hover{
   background: #00FF00;
   color: #080808;
   text-decoration-color: #00FF00;
 }
-a.youtube{
-  color: #FF0000;
-}
+a.youtube{color: #FF0000;}
 a.youtube:hover{
   background: #FF0000;
   color: #080808;
@@ -82,9 +73,7 @@ h1{
   font-weight: bold;
   font-style: italic;
 }
-ul {
-    list-style-type: "↳ ";
-}
+ul {list-style-type: "↳ ";}
 hr{
   border: 0;
   border-top: 2px solid #F0F0F0;
