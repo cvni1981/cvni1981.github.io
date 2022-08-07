@@ -1,7 +1,6 @@
 body {
   background-color: #080808;
   color: #F0F0F0;
-  @import url('https://fonts.googleapis.com/css2?family=Inter');
   font-family: 'Inter', sans-serif;
 }
 .container{

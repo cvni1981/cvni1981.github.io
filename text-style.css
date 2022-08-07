@@ -1,8 +1,7 @@
 body {
   background-color: #080808;
   color: #F0F0F0;
-  @import url('https://fonts.googleapis.com/css2?family=Roboto-Serif');
-  font-family: 'Roboto-Serif', sans-serif;
+  font-family: 'Roboto Serif', sans-serif;
 }
 .container{
   width: 500px;
