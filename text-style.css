@@ -1,7 +1,11 @@
 body {
   background-color: #080808;
   color: #F0F0F0;
-  font-family: 'Roboto Serif', sans-serif;
+  font-family: 'Roboto Serif', serif;
+}
+b{
+  font-weight: 800;
+  font-style: italic;
 }
 .container{
   width: 500px;
