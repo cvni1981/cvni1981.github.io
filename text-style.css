@@ -1,0 +1,38 @@
+body {
+  background-color: #080808;
+  color: #F0F0F0;
+  @import url('https://fonts.googleapis.com/css2?family=Roboto-Serif');
+  font-family: 'Roboto-Serif', sans-serif;
+}
+.container{
+  width: 500px;
+  margin: 10px auto;
+  padding: 20px;
+  border: dashed #F0F0F0 2px;
+  line-height: 1.5;}
+.centered-container{
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+  width: 500px;
+  padding: 20px;
+  border: dashed #F0F0F0 2px;
+  line-height: 1.5;}
+a{color: #F0F0F0;}
+a:hover{
+  background: #F0F0F0;
+  color: #080808;
+  text-decoration-color: #F0F0F0;
+}
+h1{
+  margin: 0px;
+  font-weight: bold;
+  font-style: italic;
+}
+ul {list-style-type: "↳ ";}
+hr{
+  border: 0;
+  border-top: 2px solid #F0F0F0;
+  width: 50%;
+}
