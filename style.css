@@ -21,33 +21,34 @@ body {
   border: solid #F0F0F0 2px;
   border-radius: 30px;
   line-height: 1.5;}
-a{color: #F0F0F0;}
+a{color: #F0F0F0; font-weight: bold;}
 a:hover{
   background: #F0F0F0;
   color: #080808;
-  text-decoration-color: #F0F0F0;
+  text-decoration-color: #F0F0F0; 
+  font-weight: bold;
 }
-a.discord{color:#303eff;}
+a.discord{color:#303eff; font-weight: bold;}
 a.discord:hover{
-  background: #303eff;
+  background: #303eff; font-weight: bold;
   color: #080808;
   text-decoration-color: #303eff;
 }
-a.bandcamp{color: #00a2ff;}
+a.bandcamp{color: #00a2ff; font-weight: bold;}
 a.bandcamp:hover{
-  background: #00a2ff;
+  background: #00a2ff; font-weight: bold;
   color: #080808;
   text-decoration-color: #00a2ff;
 }
-a.spotify{color: #00FF00;}
+a.spotify{color: #00FF00; font-weight: bold;}
 a.spotify:hover{
-  background: #00FF00;
+  background: #00FF00; font-weight: bold;
   color: #080808;
   text-decoration-color: #00FF00;
 }
-a.youtube{color: #FF0000;}
+a.youtube{color: #FF0000; font-weight: bold;}
 a.youtube:hover{
-  background: #FF0000;
+  background: #FF0000; font-weight: bold;
   color: #080808;
   text-decoration-color: #FF0000;
 }
