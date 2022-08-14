@@ -22,9 +22,9 @@ b{
   padding: 20px;
   border: dashed #F0F0F0 2px;
   line-height: 1.5;}
-a{color: #F0F0F0;}
+a{color: #F0F0F0; font-weight: bold;}
 a:hover{
-  background: #F0F0F0;
+  background: #F0F0F0; font-weight: bold;
   color: #080808;
   text-decoration-color: #F0F0F0;
 }
