@@ -5,7 +5,6 @@ body {
 }
 b{
   font-weight: 800;
-  font-style: italic;
 }
 .container{
   width: 500px;
@@ -23,12 +22,10 @@ b{
   border: dashed #F0F0F0 2px;
   line-height: 1.5;}
 a{color: #F0F0F0;
-  font-weight: 800;
-  font-style: italic;}
+  font-weight: 800;}
 a:hover{
   background: #F0F0F0;
   font-weight: 800;
-  font-style: italic;
   color: #080808;
   text-decoration-color: #F0F0F0;
 }
@@ -36,7 +33,6 @@ h1{
   text-align: right;
   margin: 0px;
   font-weight: bold;
-  font-style: italic;
 }
 ul {list-style-type: "↳ ";}
 hr{
