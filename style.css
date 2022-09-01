@@ -14,7 +14,10 @@ body {
 .grid-container{
   display: grid;
   grid-template-columns: auto auto;
-  grid-gap:20px}
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  grid-gap: 20px}
 .centered-grid-container{
   display: grid;
   grid-template-columns: auto auto;
