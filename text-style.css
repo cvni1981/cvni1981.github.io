@@ -21,6 +21,28 @@ b{
   padding: 20px;
   border: dashed #F0F0F0 2px;
   line-height: 1.5;}
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  grid-gap: 20px}
+.centered-grid-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+  grid-gap:20px}
+.sidebox{
+  height: fit-content;
+  margin: 10px auto;
+  padding: 20px;
+  padding-top: 17px;
+  border: dashed #F0F0F0 2px;
+  line-height: 1.5;}
 a{color: #F0F0F0;
   font-weight: 800;}
 a:hover{
