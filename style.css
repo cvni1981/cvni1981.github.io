@@ -11,6 +11,9 @@ body {
   border-radius: 30px;
   line-height: 1.5;
 }
+.grid-container{
+  display: grid;
+  grid-gap:20px}
 .centered-grid-container{
   display: grid;
   grid-template-columns: auto auto;
