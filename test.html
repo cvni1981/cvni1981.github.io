@@ -7,19 +7,26 @@
         <title>≠</title>
         <link href="/mute-ante/style.css" rel="stylesheet" type="text/css" media="all">
     <style>
-        .grid-container{display: grid; grid-template-columns: auto auto; width: 700px;}
-        .container{
-        margin: 10px auto;
-        padding: 20px;
-        border: solid #F0F0F0 2px;
-        border-radius: 30px;
-        line-height: 1.5;}
+        .centered-grid-container{
+            display: grid;
+            grid-template-columns: auto auto;
+            width: 700px;
+            position: absolute;
+            left: 50%;
+            bottom: 50%;
+            transform: translate(-50%, 50%);}
+        .sidebox{
+            margin: 10px auto;
+            padding: 20px;
+            border: solid #F0F0F0 2px;
+            border-radius: 30px;
+            line-height: 1.5;}
     </style>
     </head>
 
     <body><div class="grid-container">
         <div class="sidebox">did it work?</div>
-        <div class="centered-container">
+        <div class="container">
         <h1>stuff I find interesting</h1>
         <hr>
         <ul>
