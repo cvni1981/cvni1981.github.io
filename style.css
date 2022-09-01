@@ -13,6 +13,7 @@ body {
 }
 .grid-container{
   display: grid;
+  grid-template-columns: auto auto;
   grid-gap:20px}
 .centered-grid-container{
   display: grid;
