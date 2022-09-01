@@ -14,11 +14,11 @@ body {
 .centered-grid-container{
   display: grid;
   grid-template-columns: auto auto;
-  width: 700px;
   position: absolute;
   left: 50%;
   bottom: 50%;
-  transform: translate(-50%, 50%);}
+  transform: translate(-50%, 50%);
+  grid-gap:20px}
 .sidebox{
   height: fit-content;
   margin: 10px auto;
