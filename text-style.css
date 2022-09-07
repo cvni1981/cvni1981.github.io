@@ -1,7 +1,7 @@
 body {
   background-color: #080808;
   color: #F0F0F0;
-  font-family: 'Roboto Serif', serif;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
 }
 b{
   font-weight: 800;
@@ -11,7 +11,7 @@ b{
   margin: 10px auto;
   padding: 20px;
   border: dashed #F0F0F0 2px;
-  line-height: 1.5;}
+  line-height: 1.4;}
 .centered-container{
   position: absolute;
   left: 50%;
@@ -20,7 +20,7 @@ b{
   width: 500px;
   padding: 20px;
   border: dashed #F0F0F0 2px;
-  line-height: 1.5;}
+  line-height: 1.4;}
 .centered-grid-container{
   display: grid;
   grid-template-columns: auto auto;
