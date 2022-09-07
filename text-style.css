@@ -41,7 +41,8 @@ h1{
   margin: 0px;
   font-weight: bold;
   font-size: 40px;}
-ul {list-style-type: "↳ ";}
+ul {list-style-type: "↳ ";
+  font-size: larger}
 hr{
   border: 0;
   border-top: 2px solid #F0F0F0;}
