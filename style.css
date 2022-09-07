@@ -72,11 +72,11 @@ a.spotify:hover{
   color: #080808;
   text-decoration-color: #00FF00;
 }
-a.youtube{color: #FF0000; font-weight: bold;}
-a.youtube:hover{
-  background: #FF0000; font-weight: bold;
+a.cafe{color: #9D3C00; font-weight: bold;}
+a.cafe:hover{
+  background: #9D3C00; font-weight: bold;
   color: #080808;
-  text-decoration-color: #FF0000;
+  text-decoration-color: #9D3C00;
 }
 h1{
   margin: 0px;
