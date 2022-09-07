@@ -1,17 +1,12 @@
 body {
   background-color: #080808;
   color: #F0F0F0;
-  font-family: 'Atkinson Hyperlegible', sans-serif;
-}
-b{
-  font-weight: 800;
-}
+  font-family: 'Atkinson Hyperlegible', sans-serif;}
 .container{
   width: 500px;
   margin: 10px auto;
   padding: 20px;
-  border: dashed #F0F0F0 2px;
-  line-height: 1.4;}
+  border: dashed #F0F0F0 2px;}
 .centered-container{
   position: absolute;
   left: 50%;
@@ -19,8 +14,7 @@ b{
   transform: translate(-50%, 50%);
   width: 500px;
   padding: 20px;
-  border: dashed #F0F0F0 2px;
-  line-height: 1.4;}
+  border: dashed #F0F0F0 2px;}
 .centered-grid-container{
   display: grid;
   grid-template-columns: auto auto;
@@ -34,23 +28,25 @@ b{
   margin: 10px auto;
   padding: 20px;
   padding-top: 17px;
-  border: dashed #F0F0F0 2px;
-  line-height: 1.5;}
+  border: dashed #F0F0F0 2px;}
 a{color: #F0F0F0;
-  font-weight: 800;}
+  font-weight: bold;
+  font-size: larger;}
 a:hover{
   background: #F0F0F0;
-  font-weight: 800;
+  font-weight: bold;
   color: #080808;
   text-decoration-color: #F0F0F0;
+  font-size: larger;
 }
 h1{
   text-align: right;
   margin: 0px;
   font-weight: bold;
-}
-ul {list-style-type: "↳ ";}
+  font-size: 40px;}
+ul {list-style-type: "↳ ";
+  font-size: larger;}
 hr{
   border: 0;
-  border-top: 2px solid #F0F0F0;
-}
+  border-top: 2px solid #F0F0F0;}
+p{font-size: larger;}
