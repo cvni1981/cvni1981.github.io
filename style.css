@@ -12,6 +12,7 @@ body {
   line-height: 1.5;
 }
 header{
+  width: fit-content;
   margin: 10px auto;
   padding: 10px;
   border: solid #F0F0F0 2px;
