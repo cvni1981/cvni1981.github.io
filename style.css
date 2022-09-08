@@ -32,13 +32,10 @@ body {
   transform: translate(-50%, 0%);
   grid-gap: 20px}
 .centered-grid-container{
-  display: grid;
-  grid-template-columns: auto auto;
   position: absolute;
   left: 50%;
   bottom: 50%;
-  transform: translate(-50%, 50%);
-  grid-gap:20px}
+  transform: translate(-50%, 50%);}
 .sidebox{
   margin: 10px auto;
   padding: 10px;
