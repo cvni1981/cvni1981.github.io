@@ -12,7 +12,6 @@ body {
   line-height: 1.5;
 }
 .centered-container{
-  grid-template-columns: auto auto;
   position: absolute;
   left: 50%;
   bottom: 50%;
@@ -24,19 +23,7 @@ body {
   border-radius: 30px;
   line-height: 1.5;
 }
-.grid-container{
-  display: grid;
-  grid-template-columns: auto auto;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  grid-gap: 20px}
-.centered-grid-container{
-  position: absolute;
-  left: 50%;
-  bottom: 50%;
-  transform: translate(-50%, 50%);}
-.sidebox{
+header{
   margin: 10px auto;
   padding: 10px;
   border: solid #F0F0F0 2px;
