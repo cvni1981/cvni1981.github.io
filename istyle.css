@@ -8,3 +8,4 @@ a{color: #53545b; font-weight: bold;}
 h1{font-style: italic;
 font-size: xxx-large;}
 ul {color: #53545b; font-weight: bold;}
+p{max-width: 500px;}
