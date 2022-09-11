@@ -1,6 +1,8 @@
 body {
-  background-color: #cdedf7;
+  padding-left: 50px;
+  background-color: #fafbff;
   color: #080808;
   font-family: 'Libre Baskerville', serif;
 }
-a{color: #313554; font-weight: bold;}
+a{color: #9b9dac; font-weight: bold;}
+h1{font-style: italic;}
