@@ -4,7 +4,7 @@ body {
   color: #080808;
   font-family: 'Libre Baskerville', serif;
 }
-a{font-weight: bold; color:#080808;font-style: italic;}
+a{font-weight: bold; color:#9b9dac;font-style: italic;}
 a::after{content: "}"; color: #9b9dac;}
 a::before{content: "{"; color: #9b9dac;}
 h1{font-style: italic;
