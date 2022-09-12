@@ -4,9 +4,13 @@ body {
   color: #080808;
   font-family: 'Libre Baskerville', serif;
 }
-a{color: #53545b; font-weight: bold;}
+a{font-weight: bold; font-style: italic;}
+a::after{content: "}"; color: #53545b;}
+a::before{content: "{"; color: #53545b;}
 h1{font-style: italic;
 font-size: xxx-large;}
+h1::after{content: "}"; color: #53545b;}
+ah1::before{content: "{"; color: #53545b;}
 h2{font-style: italic;
   font-size: xx-large;}
 p{max-width: 750px;}
