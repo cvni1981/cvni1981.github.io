@@ -5,12 +5,12 @@ body {
   font-family: 'Libre Baskerville', serif;
 }
 a{font-weight: bold; font-style: italic;}
-a::after{content: "}"; color: #53545b;}
-a::before{content: "{"; color: #53545b;}
+a::after{content: "}"; color: #9b9dac;}
+a::before{content: "{"; color: #9b9dac;}
 h1{font-style: italic;
 font-size: xxx-large;}
-h1::after{content: "}"; color: #53545b;}
-ah1::before{content: "{"; color: #53545b;}
+h1::after{content: "}"; color: #9b9dac;}
+ah1::before{content: "{"; color: #9b9dac;}
 h2{font-style: italic;
   font-size: xx-large;}
 p{max-width: 750px;}
