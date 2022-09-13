@@ -15,4 +15,5 @@ h1{font-size: xxx-large;
 h1:before{content: "> ";color: #15c405}
 ul{list-style-type: "> ";}
 h2{font-size: xx-large;}
+h2:before{content: "- "; color: #15c405;}
 p{max-width: 750px;}
