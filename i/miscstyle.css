@@ -1,0 +1,15 @@
+body {padding-left: 50px;
+  background-color: #080808;
+  color: #f0f0f0;
+  font-family: 'Space Grotesk', sans-serif;}
+ul{line-height: 1.5;}
+a{font-weight: bold; 
+  color:#f0f0f0;
+  font-style: italic;
+  text-decoration-color: #b0b0b0;}
+a:hover{text-decoration-color: #15c405;}
+h1{font-size: xxx-large;}
+h1:before{content: "> ";color: #15c405}
+ul{list-style-type: "> ";}
+h2{font-size: xx-large;}
+p{max-width: 750px;}
