@@ -5,7 +5,7 @@ body {
   font-family: 'Libre Baskerville', serif;}
 ul{line-height: 1.5;}
 a{font-weight: bold; color:#5d5e6c;font-style: italic;}
-a::hover{font-weight: bold; color:#080808;font-style: italic;}
+a:hover{font-weight: bold; color:#080808;font-style: italic;}
 a::after{content: "}"; color: #9b9dac;}
 a::before{content: "{"; color: #9b9dac;}
 h1{font-style: italic;
