@@ -22,7 +22,7 @@ header{
   text-align: center;
   font-weight: bold;}
 
-a{color: #f0f0f0; font-weight: bold; text-decoration-color: #606060; text-decoration-thickness: 2px;}
+a{color: #f0f0f0; font-weight: bold; text-decoration-color: #808080; text-decoration-thickness: 2px;}
 a:hover{text-decoration-color: #F0F0F0}
 
 a.discord{text-decoration-color: #303eff;}
