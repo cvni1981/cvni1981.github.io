@@ -21,37 +21,22 @@ header{
   border-radius: 20px;
   text-align: center;
   font-weight: bold;}
-a{color: #F0F0F0; font-weight: bold;}
-a:hover{
-  background: #F0F0F0;
-  color: #080808;
-  text-decoration-color: #F0F0F0; 
-  font-weight: bold;
-}
-a.discord{color:#303eff; font-weight: bold;}
-a.discord:hover{
-  background: #303eff; font-weight: bold;
-  color: #080808;
-  text-decoration-color: #303eff;
-}
-a.bandcamp{color: #00a2ff; font-weight: bold;}
-a.bandcamp:hover{
-  background: #00a2ff; font-weight: bold;
-  color: #080808;
-  text-decoration-color: #00a2ff;
-}
-a.spotify{color: #00FF00; font-weight: bold;}
-a.spotify:hover{
-  background: #00FF00; font-weight: bold;
-  color: #080808;
-  text-decoration-color: #00FF00;
-}
-a.cafe{color: #9D3C00; font-weight: bold;}
-a.cafe:hover{
-  background: #9D3C00; font-weight: bold;
-  color: #080808;
-  text-decoration-color: #9D3C00;
-}
+
+a{color: #f0f0f0; font-weight: bold; text-decoration-color: #606060; text-decoration-thickness: 2px;}
+a:hover{text-decoration-color: #F0F0F0}
+
+a.discord{text-decoration-color: #303eff;}
+a.discord:hover{color: #303eff;}
+
+a.bandcamp{text-decoration-color: #00a2ff;}
+a.bandcamp:hover{color: #00a2ff;}
+
+a.spotify{text-decoration-color: #00FF00;}
+a.spotify:hover{color: #00FF00;}
+
+a.cafe{text-decoration-color: #9D3C00;}
+a.cafe:hover{color: #9D3C00;}
+
 h1{
   margin: 0px;
   font-weight: bold;
