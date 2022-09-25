@@ -7,7 +7,7 @@ body {
   flex-direction: row; 
   margin: 0px;
   font-size: large}
-a{font-weight: bold; text-decoration-color:#5d5e6c;font-style: italic; text-decoration-thickness: 2px;}
+a{font-weight: bold; color: #080808; text-decoration-color:#5d5e6c;font-style: italic; text-decoration-thickness: 2px;}
 a:hover{text-decoration-color:#080808;}
 h1{font-style: italic;
 font-size: xxx-large;}
