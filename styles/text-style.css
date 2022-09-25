@@ -21,7 +21,7 @@ h1{
 ul {list-style-type: "↳ ";
   font-size: larger}
 nav, p{font-size: larger;}
-p, ul{max-width: 750px; line-height: 1.5;}
+p, ul{max-width: 500px; line-height: 1.5;}
 nav{padding: 0px; 
   min-height: 100vh; 
   border-right: dashed #f0f0f0 2px; 
