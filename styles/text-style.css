@@ -5,7 +5,7 @@ body {
   display: flex; 
   flex-direction: row; 
   margin: 0px}
-a{color: #f0f0f0; font-weight: bold; text-decoration-color: #808080; text-decoration-thickness: 2px;}
+a{color: #f0f0f0; font-weight: bold; text-decoration-thickness: 2px;}
 a:hover{text-decoration-color: #F0F0F0}
 a:hover{
   background: #F0F0F0;
