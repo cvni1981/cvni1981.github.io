@@ -17,17 +17,15 @@ h1{
   font-weight: bold;
   font-size: xxx-large; 
   font-style: normal; 
-  margin-top: 20px; 
-  text-shadow: #202020 5px 5px}
+  margin-top: 20px}
 ul {list-style-type: "↳ ";
   font-size: larger}
-p{font-size: larger;}
+nav, p{font-size: larger;}
 p, ul{max-width: 750px; line-height: 1.5;}
 nav{padding: 0px; 
-  background-color:#202020; 
   min-height: 100vh; 
-  border-right: solid #f0f0f0 2px; 
+  border-right: dashed #f0f0f0 2px; 
   margin-right: 50px;
   position: fixed;
-  width: 125px}
+  width: 125p}
 .main{margin-left: 175px}
