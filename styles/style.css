@@ -36,4 +36,8 @@ nav{padding: 0px;
     background-color:#202020; 
     min-height: 100vh; 
     border-right: solid #f0f0f0 2px; 
-    margin-right: 50px}
+    margin-right: 50px;
+    position: fixed;
+    width: 125px}
+
+.main{margin-left: 175px}
