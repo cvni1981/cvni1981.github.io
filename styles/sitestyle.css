@@ -1,3 +1,11 @@
+@font-face{font-family: 'Vera Humana 95';
+  font-weight: normal;
+  src: url("Vera.ttf")}
+
+  @font-face{font-family: 'Vera Humana 95';
+  font-weight: bold;
+  src: url("Verab.ttf")}
+
 body {
   background-color: #080808;
   color: #F0F0F0;
