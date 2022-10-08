@@ -8,7 +8,7 @@
 
 body {
   background-color: #080808;
-  color: #F0F0F0;
+  color: #FDE59F;
   font-family: 'Vera Humana 95', sans-serif;
   line-height: 1.5;
   display: flex; 
@@ -16,8 +16,8 @@ body {
   margin: 0px;
   font-size: large}
 
-a{color: #f0f0f0; font-weight: bold; text-decoration-color: #808080; text-decoration-thickness: 2px;}
-a:hover{text-decoration-color: #F0F0F0}
+a{color: #FDE59F; font-weight: bold; text-decoration-color: #808080; text-decoration-thickness: 2px;}
+a:hover{text-decoration-color: #FDE59F}
 
 h1{
   margin: 0px;
@@ -32,7 +32,7 @@ p, ul{max-width: 750px; line-height: 1.5;}
 nav{padding: 0px; 
     background-color:#202020; 
     min-height: 100vh; 
-    border-right: solid #f0f0f0 2px; 
+    border-right: solid #FDE59F 2px; 
     margin-right: 50px;
     position: fixed;
     width: 150px}
