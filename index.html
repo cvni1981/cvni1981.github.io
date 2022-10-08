@@ -9,18 +9,29 @@
         <meta charset="UTF-8">
         <title>cvni81</title>
         <link href="/website/styles/style.css" rel="stylesheet" type="text/css" media="all"><style>
+            @font-face{font-family: 'Vera Humana 95';
+            font-weight: normal;
+            src: url("Vera.ttf")}
+
+            @font-face{font-family: 'Vera Humana 95';
+            font-weight: bold;
+            src: url("Verab.ttf")}
             .all{display: grid;
             grid-template-columns: 350px 1px auto}
             body{min-height:100vh;
             margin:0px;}
             .misc{color: #f0f0f0;
             font-family: 'Space Grotesk', sans-serif;}
-            a.misc, a.i, a.log, a.buttons{font-style: italic;}
+            .website{color: #f0f0f0;
+            font-family: 'Vera Humana 95', sans-serif;}
+            a.misc, a.i, a.log, a.buttons, a.websites{font-style: italic;}
             a.buttons:hover{color: #7ba0cc; text-decoration-color:#7ba0cc}
             a.misc:hover{color: #15c405;
             text-decoration-color: #15c405;}
             a.log:hover{color: #ffa900;
             text-decoration-color: #ffa900;}
+            a.websites:hover{color: #0f008a;
+            text-decoration-color: #0f008a;}
             .i, .buttons{font-family: 'Libre Baskerville', serif}
             .log{font-family: 'IBM Plex Mono', sans-serif}
         </style></head>
@@ -39,7 +50,7 @@
     <div style="font-size:x-large; padding-left: 50px; margin: auto 0;">
         <a href="/website/about">about</a> stuff about me<br>
         <a href="/website/musicians">musicians</a> good music people<br>
-        <a href="/website/websites">websites</a> cool websites i've collected<br>
+        <span class="websites"><a href="/website/websites" class="websites">websites</a> cool websites i've collected</span><br>
         <br>
         <a href="/website/words">words</a> stuff i have written<br>
         <a href="/website/blender">blender</a> things i've made in blender<br>
