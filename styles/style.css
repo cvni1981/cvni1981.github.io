@@ -11,7 +11,7 @@ body {
 a{color: #f0f0f0; font-weight: bold;text-decoration-color: #808080; text-decoration-thickness: 2px;}
 a:hover{text-decoration-color: #F0F0F0}
 
-a.small{font-weight: normal}
+a.small{font-weight: normal; text-decoration-thickness: 1px}
 
 a.discord{text-decoration-color: #303eff;}
 a.discord:hover{color: #303eff;}
