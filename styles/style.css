@@ -16,11 +16,14 @@ a.small{font-weight: normal; text-decoration-thickness: 1px}
 a.discord{text-decoration-color: #303eff;}
 a.discord:hover{color: #303eff;}
 
-a.bandcamp{text-decoration-color: #00a2ff;}
-a.bandcamp:hover{color: #00a2ff;}
+a.bandcamp, a.bandcampbold{text-decoration-color: #00a2ff;}
+a.bandcamp:hover, a.bandcampbold:hover{color: #00a2ff;}
 
-a.spotify{text-decoration-color: #00FF00;}
-a.spotify:hover{color: #00FF00;}
+a.spotify, a.spotifybold{text-decoration-color: #00FF00;}
+a.spotify:hover, a.spotifybold:hover{color: #00FF00;}
+
+a.bandcamp, a.spotify{font-weight: normal; text-decoration-thickness: 1px;}
+a.bandcampbold, a.spotifybold{font-weight: bold; text-decoration-thickness: 2px}
 
 a.cafe{text-decoration-color: #9D3C00;}
 a.cafe:hover{color: #9D3C00;}
