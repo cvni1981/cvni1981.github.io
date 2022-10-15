@@ -23,7 +23,9 @@ h1{
 
 p{max-width: 800px}
 
-i{margin-left: 70px}
+.tp, i{margin-left: 70px}
+
+.tp{color: #808080}
 
 u, s{text-decoration-color:#808080;
 text-decoration-thickness: 2px}
