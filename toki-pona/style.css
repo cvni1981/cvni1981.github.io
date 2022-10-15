@@ -21,5 +21,5 @@ p{max-width: 800px}
 
 i{margin-left: 70px}
 
-u{text-decoration-color:#808080;
+u, s{text-decoration-color:#808080;
 text-decoration-thickness: 2px}
