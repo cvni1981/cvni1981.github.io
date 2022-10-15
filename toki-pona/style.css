@@ -23,3 +23,8 @@ i{margin-left: 70px}
 
 u, s{text-decoration-color:#808080;
 text-decoration-thickness: 2px}
+
+img{float: right;
+  margin-left: 0px;
+  margin-right: -150px;
+  margin-top: -75px}
