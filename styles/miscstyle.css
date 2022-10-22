@@ -19,8 +19,7 @@ ul{list-style-type: "> ";}
 h2{font-size: xx-large;}
 h2:before{content: "- "; color: #15c405;}
 ul, p{max-width: 750px;}
-
-crt::before {
+.crt::before {
   content: " ";
   display: block;
   position: absolute;
