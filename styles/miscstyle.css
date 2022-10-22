@@ -19,15 +19,3 @@ ul{list-style-type: "> ";}
 h2{font-size: xx-large;}
 h2:before{content: "- "; color: #15c405;}
 ul, p{max-width: 750px;}
-body::before {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: linear-gradient(rgba(4, 4, 4, 0.04) 50%, rgba(0, 0, 0, 0.34) 50%);
-  z-index: 2;
-  background-size: 100% 2px, 3px 100%;
-  pointer-events: none;}
