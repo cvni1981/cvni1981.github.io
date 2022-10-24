@@ -29,11 +29,9 @@ ul {list-style-type: "↳ ";}
 p, ul{max-width: 750px; line-height: 1.5;}
 
 nav{padding: 0px; 
-    background-color:#040024; 
-    min-height: 100vh; 
-    border-right: solid #F2CF68 2px; 
-    margin-right: 50px;
-    position: fixed;
-    width: 150px}
+  min-height: 100vh; 
+  margin-right: 50px;
+  position: fixed;
+  width: 150px}
 
 .main{margin-left: 200px}
