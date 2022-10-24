@@ -19,10 +19,9 @@ h2{font-style: italic;
 h2::before{content: "- "; color: #9b9dac;}
 p{max-width: 750px;}
 nav{padding: 0px; 
-  background-color:#202020; 
   min-height: 100vh; 
-  border-right: solid #f0f0f0 2px; 
   margin-right: 50px;
+  padding-left: 20px;
   position: fixed;
   width: 150px}
 .main{margin-left: 200px}
