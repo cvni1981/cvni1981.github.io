@@ -11,10 +11,11 @@ a{color: #f0f0f0; font-weight: bold;text-decoration-color: #808080; text-decorat
 a:hover{text-decoration-color: #F0F0F0}
 a.small{font-weight: normal; text-decoration-thickness: 1px}
 
-nav{padding: 0px;  
+nav{padding: 0px; 
   min-height: 100vh; 
   margin-right: 50px;
   position: fixed;
+  padding-left: 20px;
   width: 150px}
 
 h1{
