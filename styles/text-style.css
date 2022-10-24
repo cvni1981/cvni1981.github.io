@@ -25,6 +25,7 @@ p, ul{max-width: 500px; line-height: 1.5;}
 nav{padding: 0px; 
   min-height: 100vh; 
   margin-right: 50px;
+  padding-left: 20px;
   position: fixed;
   width: 150px}
 hr{color: #f0f0f0}
