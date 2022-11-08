@@ -1,7 +1,7 @@
 body {
   background-color: #000000;
   color: #ffa900;
-  font-family: 'IBM Plex Mono', 'Noto Emoji',sans-serif;
+  font-family: 'IBM Plex Mono', 'Noto Emoji', sans-serif;
   line-height: 1.5;
   display: flex; 
   flex-direction: row; 
