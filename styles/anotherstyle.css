@@ -6,5 +6,7 @@ body {
   margin: 20px;
   font-size: large}
 h1{font-weight: bold;
-font-size: 75px;
-line-height: 0.9}
+font-size: 150px;
+line-height: 0.9;
+margin: 0px;
+margin-bottom: 20px}
