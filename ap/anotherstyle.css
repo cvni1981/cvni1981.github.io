@@ -11,3 +11,8 @@ line-height: 0.9;
 margin: 0px;
 margin-bottom: 20px}
 p{color: #a0a0a0}
+a{color: #a0a0a0;
+text-decoration-color: #a0a0a0;
+text-decoration-thickness: 2px}
+a:hover{color: #f0f0f0;
+text-decoration-color: #f0f0f0}
