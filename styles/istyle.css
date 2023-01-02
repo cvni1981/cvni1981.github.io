@@ -8,8 +8,6 @@ body {
   margin: 0px;
   font-size: large}
 a{font-weight: bold; color: #080808; text-decoration-color:#5d5e6c;font-style: italic; text-decoration-thickness: 2px;}
-a::after{content: "}"; color: #5d5e6c;}
-a::before{content: "{"; color: #5d5e6c;}
 a:hover{text-decoration-color:#080808;}
 a.button::after, a.button::before{content:""}
 h1{font-style: italic;
