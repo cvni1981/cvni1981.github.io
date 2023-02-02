@@ -7,7 +7,7 @@
         <title>welcome!</title>
         <style>
             body{display: grid;
-            grid-template-columns: 3fr 4fr;
+            grid-template-columns: 2fr 3fr;
             margin: 0px;
             background-color: #080808;
             color: #f0f0f0;
@@ -16,10 +16,19 @@
             .l, .r{height:100vh; display: grid; align-content: center;}
 
             .r{padding: 0 20px}
-            p{margin: auto; font-size: larger; line-height: 1.4}
+            p{margin: auto; font-size: 1.5vw; line-height: 1.4}
 
-            a{color: #f0f0f0}
-            a:hover{background-color: #f0f0f0; color: #080808; text-decoration-color: #f0f0f0}
+            a{color: #f0f0f0; text-decoration-color: #808080}
+            a:hover{text-decoration-color: #f0f0f0}
+
+            a.buttons:hover{color: #7ba0cc; text-decoration-color:#7ba0cc}
+            a.misc:hover{color: #15c405;
+            text-decoration-color: #15c405;}
+            a.log:hover{color: #ffa900;
+            text-decoration-color: #ffa900;}
+            a.websites:hover{color: #F2CF68;
+            text-decoration-color: #F2CF68;}
+
         </style></head>
 
     <body>
@@ -34,9 +43,9 @@
                 Making this website has been a very fun experience, including learning html and css, and i hope you like having a gander at it.<br>Feel free to look
                 around and explore, however small this site may be.<br><br><br></p>
             <p style="font-size: 2.5vw; line-height: 1.5;">
-                <a>about</a> . <a>musicians</a> . <a>websites</a><br>
-                <a>words</a> . <a>doodles</a> . <a>blender</a> . <a>misc</a><br>
-                <a>buttons</a> . <a>sitelog</a>
+                <a href="about">about</a> . <a href="musicians">musicians</a> . <a href="websites" class="websites">websites</a><br>
+                <a href="words">words</a> . <a href="doodles">doodles</a> . <a href="blender">blender</a> . <a href="misc" class="misc">misc</a><br>
+                <a href="buttons" class="buttons">buttons</a> . <a href="sitelog" class="log">sitelog</a>
             </p></body>
         </div>
     </body>
