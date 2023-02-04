@@ -17,15 +17,20 @@
             text-decoration-color: #201868; color: #f2cf68}
             a{text-decoration-thickness: 3px; font-weight: normal;}
             #entry a{text-decoration-thickness: 1px;}
+            .summary{text-align: center}
 
             h1{font-size: 11vw; text-decoration: underline 5px}
-            .summary{text-align: left}
+            .summary div{display: block; font-size:x-large}
             @media only screen and (min-width: 650px){
-            .summary{text-align: center}}
+            .summary div{display: inline; font-size:xx-large; }
+            .summary div:not(:last-child)::after{content: " . "};
+            .main{position: absolute}}
             @media only screen and (min-width: 455px) and (max-width: 810px){
             h1{font-size: 6.56vw}}
             @media only screen and (min-width: 810px) {
             h1{font-size: 3.6rem}}
+
+
         </style></head>
 
     <body><div class="page"><div class="main">
@@ -36,14 +41,16 @@
     around and explore, however small this site may be.<br>
     <details><summary style="font-weight: bold">current status</summary>
         <div id="entry" style="margin-left: 20px"><div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=cvni81" defer></script></div></details></p>
-    <p class="summary" style="font-size:xx-large">
-        <a href="about"     title="me and what i like to do"                   >about</a> . 
-        <a href="musicians" title="good music people"                          >musicians</a> . 
-        <a href="websites"  title="cool websites"              class="websites">websites</a><br>
-        <a href="words"     title="poems and texts and things" class="words"   >words</a> . 
-        <a href="doodles"   title="stuff i drew"               class="i"       >doodles</a> . 
-        <a href="blender"   title="3d renders in blender"                      >blender</a> . 
-        <a href="misc"      title="general miscellanea"        class="misc"    >misc</a><br>
-        <a href="buttons"   title="other folks' sites"         class="buttons" >buttons</a> . 
-        <a href="sitelog"   title="what's changed"             class="log"     >sitelog</a>
-    </p></div></div></body>
+    <div class="summary">
+        <div><a href="about"     title="me and what i like to do"                   >about</a></div>
+        <div><a href="musicians" title="good music people"                          >musicians</a></div>
+        <div><a href="websites"  title="cool websites"              class="websites">websites</a></div></div>
+    <div class="summary">
+        <div><a href="words"     title="poems and texts and things" class="words"   >words</a></div>
+        <div><a href="doodles"   title="stuff i drew"               class="i"       >doodles</a></div>
+        <div><a href="blender"   title="3d renders in blender"                      >blender</a></div>
+        <div><a href="misc"      title="general miscellanea"        class="misc"    >misc</a></div></div>
+    <div class="summary">
+        <div><a href="buttons"   title="other folks' sites"         class="buttons" >buttons</a></div>
+        <div><a href="sitelog"   title="what's changed"             class="log"     >sitelog</a></div>
+    </div></div></div></body>
