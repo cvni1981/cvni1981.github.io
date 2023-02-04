@@ -22,13 +22,7 @@ a:hover{background-color: #404040; color: #f0f0f0; text-decoration-color: #40404
 ul {list-style-type: "└ ";}
 p, ul{line-height: 1.4; margin-bottom: 0; font-size: 1rem}
 
-.page{margin: 0 auto; width: min(85%, 50rem);
+.page{margin: 0 auto; width: min(85%, 35rem);
   border-left: solid #a0a0a0 2px;
   border-right: solid #a0a0a0 2px;
   min-height: 100vh}
-
-/* desktop 
-@media only screen and (min-width: 850px) {
-  body{font-size: xx-large;}
-  .main{max-width: 620px; margin: 0 auto}
-}*/
