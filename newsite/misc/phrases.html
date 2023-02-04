@@ -7,19 +7,21 @@
         <link href="/website/newsite/styles/miscstyle.css" rel="stylesheet" type="text/css" media="all"><style>
         #notes{display: grid;
             grid-template-columns: auto auto;
-            gap: auto}
+            margin-top: 2vh}
         #notes div{margin-bottom: 10px;
             border: solid #15c405 3px;
             background-color: #072502; 
             max-width: 150px;
             height: 150px;
             padding: 10px}
+        @media only screen and (min-width: 550px) {
+        #notes{grid-template-columns: auto}}
         </style></head>
 
     <body><div class="page"><div class="main">
     <h1>wall</h1>
-    <p>You look closer at the sticky notes on the wall.
     < <a class="back" href="/website/newsite/misc">go back</a>
+    <p>You look closer at the sticky notes on the wall.
     </p>
     <div id="notes">
         <div>What do i know</div>
