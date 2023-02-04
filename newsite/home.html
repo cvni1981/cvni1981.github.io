@@ -3,9 +3,10 @@
     <head>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet"> 
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
         <title>(?)</title>
         <link href="style.css" rel="stylesheet" type="text/css" media="all"><style>
+            .page{width: min(85%, 45rem)}
             a.buttons:hover{background-color: #7ba0cc; 
             text-decoration-color:#404040; color: #404040; }
             a.misc:hover{background-color: #202020;
@@ -15,8 +16,16 @@
             a.websites:hover{background-color: #201868;
             text-decoration-color: #f2cf68; color: #f2cf68}
             a{text-decoration-thickness: 3px; font-weight: normal;}
-            h1{font-size: 60px; text-decoration: underline 5px}
             #entry a{text-decoration-thickness: 1px;}
+
+            h1{font-size: 12vw; text-decoration: underline 5px}
+            .summary{text-align: left}
+            @media only screen and (min-width: 650px){
+            .summary{text-align: center}}
+            @media only screen and (min-width: 455px) and (max-width: 810px){
+            h1{font-size: 6.56vw}}
+            @media only screen and (min-width: 810px) {
+            h1{font-size: 3.6rem}}
         </style></head>
 
     <body><div class="page"><div class="main">
@@ -27,7 +36,7 @@
     around and explore, however small this site may be.<br>
     <details><summary style="font-weight: bold">current status</summary>
         <div id="entry" style="margin-left: 20px"><div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=cvni81" defer></script></div></details></p>
-    <p style="font-size:xx-large; text-align: center;">
+    <p class="summary" style="font-size:xx-large">
         <a href="about"     title="me and what i like to do"                   >about</a> . 
         <a href="musicians" title="good music people"                          >musicians</a> . 
         <a href="websites"  title="cool websites"              class="websites">websites</a><br>
