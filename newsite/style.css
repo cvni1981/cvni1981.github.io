@@ -1,28 +1,33 @@
+/* mobile */
 body {
   background-color: #f0f0f0;
   color: #404040;
   font-family: 'Inter', sans-serif;
   line-height: 1.5;
   margin: 0px;
-  font-size: large}
+  height: 100vh}
 
 .main{
-  max-width: 650px;
   padding: 20px 40px;
   border-left: solid #a0a0a0 2px;
   border-right: solid #a0a0a0 2px;
-  margin: 0 auto;
-  line-height: 1.5;}
+  margin: 0 30px;}
 
 .back{padding-top:0}
 
 h1{
   margin: 0;
   font-weight: bold;
-  font-size: xxx-large}
+  font-size: 2rem}
 
 a{color: #404040}
 a:hover{background-color: #404040; color: #f0f0f0; text-decoration-color: #404040;}
 
 ul {list-style-type: "└ ";}
 p, ul{line-height: 1.4; margin-bottom: 0}
+
+/* desktop 
+@media only screen and (min-width: 850px) {
+  body{font-size: xx-large;}
+  .main{max-width: 620px; margin: 0 auto}
+}*/
