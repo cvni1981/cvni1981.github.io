@@ -23,8 +23,7 @@ a{font-weight: bold;
 a:hover{color: #15c405;
     text-decoration-color: #15c405;}
 
-h1{font-size: xxx-large;
-  text-decoration: underline;
+h1{text-decoration: underline;
   text-decoration-color: #15c405;
   text-decoration-thickness: 5px;}
 h1:before{content: "> ";color: #15c405}
