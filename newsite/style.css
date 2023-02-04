@@ -20,7 +20,7 @@ a{color: #404040}
 a:hover{background-color: #404040; color: #f0f0f0; text-decoration-color: #404040;}
 
 ul {list-style-type: "└ ";}
-p, ul{line-height: 1.4; margin-bottom: 0}
+p, ul{line-height: 1.4; margin-bottom: 0; font-size: 1rem}
 
 .page{margin: 0 auto; width: min(85%, 50rem);
   border-left: solid #a0a0a0 2px;
