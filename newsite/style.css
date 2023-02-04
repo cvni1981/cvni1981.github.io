@@ -18,7 +18,7 @@ h1{
 a{color: #404040}
 a:hover{background-color: #404040; color: #f0f0f0; text-decoration-color: #404040;}
 
-ul {list-style-type: "└ ";}
+ul {list-style-type: "└ "; padding-left: 20px}
 p, ul{line-height: 1.4; margin-bottom: 0; font-size: 1rem}
 
 .page{margin: 0 auto; width: min(85%, 35rem);
