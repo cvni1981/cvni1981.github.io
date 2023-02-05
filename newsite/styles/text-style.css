@@ -13,7 +13,7 @@ body {
 h1{
   margin: 0;
   font-weight: bold;
-  font-size: min(13vw, 3rem)}
+  font-size: 2.5rem}
 
 a{color: #404040; font-weight: bold; text-decoration-thickness: 2px;}
 a:hover{background-color: #404040; color: #d0d0d0; text-decoration-color: #404040;}
