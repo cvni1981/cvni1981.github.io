@@ -38,6 +38,3 @@ p, ul{line-height: 1.4; margin-bottom: 0; font-size: 1rem}
   border-left: solid #202020 2px;
   border-right: solid #202020 2px;
   min-height: 100vh}
-
-@media only screen and (min-width: 810px) {
-  p, ul{font-size: 0.9rem}}
