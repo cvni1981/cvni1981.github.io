@@ -3,7 +3,7 @@ body {
   color: #202020;
   font-family: 'Atkinson Hyperlegible', sans-serif;
   line-height: 1.5;
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin: 0px}
 
 .main{padding: 1rem 2rem;}
@@ -13,7 +13,7 @@ body {
 h1{
   margin: 0;
   font-weight: bold;
-  font-size: min(6.5vw, 3rem)}
+  font-size: min(13vw, 3rem)}
 
 a{color: #202020; font-weight: bold;}
 a:hover{background-color: #202020; color: #dda978; text-decoration-color: #202020;}
