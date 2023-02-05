@@ -1,5 +1,5 @@
 body {
-  background-color: #f0f0f0;
+  background-color: #d0d0d0;
   color: #404040;
   font-family: 'Atkinson Hyperlegible', sans-serif;
   line-height: 1.5;
@@ -16,12 +16,12 @@ h1{
   font-size: min(13vw, 3rem)}
 
 a{color: #202020; font-weight: bold; text-decoration-thickness: 2px;}
-a:hover{background-color: #202020; color: #dda978; text-decoration-color: #202020;}
+a:hover{background-color: #202020; color: #d0d0d0; text-decoration-color: #202020;}
 
 ul {list-style-type: "└ "; padding-left: 20px}
 p, ul{line-height: 1.4; margin-bottom: 0; font-size: 1.5rem}
 
 .page{margin: 0 auto; width: min(85%, 35rem);
-  border-left: solid #7c5939 2px;
-  border-right: solid #7c5939 2px;
+  border-left: solid #a0a0a0 2px;
+  border-right: solid #a0a0a0 2px;
   min-height: 100vh}
