@@ -1,6 +1,6 @@
 body {
-  background-color: #dda978;
-  color: #202020;
+  background-color: #f0f0f0;
+  color: #404040;
   font-family: 'Atkinson Hyperlegible', sans-serif;
   line-height: 1.5;
   font-size: 1.5rem;
@@ -15,7 +15,7 @@ h1{
   font-weight: bold;
   font-size: min(13vw, 3rem)}
 
-a{color: #202020; font-weight: bold;}
+a{color: #202020; font-weight: bold; text-decoration-thickness: 2px;}
 a:hover{background-color: #202020; color: #dda978; text-decoration-color: #202020;}
 
 ul {list-style-type: "└ "; padding-left: 20px}
