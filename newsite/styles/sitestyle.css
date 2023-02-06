@@ -20,11 +20,13 @@
   h1{
     margin: 0;
     font-weight: bold;
-    font-size: min(6.5vw, 3rem)}
+    font-size: min(10vw, 3rem)}
   
   a{color: #f2cf68}
   a:hover{background-color: #f2cf68; color: #020013; text-decoration-color: #f2cf68;}
   
+h2{font-size: 0.9rem}
+
   ul {list-style-type: "└ "; padding-left: 20px}
   p, ul{line-height: 1.4; margin-bottom: 0; font-size: 1rem}
   
