@@ -2,46 +2,45 @@
 <html style="height:100%">
     <head>
         <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
         <title>ruler and compass</title>
-        <link href="/website/styles/istyle.css" rel="stylesheet" type="text/css" media="all">
+        <link href="/website/newsite/styles/style.css" rel="stylesheet" type="text/css" media="all">
     <style>
-        body{background-image:url(/website/doodles/background.jpg);
+        body{background-image:url(/website/newsite/doodles/background.jpg);
             background-repeat:no-repeat;
             background-size:cover;
+            color: #101010;
+            font-family: 'Libre Baskerville', serif;
             background-attachment: fixed;}
-        img{border: solid #080808 3px}
+        .main{padding-top: 20px}
+        h1{font-size: min(10vw, 3rem); font-style: italic;}
+        h2{margin-bottom: 10px; font-style: italic; font-size: 1.5rem;}
+        h2::before{content: "- "; color: #5d5e6c;}
+        a{font-weight: bold; color: #101010; text-decoration-color:#5d5e6c;font-style: italic; text-decoration-thickness: 2px;}
+        a:hover{text-decoration-color:#101010; background-color: #101010; color: #a2a4a3}
+        a.button:hover{text-decoration-color:#00000000; background-color: #00000000}
+        .page{border-color: #5d5e6c}
+        img{border: solid #080808 min(3px, 0.6vw)}
         .header{border: solid 0px}
-        .main{width: 100%; padding-top: 20px}
+        #drawings{line-height:0; column-count: 1; column-gap: 12px; margin-top: 20px}
+        #drawings img{margin-bottom: 6px; width: 100%}
+        #drawings img:hover{transform: scale(125%)}
+        @media only screen and (min-width: 500px){
+            #drawings{column-count: 2;}}
     </style>
     </head>
 
     <body>
-        <nav><div style="margin: 20px">
-            <a href="/website">home</a><br>
-            <br>
-            <a href="/website/about">about</a><br>
-            <a href="/website/musicians">musicians</a><br>
-            <a href="/website/websites">websites</a><br>
-            <br>
-            <a href="/website/words">words</a><br>
-            <a href="/website/doodles">doodles</a> ←<br>
-            <a href="/website/blender">blender</a><br>
-            <a href="/website/misc">misc</a><br>
-            <br>
-            <a href="/website/buttons">buttons</a><br>
-            <a href="/website/sitelog">sitelog</a><br>
-        </div></nav>
-        <div class="main">
-        <img src="/website/doodles/racheader.gif" alt="ruler and compass" style="height:120px; margin-bottom:20px" class="header"><br>
-        <p>This used to be the thing i did the most since, maybe the start of 2021, and i have a big bunch of geometrical things, i PROMISE this won't be this empty forever</p>
-        <div id="drawings">
-        <img src="/website/doodles/rac/eye.jpg" alt="eye">
-        <img src="/website/doodles/rac/arrow.jpg" alt="arrow">
-        <img src="/website/doodles/rac/mun_suno.jpg" alt="mun suno">
-        <img src="/website/doodles/rac/3.jpg" alt="3">
-        <img src="/website/doodles/rac/hyperbolic-attempt.jpg" alt="hyperbolic attempt">
-        <img src="/website/doodles/rac/penrose.jpg" alt="penrose">
-
+        <div class="page"><div class="main">
+            <img src="/website/doodles/racheader.gif" alt="ruler and compass" style="max-width: 382px; width: 100%" class="header"><br>< <a class="back" href="/website/newsite/doodles">home</a>
+            <p>This used to be the thing i did the most since, maybe the start of 2021, and i have a big bunch of geometrical things, i PROMISE this won't be this empty forever</p>
+            <div id="drawings">
+            <img src="rac/eye.jpg" alt="eye">
+            <img src="rac/arrow.jpg" alt="arrow">
+            <img src="rac/mun_suno.jpg" alt="mun suno">
+            <img src="rac/3.jpg" alt="3">
+            <img src="rac/hyperbolic-attempt.jpg" alt="hyperbolic attempt">
+            <img src="rac/penrose.jpg" alt="penrose">
+        </div>
         </div>
     </body>

@@ -2,37 +2,28 @@
 <html>
     <head>
         <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
         <title>buttons</title>
-        <link href="/website/styles/istyle.css" rel="stylesheet" type="text/css" media="all">
-    <style>
-        body{background-color: #b8cadf;}
-        a::after, a::before{color: #475464}
-        h1{text-shadow: #7ba0cc 3px 3px}
-        h2{margin-bottom: 10px}
-    </style>
-    </head>
+        <link href="styles/style.css" rel="stylesheet" type="text/css" media="all"><style>
+            body{background-color: #b8cadf;
+                color: #101010;
+                font-family: 'Libre Baskerville', serif;}
+            h1{font-size: min(10vw, 3rem); font-style: italic;}
+            h2{margin-bottom: 10px; font-style: italic; font-size: 1.5rem;}
+            h2::before{content: "- "; color: #5d5e6c;}
+            a{font-weight: bold; color: #101010; text-decoration-color:#5d5e6c;font-style: italic; text-decoration-thickness: 2px;}
+            a:hover{text-decoration-color:#101010; background-color: #101010; color: #b8cadf}
+            a.button::after, a.button::before{content:""}
+            .page{border-color: #5d5e6c}
+        </style></head>
 
-    <body><nav><div style="margin: 20px">
-        <a href="/website">home</a><br>
-        <br>
-        <a href="/website/about">about</a><br>
-        <a href="/website/musicians">musicians</a><br>
-        <a href="/website/websites">websites</a><br>
-        <br>
-        <a href="/website/words">words</a><br>
-        <a href="/website/doodles">doodles</a><br>
-        <a href="/website/blender">blender</a><br>
-        <a href="/website/misc">misc</a><br>
-        <br>
-        <a href="/website/buttons">buttons</a> ←<br>
-        <a href="/website/sitelog">sitelog</a><br>
-    </div></nav>
-    <div class="main">
+    <body><div class="page"><div class="main">
     <h1>buttons</h1>
+    < <a class="back" href="home">home</a>
+    
     <p>This is the place where we put any and all buttons of other sites! (as many as currently possible)<br>
-    Oh and here's mine if you want to put it in your website for some reason<br></p><img src="/website/misc/folder/nowhere.gif" alt="nowhere in particular"><br>
-    <div style="width: 500px">
+    Oh and here's mine if you want to put it in your website for some reason<br></p><img src="misc/folder/nowhere.gif" alt="nowhere in particular"><br>
+    <div>
     <details><summary>button code</summary><code>&lt;a href="https://cvni1981.github.io/website"&gt;&lt;img src="https://cvni1981.github.io/website/misc/folder/nowhere.gif" alt="nowhere in particular"&gt;&lt;/a&gt;</code></div></details>
     <h2>acquaintances</h2>
     <a href=https://tabby-the-tabby.neocities.org class="button"><img src=https://tabby-the-tabby.neocities.org/assets/tabbutton.gif alt="tabbutton"></a> 
@@ -40,18 +31,14 @@
     <a href="https://chiitopia.neocities.org" class="button"><img src="https://chiitopia.neocities.org/images/balls.png" alt="my site. youre looking at it right now"></a> 
     <a href="https://jansamosi.ichi.city/"  class="button"><img src="https://jansamosi.ichi.city/badg.png" alt="samosi badg"></a> 
     <a href="https://temmiemew.neocities.org/" class="button"><img src="https://temmiemew.neocities.org/temmie-mew-button.png" alt="behold! the mu-niverse!"></a>
-    <br>
     <a class="button" href="https://jmibo.neocities.org/"><img src="https://jmibo.neocities.org/assets/button.png"></a> 
     <a href="https://kpwu.neocities.org/" class="button"><img id="button_self" src="https://kpwu.neocities.org/images/kpwu_button.png" alt="kpwu button"></a>
     <h2>other neat places</h2>
-    <a href="https://worldendling.neocities.org/" class="button"><img width="88" height="31" src="/website/misc/folder/worldendling.gif"></a>
+    <a href="https://worldendling.neocities.org/" class="button"><img width="88" height="31" src="misc/folder/worldendling.gif"></a>
     <a href="https://moondvsted.neocities.org/" class="button"><img src="https://f2.toyhou.se/file/f2-toyhou-se/images/47052159_rd5iWTFAMmQWrMr.gif"></a>
     <a href="https://telepoet.neocities.org/" class="button"><img src="https://telepoet.neocities.org/images/buttons/telepoet8831.gif" alt="TELEPOET"></a> 
     <a href="https://nyanseong.neocities.org/" class="button"><img width="88" height="31" src="https://nyanseong.neocities.org/img/buttons/nyanseong-wink.png"></a>
-    <a href="https://noodledesk.net/" class="button"><img src="/website/misc/folder/noodlebutton.gif" alt="noodle desk"></a>
-    <br>
+    <a href="https://noodledesk.net/" class="button"><img src="misc/folder/noodlebutton.gif" alt="noodle desk"></a>
     <a href="https://lazybones.neocities.org/" class="button"><img src="https://lazybones.neocities.org/IMAGES/lazybonesicon4.png" alt="lazybones"></a>
     <a href="https://www.bikobatanari.art/" class="button"><img src="https://www.bikobatanari.art/images/bikobatanari.gif" alt="bikobatanari"></a>
-    <a href="https://status.cafe" class="button"><img src="https://status.cafe/assets/button.png" alt="Status Cafe"></a>
-    <iframe src="https://john.citrons.xyz/embed?ref=cvni1981.github.io/website/" style="margin-left:auto;display:block;margin-right:auto;max-width:732px;width:100%;height:94px;border:none;"></iframe>
-    </div></body>
+    <a href="https://status.cafe" class="button"><img src="https://status.cafe/assets/button.png" alt="Status Cafe"></a></div></div></body></html>

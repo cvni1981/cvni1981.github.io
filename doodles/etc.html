@@ -2,57 +2,57 @@
 <html style="height:100%">
     <head>
         <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
-        <meta charset="UTF-8">
-        <title>{etc}</title>
-        <link href="/website/styles/istyle.css" rel="stylesheet" type="text/css" media="all">
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <title>etc</title>
+        <link href="/website/newsite/styles/style.css" rel="stylesheet" type="text/css" media="all">
     <style>
-        body{background-image:url(/website/doodles/background.jpg);
+        body{background-image:url(/website/newsite/doodles/background.jpg);
             background-repeat:no-repeat;
             background-size:cover;
+            color: #101010;
+            font-family: 'Libre Baskerville', serif;
             background-attachment: fixed;}
-        img{border: solid #080808 3px}
+        .main{padding-top: 20px}
+        h1{font-size: min(10vw, 3rem); font-style: italic;}
+        h2{margin-bottom: 10px; font-style: italic; font-size: 1.5rem;}
+        h2::before{content: "- "; color: #5d5e6c;}
+        a{font-weight: bold; color: #101010; text-decoration-color:#5d5e6c;font-style: italic; text-decoration-thickness: 2px;}
+        a:hover{text-decoration-color:#101010; background-color: #101010; color: #a2a4a3}
+        a.button:hover{text-decoration-color:#00000000; background-color: #00000000}
+        .page{border-color: #5d5e6c}
+        img{border: solid #080808 min(3px, 0.6vw)}
         .header{border: solid 0px}
-        .main{width: 100%; padding-top: 20px}
+        #drawings{line-height:0; column-count: 1; column-gap: 12px; margin-top: 20px}
+        #drawings img{margin-bottom: 6px; width: 100%}
+        #drawings img:hover{transform: scale(125%)}
+        @media only screen and (min-width: 500px){
+            #drawings{column-count: 2;}}
     </style>
     </head>
 
     <body>
-        <nav><div style="margin: 20px">
-            <a href="/website">home</a><br>
-            <br>
-            <a href="/website/about">about</a><br>
-            <a href="/website/musicians">musicians</a><br>
-            <a href="/website/websites">websites</a><br>
-            <br>
-            <a href="/website/words">words</a><br>
-            <a href="/website/doodles">doodles</a> ←<br>
-            <a href="/website/blender">blender</a><br>
-            <a href="/website/misc">misc</a><br>
-            <br>
-            <a href="/website/buttons">buttons</a><br>
-            <a href="/website/sitelog">sitelog</a><br>
-        </div></nav>
-        <div class="main">
-        <img src="/website/doodles/etcheader.gif" alt="etc" style="height:120px; margin-bottom:20px" class="header"><br>
+    <div class="page"><div class="main">
+        <img src="etcheader.gif" alt="etc" style="width: 60%" class="header"><br>< <a class="back" href="/website/newsite/doodles">home</a>
         <div id="drawings">
-        <img src="/website/doodles/etc/creatures2.jpg" alt="creatures2">
-        <img src="/website/doodles/etc/noise.jpg" alt="noise">
-        <img src="/website/doodles/etc/light.jpg" alt="light">
-        <img src="/website/doodles/etc/creatures.jpg" alt="creatures">
-        <img src="/website/doodles/etc/lines.jpg" alt="lines">
-        <img src="/website/doodles/etc/cat_doodles.jpg" alt="cat doodles">
-        <img src="/website/doodles/etc/cat_spotlight.jpg" alt="cat spotlight">
-        <img src="/website/doodles/etc/et.jpg" alt="et">
-        <img src="/website/doodles/etc/graphite.jpg" alt="graphite">
-        <img src="/website/doodles/etc/hypercube.jpg" alt="hypercube">
-        <img src="/website/doodles/etc/mobius.jpg" alt="mobius">
-        <img src="/website/doodles/etc/waveform.jpg" alt="waveform">
-        <img src="/website/doodles/etc/new.jpg" alt="new">
-        <img src="/website/doodles/etc/new2.jpg" alt="new2">
-        <img src="/website/doodles/etc/new3.jpg" alt="new3">
-        <img src="/website/doodles/etc/creature.jpg" alt="creature">
-        <img src="/website/doodles/etc/creature2.jpg" alt="creature2">
-        <img src="/website/doodles/etc/square.jpg" alt="square">
-        <img src="/website/doodles/etc/creature3.png" alt="creature3">
+        <img src="etc/creatures2.jpg" alt="creatures2">
+        <img src="etc/noise.jpg" alt="noise">
+        <img src="etc/light.jpg" alt="light">
+        <img src="etc/creatures.jpg" alt="creatures">
+        <img src="etc/lines.jpg" alt="lines">
+        <img src="etc/cat_doodles.jpg" alt="cat doodles">
+        <img src="etc/cat_spotlight.jpg" alt="cat spotlight">
+        <img src="etc/et.jpg" alt="et">
+        <img src="etc/graphite.jpg" alt="graphite">
+        <img src="etc/hypercube.jpg" alt="hypercube">
+        <img src="etc/mobius.jpg" alt="mobius">
+        <img src="etc/waveform.jpg" alt="waveform">
+        <img src="etc/new.jpg" alt="new">
+        <img src="etc/new2.jpg" alt="new2">
+        <img src="etc/new3.jpg" alt="new3">
+        <img src="etc/creature.jpg" alt="creature">
+        <img src="etc/creature2.jpg" alt="creature2">
+        <img src="etc/square.jpg" alt="square">
+        <img src="etc/creature3.png" alt="creature3">
+        </div>
         </div>
     </body>

@@ -1,48 +1,28 @@
 body {
-  background-color: #080808;
-  color: #F0F0F0;
+  background-color: #f0f0f0;
+  color: #404040;
   font-family: 'Inter', sans-serif;
   line-height: 1.5;
-  display: flex; 
-  flex-direction: row; 
-  margin: 0px;
-  font-size: large}
+  font-size: 1rem;
+  margin: 0px}
 
-a{color: #f0f0f0; font-weight: bold;text-decoration-color: #808080; text-decoration-thickness: 2px;}
-a:hover{text-decoration-color: #F0F0F0}
+.main{padding: 1rem 2rem;}
 
-a.small{font-weight: normal; text-decoration-thickness: 1px}
-
-a.discord{text-decoration-color: #303eff;}
-a.discord:hover{color: #303eff;}
-
-a.bandcamp, a.bandcampbold{text-decoration-color: #00a2ff;}
-a.bandcamp:hover, a.bandcampbold:hover{color: #00a2ff;}
-
-a.spotify, a.spotifybold{text-decoration-color: #00FF00;}
-a.spotify:hover, a.spotifybold:hover{color: #00FF00;}
-
-a.bandcamp, a.spotify{font-weight: normal; text-decoration-thickness: 1px;}
-a.bandcampbold, a.spotifybold{font-weight: bold; text-decoration-thickness: 2px}
-
-a.cafe{text-decoration-color: #9D3C00;}
-a.cafe:hover{color: #9D3C00;}
+.back{padding-top:0}
 
 h1{
-  margin: 0px;
+  margin: 0;
   font-weight: bold;
-  font-size: xxx-large; 
-  font-style: normal; 
-  margin-top: 20px; 
-  text-shadow: #202020 5px 5px}
-ul {list-style-type: "↳ ";}
-p, ul{max-width: 750px; line-height: 1.5;}
+  font-size: min(6.5vw, 3rem);
+  line-height: 1.2}
 
-nav{padding: 0px; 
-    min-height: 100vh; 
-    margin-right: 50px;
-    padding-left: 20px;
-    position: fixed;
-    width: 150px}
+a{color: #404040}
+a:hover{background-color: #404040; color: #f0f0f0; text-decoration-color: #404040;}
 
-.main{margin-left: 200px}
+ul {list-style-type: "└ "; padding-left: 20px}
+p, ul{line-height: 1.4; margin-bottom: 0; font-size: 1rem}
+
+.page{margin: 0 auto; width: min(85%, 35rem);
+  border-left: solid #a0a0a0 2px;
+  border-right: solid #a0a0a0 2px;
+  min-height: 100vh}
