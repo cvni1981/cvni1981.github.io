@@ -3,7 +3,7 @@ body {
   color: #404040;
   font-family: 'Atkinson Hyperlegible', sans-serif;
   line-height: 1.5;
-  font-size: 1.25rem;
+  font-size: min(1.25rem, 5vw);
   margin: 0px}
 
 .main{padding: 1rem 2rem;}
