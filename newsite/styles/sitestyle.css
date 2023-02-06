@@ -20,7 +20,7 @@
   h1{
     margin: 0;
     font-weight: bold;
-    font-size: min(10vw, 3rem)}
+    font-size: min(8vw, 3rem)}
   
   a{color: #f2cf68}
   a:hover{background-color: #f2cf68; color: #020013; text-decoration-color: #f2cf68;}
