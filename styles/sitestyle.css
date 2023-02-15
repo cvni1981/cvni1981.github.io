@@ -10,10 +10,10 @@
     color: #f2cf68;
     font-family: 'Vera Humana 95', sans-serif;
     line-height: 1.5;
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin: 0px}
   
-  .main{padding: 1rem 2rem;}
+  .main{padding: 1rem 1.5rem;}
   
   .back{padding-top:0}
   
@@ -31,7 +31,7 @@ h2{font-size: 1.2rem}
   ul {list-style-type: "└ "; padding-left: 20px}
   p, ul{line-height: 1.4; margin-bottom: 0; font-size: 1rem}
   
-  .page{margin: 0 auto; width: min(85%, 35rem);
+  .page{margin: 0 auto; width: min(90%, 35rem);
     border-left: solid #0f008a 2px;
     border-right: solid #0f008a 2px;
     min-height: 100vh}

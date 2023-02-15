@@ -6,7 +6,7 @@ body {
   font-size: min(1.25rem, 5vw);
   margin: 0px}
 
-.main{padding: 1rem 2rem;}
+.main{padding: 1rem 1.5rem;}
 
 .back{padding-top:0}
 
@@ -22,7 +22,7 @@ a:hover{background-color: #404040; color: #d0d0d0; text-decoration-color: #40404
 ul {list-style-type: "└ "; padding-left: 20px}
 p, ul{line-height: 1.4; margin-bottom: 0; font-size: min(1.25rem, 5vw)}
 
-.page{margin: 0 auto; width: min(85%, 35rem);
+.page{margin: 0 auto; width: min(90%, 35rem);
   border-left: solid #a0a0a0 2px;
   border-right: solid #a0a0a0 2px;
   min-height: 100vh}

@@ -3,10 +3,10 @@ body {
   color: #f0f0f0;
   font-family: 'Space Grotesk', sans-serif;
   line-height: 1.5;
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin: 0px}
 
-.main{padding: 1rem 2rem;}
+.main{padding: 1rem 1.5rem;}
 
 .back{padding-top:0}
 
@@ -34,7 +34,7 @@ h2:before{content: "- "; color: #15c405;}
 
 p, ul{line-height: 1.4; margin-bottom: 0; font-size: 1rem}
 
-.page{margin: 0 auto; width: min(85%, 35rem);
+.page{margin: 0 auto; width: min(90%, 35rem);
   border-left: solid #202020 2px;
   border-right: solid #202020 2px;
   min-height: 100vh}
