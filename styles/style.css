@@ -13,7 +13,7 @@ body {
 h1{
   margin: 0;
   font-weight: bold;
-  font-size: min(6.5vw, 3rem);
+  font-size: min(8vw, 3rem);
   line-height: 1.2}
 
 a{color: #404040}
