@@ -28,7 +28,7 @@ p, ul{line-height: 1.4; margin-bottom: 0; font-size: 1rem}
   min-height: 100vh}
 
 details[open] summary ~ * {
-  animation: sweep .5s cubic-bezier(.23,1,.32,1);
+  animation: sweep .5s cubic-bezier(.08,.82,.17,1);
 }
 
 @keyframes sweep {
