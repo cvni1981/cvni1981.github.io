@@ -26,3 +26,12 @@ p, ul{line-height: 1.4; margin-bottom: 0; font-size: 1rem}
   border-left: solid #a0a0a0 2px;
   border-right: solid #a0a0a0 2px;
   min-height: 100vh}
+
+details[open] summary ~ * {
+  animation: sweep .5s cubic-bezier(.23,1,.32,1);
+}
+
+@keyframes sweep {
+  0%    {opacity: 0; transform: translateY(-0.5rem)}
+  100%  {opacity: 1; transform: translateX(0)}
+}
