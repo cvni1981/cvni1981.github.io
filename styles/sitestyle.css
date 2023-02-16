@@ -13,12 +13,13 @@ body {
   font-size: 1.1rem;
   margin: 0px}
 
-.main{padding: 1rem 1.5rem;}
+.main{padding: 0 1.5rem 1rem 1.5rem;}
 
 .back{padding-top:0}
 
 h1{
   margin: 0;
+  margin-top: 1rem;
   font-weight: bold;
   font-size: min(8vw, 3rem);
   line-height: 1.2}
@@ -26,7 +27,7 @@ h1{
 a{color: #f2cf68}
 a:hover{background-color: #f2cf68; color: #020013; text-decoration-color: #f2cf68;}
   
-.top{position: sticky; top: 1rem; background-color: #020013;}
+.top{position: sticky; top: 0; background-color: #020013;}
 
 h2{font-size: 1.2rem}
 
