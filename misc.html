@@ -5,6 +5,12 @@
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
         <title>> misc</title>
         <link href="styles/miscstyle.css" rel="stylesheet" type="text/css" media="all"><style>
+
+            .journal:hover ~ img{background: url('misc/folder/journal.png');}
+            .notes:hover ~ img{background: url('misc/folder/notes.png');}
+            .folder:hover ~ img{background: url('misc/folder/folder.png');}
+            .exit:hover ~ img{background: url('misc/folder/exit.png');}
+
         </style></head>
 
     <body><div class="page"><div class="main">
@@ -15,9 +21,10 @@
             <br>You see a drawing table. On it is a notebook and a folder. Besides the table is a heavily scratched wall covered in sticky notes.
         </p>
             <ul>
-                <li><a href="misc/journal">open the notebook</a></li>
-                <li><a href="misc/phrases">look at the sticky notes</a></li>
-                <li><a href="misc/folder">open the folder</a></li>
-                <li><a href="home">walk back out the door</a></li>
-            </ul>
+                <li><a class="journal" href="misc/journal">open the notebook</a></li>
+                <li><a class="notes" href="misc/phrases">look at the sticky notes</a></li>
+                <li><a class="folder" href="misc/folder">open the folder</a></li>
+                <li><a class="exit" href="home">walk back out the door</a></li>
+            </ul><br>
+        <img src="misc/folder/dotdotdot.png" style="margin: 0 auto">
     </div></div></body></html>
