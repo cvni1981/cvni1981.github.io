@@ -26,7 +26,7 @@ h1{
 a{color: #f2cf68}
 a:hover{background-color: #f2cf68; color: #020013; text-decoration-color: #f2cf68;}
   
-.top{display: sticky; top: 1rem; background-color: #020013;}
+.top{position: sticky; top: 1rem; background-color: #020013;}
 
 h2{font-size: 1.2rem}
 
