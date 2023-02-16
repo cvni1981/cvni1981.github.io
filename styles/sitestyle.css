@@ -23,7 +23,7 @@ h1{
   font-size: min(8vw, 3rem);
   line-height: 1.2}
 
-a{color: #f2cf68}
+a{color: #f2cf68; transition: all 0.2s cubic-bezier(.08,.82,.17,1)}
 a:hover{background-color: #f2cf68; color: #020013; text-decoration-color: #f2cf68;}
   
 h2{font-size: 1.2rem}

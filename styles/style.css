@@ -16,7 +16,7 @@ h1{
   font-size: min(8vw, 3rem);
   line-height: 1.2}
 
-a{color: #404040}
+a{color: #404040; transition: all 0.2s cubic-bezier(.08,.82,.17,1)}
 a:hover{background-color: #404040; color: #f0f0f0; text-decoration-color: #404040;}
 
 ul {list-style-type: "└ "; padding-left: 20px}
