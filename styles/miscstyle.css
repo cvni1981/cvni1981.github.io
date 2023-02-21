@@ -35,7 +35,7 @@ h2:before{content: "- "; color: var(--green);}
 
 p, ul{line-height: 1.4; margin-bottom: 0; font-size: 1rem}
 
-p::selection{background-color: var(--green); color: #080808}
+::selection{background-color: var(--green); color: #080808}
 
 .page{margin: 0 auto; width: min(90%, 35rem);
   border-left: solid #202020 2px;
