@@ -1,15 +1,22 @@
-let topbutton = document.getElementById("topbutton");
+const showOnPx = 100;
+const backToTopButton = document.querySelector(".back-to-top")
 
-window.onscroll = function() {scrollFunction()};
+const scrollContainer = () => {
+  return document.documentElement || document.body;
+};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    topbutton.style.display = "block";
+document.addEventListener("scroll", () => {
+  if (scrollContainer().scrollTop > showOnPx) {
+    backToTopButton.classList.remove("hidden")
   } else {
-    topbutton.style.display = "none";
+    backToTopButton.classList.add("hidden")
   }
-}
+})
 
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;}
+const goToTop = () => {
+  document.body.scrollIntoView({
+    behavior: "smooth",
+  });
+};
+
+backToTopButton.addEventListener("click", goToTop)
