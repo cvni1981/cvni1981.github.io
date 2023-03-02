@@ -3,7 +3,7 @@ let topbutton = document.getElementById("topbutton");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     topbutton.style.display = "block";
   } else {
     topbutton.style.display = "none";
