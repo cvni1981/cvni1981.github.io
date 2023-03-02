@@ -40,10 +40,12 @@ p, ul{line-height: 1.4; margin-bottom: 0}
   border-right: solid #202020 2px;
   min-height: 100vh}
 
-.back-to-top{
+#topbutton{
+  display: none;
   position: fixed;
   bottom: 2rem;
-  right: 2rem;
+  right: 3rem;
+  z-index: 99;
   border: solid var(--green) 2px;
   outline: none;
   background-color: #080808;
@@ -53,6 +55,8 @@ p, ul{line-height: 1.4; margin-bottom: 0}
   border-radius: 100%;
   font-size: 2rem
 }
-.hidden{
-  display: none;
+
+#topbutton:hover{
+  background-color: var(--green);
+  color: #080808
 }

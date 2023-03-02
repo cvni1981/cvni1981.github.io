@@ -200,6 +200,22 @@
         <br>I guess when i make some new text in toki pona or blender render or button or something that <b>fits</b> the style of upstairs, i'll put it there.
         <br>Also i think i have to make a button, i know this site already has a bunch of buttons, but none of them <b>works</b> as a button.
     </p></div>
-    <script src="/website/styles/back.js"></script>
-    <button onclick="goToTop()" class="back-to-top hidden" title="back to top">↑</button>
+    <script>
+    let topbutton = document.getElementById("topbutton");
+
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        topbutton.style.display = "block";
+        } else {
+        topbutton.style.display = "none";
+        }
+    }
+    
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;}
+    </script>
+    <button onclick="topFunction()" id="topbutton" title="back to top">↑</button>
 </div></body></html>
