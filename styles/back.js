@@ -18,5 +18,3 @@ const goToTop = () => {
     behavior: "smooth",
   });
 };
-
-backToTopButton.addEventListener("click", goToTop)
