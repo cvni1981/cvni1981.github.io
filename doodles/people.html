@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html style="height:100%">
+<html>
     <head>
-        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
-        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;1,700&display=swap" rel="stylesheet"> 
         <title>{people}</title>
-        <link href="/website/styles/style.css" rel="stylesheet" type="text/css" media="all">
-    <style>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/website/styles/test.css" rel="stylesheet" type="text/css" media="all"><style>
         body{background-image:url(background.jpg);
             background-repeat:no-repeat;
             background-size:cover;
             color: #101010;
-            font-family: 'Libre Baskerville', serif;
-            background-attachment: fixed;}
+            font-family: 'Literata', serif;}
         .main{padding-top: 20px}
         h1{font-size: min(10vw, 3rem); font-style: italic;}
         h2{margin-bottom: 10px; font-style: italic; font-size: 1.5rem;}
         h2::before{content: "- "; color: #5d5e6c;}
-        a{font-weight: bold; color: #101010; text-decoration-color:#5d5e6c;font-style: italic; text-decoration-thickness: 2px;}
+        a{color: #101010; text-decoration-color:#5d5e6c; text-decoration-thickness: 2px;}
         a:hover{text-decoration-color:#101010; background-color: #101010; color: #a2a4a3}
         a.button:hover{text-decoration-color:#00000000; background-color: #00000000}
-        .page{border-color: #5d5e6c}
+        .sidebar, .main{border-color: #5d5e6c}
+        .sidebar div{margin: 24px}
         img{border: solid #080808 min(3px, 0.6vw)}
         .header{border: solid 0px}
         #drawings{line-height:0; column-count: 1; column-gap: 12px; margin-top: 20px}
@@ -27,39 +26,58 @@
         #drawings img:hover{transform: scale(125%)}
         @media only screen and (min-width: 500px){
             #drawings{column-count: 2;}}
-    </style>
+        </style>
     </head>
 
     <body>
-        <div class="page"><div class="main">
-        <img src="peopleheader.gif" alt="people" style="width: 60%" class="header"><br>< <a class="back" href="/website/doodles">home</a>
-        <div id="drawings">
-        <img src="people/equal.jpg" alt="equal">
-        <img src="people/guy2.jpg" alt="guy2">
-        <img src="people/pointing.jpg" alt="pointing">
-        <img src="people/fingergun.jpg" alt="fingergun">
-        <img src="people/death.jpg" alt="death">
-        <img src="people/sit.jpg" alt="sit">
-        <img src="people/lonely.jpg" alt="lonely">
-        <img src="people/howdy.jpg" alt="howdy">
-        <img src="people/lookup.jpg" alt="lookup">
-        <img src="people/out.jpg" alt="out">
-        <img src="people/yay.jpg" alt="yay">
-        <img src="people/tall.jpg" alt="tall">
-        <img src="people/annoyed.jpg" alt="annoyed">
-        <img src="people/guy.jpg" alt="guy">
-        <img src="people/aslep.jpg" alt="aslep">
-        <img src="people/aww.jpg" alt="aww">
-        <img src="people/aww.png" alt="aww2">
-        <img src="people/hmm.jpg" alt="hmm">
-        <img src="people/sitting.jpg" alt="sitting">
-        <img src="people/stairs.jpg" alt="stairs">
-        <img src="people/eh.jpg" alt="eh">
-        <img src="people/really.jpg" alt="really">
-        <img src="people/untitled.png" alt="untitled">
-        <img src="people/float.jpg" alt="float">
-        <img src="people/fear.jpg" alt="fear">
-        <img src="people/faces.jpg" alt="faces">
+        <div class="sidebar">
+            <div>
+            <p><a href="/website/doodles">doodles</a></p>
+            <ul>
+                <li><a href="people">people</a></li>
+                <li><b><i>ruler and compass</i></b></li>
+                <li><a href="etc">etc</a></li>
+            </ul></div>
         </div>
+        <div class="main">
+            
+            <img src="peopleheader.gif" alt="people" style="width: 60%" class="header"><br><br>
+    
+        <details class="navbar">
+            <summary><a href="/website/doodles">back to doodles</a></summary>
+            <b><i>people</i></b> . 
+            <a href="ruler_and_compass">ruler and compass</a> . 
+            <a href="etc">etc</a>
+        </details>
+
+        <div id="drawings">
+            <img src="people/equal.jpg" alt="equal">
+            <img src="people/guy2.jpg" alt="guy2">
+            <img src="people/pointing.jpg" alt="pointing">
+            <img src="people/fingergun.jpg" alt="fingergun">
+            <img src="people/death.jpg" alt="death">
+            <img src="people/sit.jpg" alt="sit">
+            <img src="people/lonely.jpg" alt="lonely">
+            <img src="people/howdy.jpg" alt="howdy">
+            <img src="people/lookup.jpg" alt="lookup">
+            <img src="people/out.jpg" alt="out">
+            <img src="people/yay.jpg" alt="yay">
+            <img src="people/tall.jpg" alt="tall">
+            <img src="people/annoyed.jpg" alt="annoyed">
+            <img src="people/guy.jpg" alt="guy">
+            <img src="people/aslep.jpg" alt="aslep">
+            <img src="people/aww.jpg" alt="aww">
+            <img src="people/aww.png" alt="aww2">
+            <img src="people/hmm.jpg" alt="hmm">
+            <img src="people/sitting.jpg" alt="sitting">
+            <img src="people/stairs.jpg" alt="stairs">
+            <img src="people/eh.jpg" alt="eh">
+            <img src="people/really.jpg" alt="really">
+            <img src="people/untitled.png" alt="untitled">
+            <img src="people/float.jpg" alt="float">
+            <img src="people/fear.jpg" alt="fear">
+            <img src="people/faces.jpg" alt="faces">
+            </div>
         </div>
     </body>
+</html>
