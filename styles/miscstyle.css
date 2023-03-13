@@ -3,7 +3,7 @@ body{
 /* Colors */
 --black:      #080808;
 --white:      #f0f0f0;
---dark-gray:  #202020;
+--dark-gray:  #404040;
 --light-gray: #808080;
 --green:      #15c405;
 
@@ -22,7 +22,7 @@ min-height: 100vh
 .navbar{display: none}
 
 .sidebar{width: min(160px, 20vw);
-border-right: solid var(--light-gray) 2px;
+border-right: solid var(--dark-gray) 2px;
 height: 100vh; position: sticky; top: 0}
 .sidebar ul{margin-top: 0}
 .sidebar div{margin: 24px auto; width: fit-content}
@@ -61,8 +61,8 @@ h2:before{content: "- "; color: var(--green);}
     .navbar{display:inline-block}
 
     .main{padding: 16px 24px; margin: 0 16px; 
-    border-right: solid var(--light-gray) 2px;
-    border-left: solid var(--light-gray) 2px;
+    border-right: solid var(--dark-gray) 2px;
+    border-left: solid var(--dark-gray) 2px;
     min-height: calc(100vh - 32px)}
 
 }
