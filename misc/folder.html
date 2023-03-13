@@ -5,13 +5,16 @@
         <title>> folder</title>
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
         <link href="/website/styles/miscstyle.css" rel="stylesheet" type="text/css" media="all"><style>
-        details{max-width: 750px;
+        .folder, .folder details{max-width: 750px;
         border-left: solid #15c405 3px;
         padding: 0 13px;
         margin: 10px 0px}
         ul{margin: 0px}
-        details details{margin-left: 10px}
+        .folder details{margin-left: 10px}
         summary{font-size: 1.1rem; font-weight: bold;}
+        @media only screen and (max-width: 600px) {
+            .folder{margin: 40px -26px}
+        }
         </style>
     </head>
 
@@ -37,7 +40,7 @@
         </details>
 
         <p>You open the folder.</p>
-    <details>
+    <details class="folder">
         <summary><a>index(es)</a></summary>
         <ul>
             <li><a href="folder/index">index</a>: the earliest version, with rounded corners.</li>
@@ -56,7 +59,7 @@
         </details>
     </details>
 
-    <details>
+    <details class="folder">
         <summary><a>handdrawn/doodle</a></summary>
         When i originally made the handdrawn/doodles page, as the name suggested, everything was supposed to be handdrawn, even the text. But after trying to chroma key the text+drawings out (because i didn't want an ugly border in the images), 
         once with black on white and then with black on green to see if it helped (it didn't, i suck at chroma key), i just gave up and had to settle for the separated text and drawing.
@@ -73,7 +76,7 @@
         </ul>
     </details>
 
-    <details>
+    <details class="folder">
         <summary><a>nameless zine</a></summary>
         Refer to <a href="journal#zine">journal entry</a>.
         <ul>
@@ -81,7 +84,7 @@
         </ul>
     </details>
 
-    <details>
+    <details class="folder">
         <summary><a>miscellaneous pages</a></summary>
         <ul>
             <li><a href="folder/difference">difference</a>: a thing about the importance of difference. Moved it here because it... doesn't really fit.</li>
@@ -90,7 +93,7 @@
         </ul>
     </details>
 
-    <details>
+    <details class="folder">
         <summary><a>miscellaneous images</a></summary>
         <ul>
             <li><a href="folder/oldnowhere.gif">oldnowhere</a>: the old button that fit with the old dark style of the site.</li>
