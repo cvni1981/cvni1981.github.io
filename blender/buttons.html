@@ -1,16 +1,50 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet"> 
-        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;800&display=swap" rel="stylesheet">
         <title>blender: buttons</title>
-        <link href="/website/styles/style.css" rel="stylesheet" type="text/css" media="all"><style>
-        </style></head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/website/styles/test.css" rel="stylesheet" type="text/css" media="all"><style>
+        #images{line-height:0; column-count: 2; column-gap: 12px; margin-top: 20px}
+        @media only screen and (max-width: 500px) {
+            #images{column-count: 1;}
+        }
+        </style>
+    </head>
 
-    <body><div class="page"><div class="main">
-        <h1>buttons</h1>
-        ← <a class="back" href="/website/blender">back</a>
+    <body>
+        <div class="sidebar">
+            <div>
+            <p><a href="/website/home">home</a></p>
+            <ul>
+                <li><a href="/website/about">about</a></li>
+                <li><a href="/website/musicians">musicians</a></li>
+                <li><a href="/website/websites">websites</a></li>
+                <li><a href="/website/words">words</a></li>
+                <li><a href="/website/doodles">doodles</a></li>
+                <li><a href="/website/blender">blender</a></li>
+                <li><a href="/website/misc">misc</a></li>
+                <li><a href="/website/buttons">buttons</a></li>
+                <li><a href="/website/sitelog">sitelog</a></li>
+            </ul></div>
+        </div>
+        <div class="main">
+            
+    <h1>buttons</h1>
+    
+        <details class="navbar">
+            <summary><a href="/website/home">home</a></summary>
+            <a href="/website/about">about</a> . 
+            <a href="/website/musicians">musicians</a> . 
+            <a href="/website/websites">websites</a><br>
+            <a href="/website/words">words</a> . 
+            <a href="/website/doodles">doodles</a> . 
+            <a href="/website/blender">blender</a> . 
+            <a href="/website/misc">misc</a><br>
+            <a href="/website/buttons">buttons</a> . 
+            <a href="/website/sitelog">sitelog</a>
+        </details>
+
         <p>I normally make still renders, but today i felt like making buttons, so i made these as a challenge, i guess.</p>
         <p>One with cubes walking:</p>
         <img src="/website/blender/buttons/walking.gif" alt="walking">
@@ -21,12 +55,14 @@
         <p>There was another one exploring shadows, but because of the speed and low resolution, it didn't turn out very good:</p>
         <img src="/website/blender/buttons/waves.gif" alt="waves">
         <p>But at least I got some nice still renders.</p>
+        <div id="images">
         <img src="/website/blender/buttons/sticks1.png" alt="sticks1" width="100%">
         <img src="/website/blender/buttons/sticks2.png" alt="sticks2" width="100%">
         <img src="/website/blender/buttons/walking.png" alt="walking" width="100%">
-        <img src="/website/blender/buttons/grid.png" alt="grid" width="100%">
+        <img src="/website/blender/buttons/grid.png" alt="grid" width="100%"></div>
         <p>This was my first time doing buttons, so it's pretty basic, but i wanna do it again some other time.</p>
         <p>Edit: i did!!</p>
         <img src="/website/blender/buttons/carpediem.gif" alt="carpediem">
-        <p>↑ <a href="#">back to top</a></p>
-    </div></div></body></html>
+        </div>
+    </body>
+</html>
