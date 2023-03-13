@@ -25,7 +25,7 @@ height: 100vh; position: sticky; top: 0}
 .sidebar ul{margin-top: -16px}
 .sidebar div{margin: 24px auto; width: fit-content}
 
-.main{flex: 1; overflow-y: scroll;
+.main{flex: 1;
 padding: 24px;
 max-width: 35rem}
 
