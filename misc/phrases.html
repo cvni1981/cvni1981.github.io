@@ -6,7 +6,7 @@
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
         <link href="/website/styles/miscstyle.css" rel="stylesheet" type="text/css" media="all"><style>
         #notes{display: grid;
-            grid-template-columns: auto auto;
+            grid-template-columns: auto auto auto;
             margin: 2vh auto 0 auto; gap: 20px;
             width: fit-content}
         #notes div{margin-bottom: 10px;
@@ -15,8 +15,11 @@
             max-width: 150px;
             height: 150px;
             padding: 10px}
-        @media only screen and (max-width: 550px) {
-        #notes{grid-template-columns: auto}}
+        @media only screen and (max-width: 800px) and (min-width: 500px) {
+            #notes{grid-template-columns: auto auto}
+        }
+        @media only screen and (max-width: 500px) {
+            #notes{grid-template-columns: auto}}
         </style>
     </head>
 
