@@ -1,41 +1,64 @@
-body {
-  --green: #15c405;
-  background-color: #080808;
-  color: #f0f0f0;
-  font-family: 'Space Grotesk', sans-serif;
-  line-height: 1.5;
-  font-size: 1rem;
-  margin: 0px}
+/* Desktop (width > 600px) */
+body{
+/* Colors */
+--black:      #080808;
+--white:      #f0f0f0;
+--dark-gray:  #202020;
+--light-gray: #808080;
+--green:      #15c405;
 
-.main{padding: 1rem 1.5rem;}
+background-color: var(--black);
+color: var(--white);
 
-.back{padding-top:0}
+font-family: 'Space Grotesk', sans-serif;
+font-size: 1rem;
+line-height: 1.5;
+
+display: flex;
+margin: 0;
+min-height: 100vh
+}
+
+.navbar{display: none}
+
+.sidebar{width: min(160px, 20vw);
+border-right: solid var(--light-gray) 2px;
+height: 100vh; position: sticky; top: 0}
+.sidebar ul{margin-top: -16px}
+.sidebar div{margin: 24px auto; width: fit-content}
+
+.main{flex: 1;
+padding: 24px;
+max-width: 35rem}
+
+p, ul{line-height: 1.4; margin-bottom: 0}
+ul{padding-left: 20px; list-style-type: "> "}
+
+a{color: var(--white); text-decoration-color: var(--light-gray);}
+a:hover{color: var(--green);
+text-decoration-color: var(--green)}
 
 h1{
   margin: 0;
   font-weight: bold;
   font-size: 2.5rem;
   line-height: 1.2}
-
-a{font-weight: bold; 
-  color:#f0f0f0;
-  font-style: italic;
-  text-decoration-color: #808080;
-  text-decoration-thickness: 2px;}
-a:hover{color: var(--green);
-    text-decoration-color: var(--green);}
-
-h1{text-decoration: underline;
-  text-decoration-color: var(--green);
-  text-decoration-thickness: 2px;}
-h1:before{content: "> ";color: var(--green)}
-ul{list-style-type: "> "; padding-left: 20px}
-h2{font-size: 1.5rem;}
+h1:before{content: "> "; color: var(--green)}
+h2{font-size: 1.5rem}
 h2:before{content: "- "; color: var(--green);}
 
-p, ul{line-height: 1.4; margin-bottom: 0}
+/* Mobile (width < 600px) */
+@media only screen and (max-width: 600px) {
+    body{display: inline-block;
+    width: 100vw; height: 100vh}
 
-.page{margin: 0 auto; width: min(90%, 35rem);
-  border-left: solid #202020 2px;
-  border-right: solid #202020 2px;
-  min-height: 100vh}
+    .sidebar{display: none}
+
+    .navbar{display:inline-block}
+
+    .main{padding: 16px 24px; margin: 0 16px; 
+    border-right: solid var(--light-gray) 2px;
+    border-left: solid var(--light-gray) 2px;
+    height: calc(100vh - 32px)}
+
+}
