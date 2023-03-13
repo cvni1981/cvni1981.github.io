@@ -46,7 +46,7 @@ h1{
   line-height: 1.2;
   text-decoration: underline;
   text-decoration-color: var(--green);
-  text-decoration-thickness: 3px}
+  text-decoration-thickness: 4px}
 h1:before{content: "> "; color: var(--green)}
 h2{font-size: 1.5rem}
 h2:before{content: "- "; color: var(--green);}
