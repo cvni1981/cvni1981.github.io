@@ -24,7 +24,7 @@ min-height: 100vh
 .sidebar{width: min(160px, 20vw);
 border-right: solid var(--light-gray) 2px;
 height: 100vh; position: sticky; top: 0}
-.sidebar ul{margin-top: -16px}
+.sidebar ul{margin-top: 0}
 .sidebar div{margin: 24px auto; width: fit-content}
 
 .main{flex: 1;
@@ -34,7 +34,8 @@ max-width: 35rem}
 p, ul{line-height: 1.4; margin-bottom: 0}
 ul{padding-left: 20px; list-style-type: "> "}
 
-a{color: var(--white); text-decoration-color: var(--light-gray);}
+a{color: var(--white); text-decoration-color: var(--light-gray);
+text-decoration-thickness: 2px;}
 a:hover{color: var(--green);
 text-decoration-color: var(--green)}
 
