@@ -60,7 +60,7 @@ details[open] summary ~ * {
     .main{padding: 16px 24px; margin: 0 16px; 
     border-right: solid var(--light-gray) 2px;
     border-left: solid var(--light-gray) 2px;
-    height: calc(100vh - 32px)}
+    min-height: calc(100vh - 32px)}
 
 }
 
