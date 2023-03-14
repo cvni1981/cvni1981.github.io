@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet"> 
-        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;800&display=swap" rel="stylesheet">
         <title>musicians</title>
-        <link href="styles/style.css" rel="stylesheet" type="text/css" media="all"><style>
-            a.bandcamp, a.bandcampbold{text-decoration-color: #00a2ff;}
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/website/styles/test.css" rel="stylesheet" type="text/css" media="all"><style>
+        a.bandcamp, a.bandcampbold{text-decoration-color: #00a2ff;}
             a.bandcamp:hover, a.bandcampbold:hover{background-color: #00a2ff; color: #404040}
 
             a.spotify, a.spotifybold{text-decoration-color: #00FF00;}
@@ -15,12 +14,42 @@
             a.bandcamp, a.spotify{font-weight: normal; text-decoration-thickness: 1px;}
             a.bandcampbold, a.spotifybold{font-weight: bold; text-decoration-thickness: 2px}
             ul{line-height: 1.5}
-        </style></head>
+        </style>
+    </head>
 
-    <body><div class="page"><div class="main">
+    <body>
+        <div class="sidebar">
+            <div>
+            <p><a href="/website/home">home</a></p>
+            <ul>
+                <li><a href="/website/about">about</a></li>
+                <li><b>musicians</b></li>
+                <li><a href="/website/websites">websites</a></li>
+                <li><a href="/website/words">words</a></li>
+                <li><a href="/website/doodles">doodles</a></li>
+                <li><a href="/website/blender">blender</a></li>
+                <li><a href="/website/misc">misc</a></li>
+                <li><a href="/website/buttons">buttons</a></li>
+                <li><a href="/website/sitelog">sitelog</a></li>
+            </ul></div>
+        </div>
+        <div class="main">
+            
     <h1>favorite musicians</h1>
-    ← <a class="back" href="home">home</a>
     
+        <details class="navbar">
+            <summary><a href="/website/home">home</a></summary>
+            <a href="/website/about">about</a> . 
+            <b>musicians</b> . 
+            <a href="/website/websites">websites</a><br>
+            <a href="/website/words">words</a> . 
+            <a href="/website/doodles">doodles</a> . 
+            <a href="/website/blender">blender</a> . 
+            <a href="/website/misc">misc</a><br>
+            <a href="/website/buttons">buttons</a> . 
+            <a href="/website/sitelog">sitelog</a>
+        </details>
+
         <p>These are some musicians who i listen/listened to a lot. I recommend checking them out! (<a href="" class="bandcamp">blue links</a> lead to bandcamp and <a href="" class="spotify">green links</a> lead to spotify)</p>
         <ul id="list">
             <li><a href="https://radiohead.bandcamp.com/" class="bandcampbold">
@@ -78,4 +107,6 @@
                 <a href="https://open.spotify.com/artist/17wDxPR2GcU3r1dpCoCiUi" class="spotify">
                     João Donato</a>
             </ul>
-            <p>↑ <a href="#">back to top</a></p></div></body></html>
+        </div>
+    </body>
+</html>
