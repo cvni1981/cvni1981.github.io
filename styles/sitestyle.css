@@ -11,7 +11,7 @@ body{
   /* Colors */
   --yellow:     #f2cf68;
   --dark-blue:  #020013;
-  --light-blue: #0f008a;
+  --light-blue: #1d1838;
   
   background-color: var(--dark-blue);
   color: var(--yellow);
@@ -30,7 +30,7 @@ body{
 .sidebar{width: min(160px, 20vw);
 background-color: var(--light-blue);
 height: 100vh; position: sticky; top: 0}
-.sidebar ul{margin-top: -16px}
+.sidebar ul{margin-top: 0}
 .sidebar div{margin: 24px; margin-right: 0; width: fit-content}
 
 .main{flex: 1;
