@@ -60,7 +60,7 @@ details[open] summary ~ * {
 
     .main{padding: 16px 24px; margin: 0 16px; 
     min-height: calc(100vh - 32px);
-    background-color: --white}
+    background-color: var(--white)}
 
 }
 
