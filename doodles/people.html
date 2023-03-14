@@ -17,7 +17,8 @@
         a{color: #101010; text-decoration-color:#5d5e6c; text-decoration-thickness: 2px;}
         a:hover{text-decoration-color:#101010; background-color: #101010; color: #a2a4a3}
         a.button:hover{text-decoration-color:#00000000; background-color: #00000000}
-        .sidebar, .main{border-color: #5d5e6c}
+        .sidebar{background-color: #d4d4d4;
+            box-shadow: #40404040 4px 0 4px}
         .sidebar div{margin: 24px}
         img{border: solid #080808 min(3px, 0.6vw)}
         .header{border: solid 0px}
@@ -26,6 +27,11 @@
         #drawings img:hover{transform: scale(125%)}
         @media only screen and (min-width: 500px){
             #drawings{column-count: 2;}}
+        @media only screen and (max-width: 600px) {
+            body{background-color: #d4d4d4}
+            .main{background-image:url(doodles/background.jpg);
+            box-shadow: #40404080 0 0 8px}
+        }
         </style>
     </head>
 
