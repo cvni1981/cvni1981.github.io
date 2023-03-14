@@ -51,7 +51,8 @@ details[open] summary ~ * {
 /* Mobile (width < 600px) */
 @media only screen and (max-width: 600px) {
     body{display: inline-block;
-    width: 100vw; height: 100vh}
+    width: 100vw; height: 100vh;
+    background-color: #d4d4d4;}
 
     .sidebar{display: none}
 
@@ -60,7 +61,8 @@ details[open] summary ~ * {
     .main{padding: 16px 24px; margin: 0 16px; 
     border-right: solid var(--light-gray) 2px;
     border-left: solid var(--light-gray) 2px;
-    min-height: calc(100vh - 32px)}
+    min-height: calc(100vh - 32px);
+    background-color: #f0f0f0}
 
 }
 
