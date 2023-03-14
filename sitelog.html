@@ -9,7 +9,7 @@
             background-color: #101010;
             color: #ffa900;
             font-family: 'IBM Plex Mono',  sans-serif}
-            .main, .sidebar{border-color: #ffa900}
+            .sidebar{background-color: #303030}
             #entry{margin-bottom: 40px}
             h1{font-size: min(10vw, 3rem)}
             h2{font-size: large}
@@ -17,6 +17,10 @@
             p, ul{font-size: 1rem}
             a{color: #ffa900; font-weight: bold; font-style: italic; text-decoration-color: #a87000; text-decoration-thickness: 2px;}
             a:hover{text-decoration-color: #ffa900; background-color: #ffa900; color: #101010}
+            @media only screen and (max-width: 600px) {
+                body{background-color: #303030}
+                .main{background-color: #101010}
+            }
         </style>
     </head>
 
