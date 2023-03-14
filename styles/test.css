@@ -23,7 +23,7 @@ min-height: 100vh
 border-right: solid var(--light-gray) 2px;
 height: 100vh; position: sticky; top: 0}
 .sidebar ul{margin-top: -16px}
-.sidebar div{margin: 24px; width: fit-content}
+.sidebar div{margin: 24px; margin-right: 0; width: fit-content}
 
 .main{flex: 1;
 padding: 24px;
