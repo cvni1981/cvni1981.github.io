@@ -22,7 +22,7 @@ min-height: 100vh
 .navbar{display: none}
 
 .sidebar{width: min(160px, 20vw);
-border-right: solid var(--dark-gray) 2px;
+border-right: solid var(--dark-gray) 4px;
 height: 100vh; position: sticky; top: 0}
 .sidebar ul{margin-top: 0}
 .sidebar div{margin: 24px; width: fit-content}
