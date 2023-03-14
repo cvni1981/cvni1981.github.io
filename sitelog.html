@@ -1,29 +1,59 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,700;1,700&display=swap" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@700&display=swap" rel="stylesheet"> 
-        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;1,700&display=swap" rel="stylesheet"> 
         <title>sitelog</title>
-        <link href="styles/style.css" rel="stylesheet" type="text/css" media="all"><style>
-            body {
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/website/styles/test.css" rel="stylesheet" type="text/css" media="all"><style>
+        body {
             background-color: #101010;
             color: #ffa900;
-            font-family: 'IBM Plex Mono', 'Noto Emoji', sans-serif}
-            .page{border-color: #ffa900}
+            font-family: 'IBM Plex Mono',  sans-serif}
+            .main, .sidebar{border-color: #ffa900}
             #entry{margin-bottom: 40px}
             h1{font-size: min(10vw, 3rem)}
             h2{font-size: large}
             h2::before{content:"> "; color: #a87000}
             p, ul{font-size: 1rem}
-            a{color: #ffa900; font-weight: bold; font-style: italic; text-decoration-color: #a87000; text-decoration-thickness: 2px;}
+            a{color: #ffa900; text-decoration-color: #a87000; text-decoration-thickness: 2px;}
             a:hover{text-decoration-color: #ffa900; background-color: #ffa900; color: #101010}
-        </style></head>
+        </style>
+    </head>
 
-    <body><div class="page"><div class="main">
-    <h1><i>sitelog</i></h1>
-    ← <a class="back" href="home">home</a>
+    <body>
+        <div class="sidebar">
+            <div>
+            <p><a href="/website/home">home</a></p>
+            <ul>
+                <li><a href="/website/about">about</a></li>
+                <li><a href="/website/musicians">musicians</a></li>
+                <li><a href="/website/websites">websites</a></li>
+                <li><a href="/website/words">words</a></li>
+                <li><a href="/website/doodles">doodles</a></li>
+                <li><a href="/website/blender">blender</a></li>
+                <li><a href="/website/misc">misc</a></li>
+                <li><a href="/website/buttons">buttons</a></li>
+                <li><b>sitelog</b></li>
+            </ul></div>
+        </div>
+        <div class="main">
+            
+    <h1>sitelog</h1>
+    
+        <details class="navbar">
+            <summary><a href="/website/home">home</a></summary>
+            <a href="/website/about">about</a> . 
+            <a href="/website/musicians">musicians</a> . 
+            <a href="/website/websites">websites</a><br>
+            <a href="/website/words">words</a> . 
+            <a href="/website/doodles">doodles</a> . 
+            <a href="/website/blender">blender</a> . 
+            <a href="/website/misc">misc</a><br>
+            <a href="/website/buttons">buttons</a> . 
+            <b>sitelog</b>
+        </details>
 
+        
     <details style="margin-bottom: 40px"><summary><a>More about the site</a></summary><p> 
         i made this site with Firefox in Ubuntu, with a crappy 1366x768 display<br>did my best to make it look decent on mobile, if there's something wrong, please tell me! (<a href="http://discordapp.com/users/691348576093077535" class="discord">discord</a>)<br>
         in existence since july 2022<br>
@@ -141,4 +171,7 @@
         <h2>12/8/2022 17:42</h2>
         <p>I just added the <a href="blender">blender images</a> and now <a href="sitelog">this log</a> so i can keep better track of what i've added to the site. Also i feel like restructuring the site, the list format isn't working, i think.</p>
     </div>
-    ↑ <a href="#">back to top</a></div></div></body></html>
+        
+        </div>
+    </body>
+</html>
