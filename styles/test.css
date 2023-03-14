@@ -3,7 +3,7 @@ body{
 /* Colors */
 --white:      #f0f0f0;
 --dark-gray:  #404040;
---light-gray: #a0a0a0;
+--light-gray: #d4d4d4;
 
 background-color: var(--white);
 color: var(--dark-gray);
@@ -20,7 +20,7 @@ min-height: 100vh
 .navbar{display: none}
 
 .sidebar{width: min(160px, 20vw);
-background-color: #d4d4d4;
+background-color: var(--light-gray);
 height: 100vh; position: sticky; top: 0}
 .sidebar ul{margin-top: -16px}
 .sidebar div{margin: 24px; margin-right: 0; width: fit-content}
@@ -52,17 +52,15 @@ details[open] summary ~ * {
 @media only screen and (max-width: 600px) {
     body{display: inline-block;
     width: 100vw; height: 100vh;
-    background-color: #d4d4d4;}
+    background-color: var(--light-gray);}
 
     .sidebar{display: none}
 
     .navbar{display:inline-block}
 
     .main{padding: 16px 24px; margin: 0 16px; 
-    border-right: solid var(--light-gray) 2px;
-    border-left: solid var(--light-gray) 2px;
     min-height: calc(100vh - 32px);
-    background-color: #f0f0f0}
+    background-color: --white}
 
 }
 
