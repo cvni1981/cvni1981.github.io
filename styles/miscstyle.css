@@ -62,8 +62,8 @@ h2:before{content: "- "; color: var(--green);}
     .navbar{display:inline-block}
 
     .main{padding: 16px 24px; margin: 0 16px; 
-    border-right: solid var(--dark-gray) 2px;
-    border-left: solid var(--dark-gray) 2px;
+    border-right: solid var(--dark-gray) 4px;
+    border-left: solid var(--dark-gray) 4px;
     min-height: calc(100vh - 32px)}
 
 }
