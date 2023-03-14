@@ -5,72 +5,50 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet"> 
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
         <title>nowhere in particular</title>
-        <link href="styles/test.css" rel="stylesheet" type="text/css" media="all"><style>
+        <link href="styles/style.css" rel="stylesheet" type="text/css" media="all"><style>
+            .page{width: min(90%, 45rem)}
             a.buttons:hover{background-color: #7ba0cc; 
-            text-decoration-color:#7ba0cc; color: #101010; border-color: #7ba0cc}
+            text-decoration-color:#7ba0cc; color: #101010; }
             a.misc:hover{background-color: #101010;
-            text-decoration-color: #101010; color: #15c405; border-color: #101010}
+            text-decoration-color: #101010; color: #15c405}
             a.log:hover{background-color: #202020;
-            text-decoration-color: #202020; color: #ffa900; border-color: #202020}
+            text-decoration-color: #202020; color: #ffa900}
             a.websites:hover{background-color: #201868;
-            text-decoration-color: #201868; color: #f2cf68; border-color: #201868}
+            text-decoration-color: #201868; color: #f2cf68}
             a{text-decoration-thickness: 3px; font-weight: normal;}
             #entry a{text-decoration-thickness: 1px;}
-            .topbar{display: none}
+            .summary{text-align: center}
 
-            .sidebar{width: 400px; padding: 16px 24px}
-            .main{padding: 0 24px; margin: auto 0 auto 48px}
-
-            #statuscafe, #statuscafe-username, #statuscafe-content{margin: 0}
-
-            .links{padding-left: 24px; line-height: 1.8}
-            .links a{font-size: 2rem; padding: 6px 12px; border-left: solid #404040 4px}
-
-            h1{font-size: 4.5rem; text-decoration: underline 5px; line-height: 1.2}
-            @media only screen and (max-width: 800px) {
-            body{display: inline-block;
-            width: 100vw; height: 100vh;
-            background-color: var(--light-gray);}
-            h1{font-size: min(3.6rem, 14vw)}
-
-            .sidebar{display: none}
-
-            .topbar{display:inline-block}
-
-            .main{padding: 16px 24px; margin: 0 auto; 
-            min-height: calc(100vh - 32px);
-            background-color: var(--white);
-            width: calc(100vw - 80px)}}
+            h1{font-size: 11vw; text-decoration: underline 5px; line-height: 1.25}
+            .summary div{display: block; font-size:x-large}
+            @media only screen and (min-width: 650px){
+            .summary div{display: inline; font-size:xx-large; }
+            .summary div:not(:last-child)::after{content: " . "};
+            .main{position: absolute}}
+            @media only screen and (min-width: 455px) and (max-width: 810px){
+            h1{font-size: 6.56vw}}
+            @media only screen and (min-width: 810px) {
+            h1{font-size: 3.6rem}}
         </style></head>
 
-    <body>
-        <div class="sidebar">
-        <h1>nowhere in particular.</h1>
-        <p>Hi! Welcome to my bit of the web where i put stuff i like, stuff i do and other things too. (hey that rhymed)<br>
-        I... don't know how to explain or express this place exactly. It's got places you can go that have stuff in them you might want to look at. Basically.<br>
-        Making this website has been a very fun (and challenging) experience, including learning html and css, and i hope you like having a gander at it.<br>Feel free to look
-        around and explore, however small this site may be.</p></div>
-
-    <div class="main">
-    <div class="topbar">
-        <h1>nowhere in particular.</h1>
-        <p>Hi! Welcome to my bit of the web where i put stuff i like, stuff i do and other things too. (hey that rhymed)<br>
-        I... don't know how to explain or express this place exactly. It's got places you can go that have stuff in them you might want to look at. Basically.<br>
-        Making this website has been a very fun (and challenging) experience, including learning html and css, and i hope you like having a gander at it.<br>Feel free to look
-        around and explore, however small this site may be.</p></div>
-
-        <details><summary style="font-weight: bold">current status</summary>
-            <div id="entry" style="margin: 0 20px"><div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=cvni81" defer></script></div></details><br>
-        <div class="links">
-        <a href="about"     title="me and what i like to do"                   >about</a><br>
-        <a href="musicians" title="good music people"                          >musicians</a><br>
-        <a href="websites"  title="cool websites"              class="websites">websites</a><br>
-        <a href="words"     title="poems and texts and things" class="words"   >words</a><br>
-        <a href="doodles"   title="stuff i drew"               class="i"       >doodles</a><br>
-        <a href="blender"   title="3d renders in blender"                      >blender</a><br>
-        <a href="misc"      title="general miscellanea"        class="misc"    >misc</a><br>
-        <a href="buttons"   title="other folks' sites"         class="buttons" >buttons</a><br>
-        <a href="sitelog"   title="what's changed"             class="log"     >sitelog</a>
-        </div>
-    </div>
-</body>
+    <body><div class="page"><div class="main" style="padding-bottom: 2rem">
+    <h1>nowhere in particular.</h1>
+    <p>Hi! Welcome to my bit of the web where i put stuff i like, stuff i do and other things too. (hey that rhymed)<br>
+    I... don't know how to explain or express this place exactly. It's got places you can go that have stuff in them you might want to look at. Basically.<br>
+    Making this website has been a very fun (and challenging) experience, including learning html and css, and i hope you like having a gander at it.<br>Feel free to look
+    around and explore, however small this site may be.<br>
+    <details><summary style="font-weight: bold">current status</summary>
+        <div id="entry" style="margin: 0 20px"><div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=cvni81" defer></script></div></details></p>
+    <div class="summary">
+        <div><a href="about"     title="me and what i like to do"                   >about</a></div>
+        <div><a href="musicians" title="good music people"                          >musicians</a></div>
+        <div><a href="websites"  title="cool websites"              class="websites">websites</a></div></div>
+    <div class="summary">
+        <div><a href="words"     title="poems and texts and things" class="words"   >words</a></div>
+        <div><a href="doodles"   title="stuff i drew"               class="i"       >doodles</a></div>
+        <div><a href="blender"   title="3d renders in blender"                      >blender</a></div>
+        <div><a href="misc"      title="general miscellanea"        class="misc"    >misc</a></div></div>
+    <div class="summary">
+        <div><a href="buttons"   title="other folks' sites"         class="buttons" >buttons</a></div>
+        <div><a href="sitelog"   title="what's changed"             class="log"     >sitelog</a></div>
+    </div></div></div></body>
