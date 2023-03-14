@@ -16,12 +16,24 @@
             text-decoration-color: #201868; color: #f2cf68}
             a{text-decoration-thickness: 3px; font-weight: normal;}
             #entry a{text-decoration-thickness: 1px;}
+            .topbar{display: none}
 
             h1{font-size: 11vw; text-decoration: underline 5px; line-height: 1.25}
             @media only screen and (min-width: 455px) and (max-width: 810px){
             h1{font-size: 6.56vw}}
-            @media only screen and (min-width: 810px) {
-            h1{font-size: 3.6rem}}
+            @media only screen and (max-width: 600px) {
+            body{display: inline-block;
+            width: 100vw; height: 100vh;
+            background-color: var(--light-gray);}
+            h1{font-size: 3.6rem}
+
+            .sidebar{display: none}
+
+            .navbar{display:inline-block}
+
+            .main{padding: 16px 24px; margin: 0 16px; 
+            min-height: calc(100vh - 32px);
+            background-color: var(--white)}}
         </style></head>
 
     <body>
@@ -36,6 +48,8 @@
     </div>
 
     <div class="main">
+        <div class="topbar"></div>
+
         <div><a href="about"     title="me and what i like to do"                   >about</a></div>
         <div><a href="musicians" title="good music people"                          >musicians</a></div>
         <div><a href="websites"  title="cool websites"              class="websites">websites</a></div>
