@@ -26,11 +26,14 @@
             @media only screen and (min-width: 650px){
             .summary div{display: inline; font-size:xx-large; }
             .summary div:not(:last-child)::after{content: " . "};
-            .main{position: absolute; max-width: none; margin: 0}}
+            .main{position: absolute; max-width: none}}
             @media only screen and (min-width: 455px) and (max-width: 810px){
             h1{font-size: 6.56vw}}
             @media only screen and (min-width: 810px) {
             h1{font-size: 3.6rem}}
+            @media only screen and (max-width: 800px) {
+                .main{margin: 0}
+            }
         </style></head>
 
     <body><div class="page"><div class="main" style="padding-bottom: 2rem">
