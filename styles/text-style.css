@@ -32,7 +32,8 @@ max-width: 35rem}
 ul{padding-left: 20px; list-style-type: "└ "}
 
 a{color: var(--dark-gray); 
-    transition: all 0.2s cubic-bezier(.08,.82,.17,1)}
+  transition: all 0.2s cubic-bezier(.08,.82,.17,1);
+  text-decoration-thickness: 2px;}
 a:hover{background-color: var(--dark-gray); color: var(--white);
 text-decoration-color: var(--dark-gray)}
 
