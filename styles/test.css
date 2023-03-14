@@ -64,3 +64,6 @@ details[open] summary ~ * {
 
 }
 
+@media only screen and (max-width: 800px) {
+  .sidebar div{margin: 24px auto}
+}
