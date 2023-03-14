@@ -67,3 +67,7 @@ h2:before{content: "- "; color: var(--green);}
     min-height: calc(100vh - 32px)}
 
 }
+
+@media only screen and (max-width: 800px) {
+  .sidebar div{margin: 24px auto}
+}
