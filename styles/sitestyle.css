@@ -5,33 +5,66 @@
   @font-face{font-family: 'Vera Humana 95';
   font-weight: bold;
   src: url("Verab.ttf")}
-body {
-  background-color: #020013;
-  color: #f2cf68;
-  font-family: 'Vera Humana 95', sans-serif;
-  line-height: 1.5;
-  font-size: 1.1rem;
-  margin: 0px}
 
-.main{padding: 1rem 1.5rem;}
-
-.back{padding-top:0}
-
-h1{
-  margin: 0;
-  font-weight: bold;
-  font-size: min(8vw, 3rem);
-  line-height: 1.2}
-
-a{color: #f2cf68; transition: all 0.2s cubic-bezier(.08,.82,.17,1)}
-a:hover{background-color: #f2cf68; color: #020013; text-decoration-color: #f2cf68;}
+/* Desktop (width > 600px) */
+body{
+  /* Colors */
+  --yellow:     #f2cf68;
+  --dark-blue:  #020013;
+  --light-blue: #0f008a;
   
+  background-color: var(--dark-blue);
+  color: var(--yellow);
+  
+  font-family: 'Vera Humana 95', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  
+  display: flex;
+  margin: 0;
+  min-height: 100vh
+  }
+
+.navbar{display: none}
+
+.sidebar{width: min(160px, 20vw);
+background-color: var(--light-blue);
+height: 100vh; position: sticky; top: 0}
+.sidebar ul{margin-top: -16px}
+.sidebar div{margin: 24px; margin-right: 0; width: fit-content}
+
+.main{flex: 1;
+padding: 24px;
+max-width: 35rem}
+
+ul{padding-left: 20px; list-style-type: "└ "}
+p, ul{line-height: 1.4; margin-bottom: 0; font-size: 1rem}
+
+a{color: var(--yellow); 
+    transition: all 0.2s cubic-bezier(.08,.82,.17,1)}
+a:hover{background-color: var(--yellow); color: var(--dark-blue);
+text-decoration-color: var(--yellow)}
+
+h1{font-size: min(8vw, 3rem); margin: 0; line-height: 1.2; font-weight: bold}
 h2{font-size: 1.2rem}
 
-  ul {list-style-type: "└ "; padding-left: 20px}
-  p, ul{line-height: 1.4; margin-bottom: 0; font-size: 1rem}
-  
-  .page{margin: 0 auto; width: min(90%, 35rem);
-    border-left: solid #0f008a 2px;
-    border-right: solid #0f008a 2px;
-    min-height: 100vh}
+
+/* Mobile (width < 600px) */
+@media only screen and (max-width: 600px) {
+    body{display: inline-block;
+    width: 100vw; height: 100vh;
+    background-color: var(--light-blue);}
+
+    .sidebar{display: none}
+
+    .navbar{display:inline-block}
+
+    .main{padding: 16px 24px; margin: 0 16px; 
+    min-height: calc(100vh - 32px);
+    background-color: var(--dark-blue)}
+
+}
+
+@media only screen and (max-width: 800px) {
+  .sidebar div{margin: 24px auto}
+}
