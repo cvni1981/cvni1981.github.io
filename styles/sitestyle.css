@@ -1,11 +1,3 @@
-@font-face{font-family: 'Vera Humana 95';
-  font-weight: normal;
-  src: url("Vera.ttf")}
-
-  @font-face{font-family: 'Vera Humana 95';
-  font-weight: bold;
-  src: url("Verab.ttf")}
-
 /* Desktop (width > 600px) */
 body{
   /* Colors */
@@ -16,7 +8,7 @@ body{
   background-color: var(--dark-blue);
   color: var(--yellow);
   
-  font-family: 'Vera Humana 95', sans-serif;
+  font-family: 'Marmelad', sans-serif;
   font-size: 1.1rem;
   line-height: 1.5;
   
