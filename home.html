@@ -1,59 +1,90 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0">
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
         <title>nowhere in particular</title>
         <link href="styles/style.css" rel="stylesheet" type="text/css" media="all"><style>
-            body{background-color: #d4d4d4}
-            .page{width: min(90%, 45rem); background-color: #f0f0f0; border: none; margin: 0 auto}
-            a.buttons:hover{background-color: #7ba0cc; 
-            text-decoration-color:#7ba0cc; color: #101010; }
-            a.misc:hover{background-color: #101010;
-            text-decoration-color: #101010; color: #15c405}
-            a.log:hover{background-color: #202020;
-            text-decoration-color: #202020; color: #ffa900}
-            a.websites:hover{background-color: #201868;
-            text-decoration-color: #201868; color: #f2cf68}
-            a{text-decoration-thickness: 3px; font-weight: normal;}
-            #entry a{text-decoration-thickness: 1px;}
-            .summary{text-align: center}
+            a{text-decoration: none; font-weight: normal;}
+            #entry a{text-decoration: underline; text-decoration-thickness: 1px;}
 
-            .main{padding: 16px 24px; max-width: none}
-            h1{font-size: 11vw; text-decoration: underline 5px; line-height: 1.25}
-            .summary div{display: block; font-size:x-large}
-            @media only screen and (min-width: 650px){
-            .summary div{display: inline; font-size:xx-large; }
-            .summary div:not(:last-child)::after{content: " . "};
-            .main{position: absolute; max-width: none}}
-            @media only screen and (min-width: 455px) and (max-width: 810px){
-            h1{font-size: 6.56vw}}
-            @media only screen and (min-width: 810px) {
-            h1{font-size: 3.6rem}}
-            @media only screen and (max-width: 800px) {
-                .main{margin: 0}
+            body{background-color: #f0f0f0}
+            .page{width: 100vw; display: flex; flex-direction: row;}
+
+            .summary{max-width: 360px; margin: 0 auto; text-align: center}
+            .summary a{display: flex; font-size: xx-large;
+                padding: 8px 8px 8px 16px; border-radius: 12px;
+                align-items: center;
             }
+            .summary a:hover{color: #f0f0f0;background-color: #404040;}
+
+            .material-symbols-outlined{font-size: xx-large; margin-right: 16px}
+
+            a.buttons:hover{background-color: #7ba0cc; 
+            text-decoration-color:#101010; color: #101010; }
+            a.misc:hover{background-color: #404040;
+            text-decoration-color: #15c405; color: #15c405}
+            a.log:hover{background-color: #404040;
+            text-decoration-color: #ffa900; color: #ffa900}
+            a.websites:hover{background-color: #201868;
+            text-decoration-color: #f2cf68; color: #f2cf68}
+
+            h1{text-decoration: underline; text-decoration-thickness: min(5px, 1vw)}
+
+            .info{background-color: #d4d4d4; padding: 16px 24px;
+            width: 400px}
+            .summary{padding: 16px 24px;
+            margin: auto; width: 360px}
+
+            @media only screen and (max-width: 800px) {
+                body{background-color: #d4d4d4}
+                .page{width: min(calc(100vw - 64px), 35rem); 
+                    background-color: #f0f0f0; 
+                    display: block;
+                    padding: 16px;
+                    margin: 0 auto;
+                    min-height: 100vh}
+                h1{font-size: min(7.2vw, 3rem)}
+                .info{background-color: #00000000;}
+                .summary, .info{padding: 0; width: auto}
+                .summary a, .material-symbols-outlined{font-size: x-large}
+            }
+
         </style></head>
 
-    <body><div class="page"><div class="main" style="padding-bottom: 2rem">
-    <h1>nowhere in particular.</h1>
-    <p>Hi! Welcome to my bit of the web where i put stuff i like, stuff i do and other things too. (hey that rhymed)<br>
-    I... don't know how to explain or express this place exactly. It's got places you can go that have stuff in them you might want to look at. Basically.<br>
-    Making this website has been a very fun (and challenging) experience, including learning html and css, and i hope you like having a gander at it.<br>Feel free to look
-    around and explore, however small this site may be.<br>
-    <details><summary style="font-weight: bold">current status</summary>
-        <div id="entry" style="margin: 0 20px"><div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=cvni81" defer></script></div></details></p>
-    <div class="summary">
-        <div><a href="about"     title="me and what i like to do"                   >about</a></div>
-        <div><a href="musicians" title="good music people"                          >musicians</a></div>
-        <div><a href="websites"  title="cool websites"              class="websites">websites</a></div></div>
-    <div class="summary">
-        <div><a href="words"     title="poems and texts and things" class="words"   >words</a></div>
-        <div><a href="doodles"   title="stuff i drew"               class="i"       >doodles</a></div>
-        <div><a href="blender"   title="3d renders in blender"                      >blender</a></div>
-        <div><a href="misc"      title="general miscellanea"        class="misc"    >misc</a></div></div>
-    <div class="summary">
-        <div><a href="buttons"   title="other folks' sites"         class="buttons" >buttons</a></div>
-        <div><a href="sitelog"   title="what's changed"             class="log"     >sitelog</a></div>
-    </div></div></div></body>
+    <body>
+        <div class="page">
+            <div class="info">
+                <h1>nowhere in particular.</h1>
+                <p>Hi! Welcome to my bit of the web where i put stuff i like, stuff i do and other things too. (hey that rhymed)<br>
+                I... don't know how to explain or express this place exactly. It's got places you can go that have stuff in them you might want to look at. Basically.<br>
+                Making this website has been a very fun (and challenging) experience, including learning html and css, and i hope you like having a gander at it.<br>Feel free to look
+                around and explore, however small this site may be.<br>
+                <details><summary style="font-weight: bold">current status</summary>
+                <div id="entry" style="margin: 0 20px"><div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=cvni81" defer></script></div></details></p>
+            </div>
+
+            <div class="summary">
+                <a href="about"     title="me and what i like to do">
+                    <span class="material-symbols-outlined">question_mark</span>about</a>
+                <a href="musicians" title="good music people">
+                    <span class="material-symbols-outlined">headphones</span>musicians</a>
+                <a href="websites"  title="cool websites"       class="websites">
+                    <span class="material-symbols-outlined">language</span>websites</a>
+                <a href="words"     title="poems and texts and things">
+                    <span class="material-symbols-outlined">menu_book</span>words</a>
+                <a href="doodles"   title="stuff i drew">
+                    <span class="material-symbols-outlined">draw</span>doodles</a>
+                <a href="blender"   title="3d renders in blender">
+                    <span class="material-symbols-outlined">deployed_code</span>blender</a>
+                <a href="misc"      title="general miscellanea" class="misc">
+                    <span class="material-symbols-outlined">more_horiz</span>misc</a>
+                <a href="buttons"   title="other folks' sites"  class="buttons">
+                    <span class="material-symbols-outlined">web</span>buttons</a>
+                <a href="sitelog"   title="what's changed"      class="log">
+                    <span class="material-symbols-outlined">overview</span>sitelog</a>
+            </div>
+        </div>
+    </body>
+</html>
