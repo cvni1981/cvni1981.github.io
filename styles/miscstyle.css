@@ -37,7 +37,7 @@ ul{padding-left: 20px; list-style-type: "> "}
 
 a{color: var(--white); text-decoration-color: var(--light-gray);
 text-decoration-thickness: 2px;
-font-weight: bold; font-style: italic;}
+font-style: italic;}
 a:hover{color: var(--green);
 text-decoration-color: var(--green)}
 
