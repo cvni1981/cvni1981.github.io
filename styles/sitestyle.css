@@ -8,6 +8,8 @@ body{
   background-color: var(--dark-blue);
   color: var(--yellow);}
 
+::selection{background-color: var(--dark-blue); color: var(--yellow)}
+
 .sidebar{border-right-color: var(--light-blue)}
 
 a{color: var(--yellow); }

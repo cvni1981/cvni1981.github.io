@@ -17,6 +17,8 @@ margin: 0;
 min-height: 100vh
 }
 
+::selection{background-color: var(--black); color: var(--white)}
+
 .navbar{display: none}
 
 .sidebar{width: min(160px, 20vw);
