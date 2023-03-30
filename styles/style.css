@@ -36,7 +36,7 @@ details[open] summary ~ * {
 }
 
 @media only screen and (max-width: 800px) {
-  body{width: min(calc(100vw - 48px), 35rem); 
+  body{width: min(calc(100vw - 32px), 35rem); 
       display: block;
       padding: 16px 0;
       margin: 0 auto;
