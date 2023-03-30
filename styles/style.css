@@ -29,7 +29,7 @@ height: 100vh; position: sticky; top: 0}
 padding: 24px;
 max-width: 35rem}
 
-h1{font-size: min(6.5vw, 2.9rem); margin: 8px 0 16px}
+h1{font-size: min(6.5vw, 2.9rem); margin: 0}
 
 ul{padding-left: 20px; list-style-type: "- "}
 
@@ -46,9 +46,9 @@ details[open] summary ~ * {
   to   {opacity: 1; transform: translateY(0)}
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
   body{width: min(calc(100vw - 32px), 35rem); 
-    display: inline-block;
+    display: block;
     padding: 16px 0;
     margin: 0 auto;
     min-height: 100vh}
@@ -57,4 +57,8 @@ details[open] summary ~ * {
     .main{padding: 16px 24px; margin: 0 16px; 
     min-height: calc(100vh - 32px);
     background-color: var(--white)}
+}
+
+@media only screen and (max-width: 800px) {
+  .sidebar div{margin: 24px auto}
 }
