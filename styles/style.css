@@ -29,7 +29,7 @@ height: 100vh; position: sticky; top: 0}
 padding: 24px;
 max-width: 35rem}
 
-h1{font-size: min(6.5vw, 2.9rem); margin: 0}
+h1{font-size: min(8vw, 3rem); line-height: 1.2; margin: 0}
 
 ul{padding-left: 20px; list-style-type: "- "}
 
