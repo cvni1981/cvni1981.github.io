@@ -23,5 +23,5 @@ ul{padding-left: 20px; list-style-type: "- "}
 
 a{color: var(--black); 
   transition: all 0.2s cubic-bezier(.08,.82,.17,1)}
-a:hover{background-color: var(--dark-gray); color: var(--white);
-text-decoration-color: var(--dark-gray)}
+a:hover{background-color: var(--black); color: var(--white);
+text-decoration-color: var(--black)}
