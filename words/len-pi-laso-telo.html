@@ -5,20 +5,22 @@
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
         <title>words: len pi laso telo</title>
         <link href="/website/styles/style.css" rel="stylesheet" type="text/css" media="all"><style>
+            body{font-size: 1.1rem}
             .sidebar div{margin: 24px}
             @media only screen and (max-width: 800px) {
-            body{display: inline-block;
-            width: 100vw; height: 100vh;
-            background-color: var(--light-gray);}
+                body{width: min(calc(100vw - 32px), 35rem); 
+                display: block;
+                padding: 16px 0;
+                margin: 0 auto;
+                min-height: 100vh}
 
             .sidebar{display: none}
 
-            .navbar{display:inline-block}
+            .navbar{display:inline-block;
+                width: 100%; border-bottom: solid var(--light-gray) 2px; padding-bottom: 10px}
 
-            .main{padding: 16px 24px; margin: 0 auto; 
-            min-height: calc(100vh - 32px);
-            background-color: var(--white);
-            width: calc(100vw - 80px)}
+            .main{padding: 0 8px; margin: 0; 
+            min-height: calc(100vh - 32px);}
         }
 
         </style>
