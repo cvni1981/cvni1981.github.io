@@ -35,3 +35,12 @@ details[open] summary ~ * {
   to   {opacity: 1; transform: translateY(0)}
 }
 
+@media only screen and (max-width: 800px) {
+  body{margin: min(calc(100vw - 64px), 35rem); 
+      display: block;
+      padding: 16px;
+      margin: 0 auto;
+      min-height: 100vh}
+  .info{background-color: #00000000;}
+  .summary, .info{padding: 0; width: auto}
+}
