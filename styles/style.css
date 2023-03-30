@@ -17,7 +17,7 @@ margin: 0;
 min-height: 100vh
 }
 
-h1{font-size: min(7.2vw, 3rem); line-height: 3.25rem}
+h1{font-size: min(7.2vw, 3rem); line-height: 3.25rem; padding: 8px 0 16px}
 
 ul{padding-left: 20px; list-style-type: "- "}
 
@@ -25,3 +25,13 @@ a{color: var(--black);
   transition: all 0.2s cubic-bezier(.08,.82,.17,1)}
 a:hover{background-color: var(--black); color: var(--white);
 text-decoration-color: var(--black)}
+
+details[open] summary ~ * {
+  animation: sweep .5s cubic-bezier(.08,.82,.17,1);
+}
+
+@keyframes sweep {
+  from {opacity: 0; transform: translateY(-0.5rem)}
+  to   {opacity: 1; transform: translateY(0)}
+}
+
