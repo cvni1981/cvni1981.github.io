@@ -20,3 +20,8 @@ min-height: 100vh
 h1{font-size: min(7.2vw, 3rem); line-height: 3.25rem}
 
 ul{padding-left: 20px; list-style-type: "- "}
+
+a{color: var(--black); 
+  transition: all 0.2s cubic-bezier(.08,.82,.17,1)}
+a:hover{background-color: var(--dark-gray); color: var(--white);
+text-decoration-color: var(--dark-gray)}
