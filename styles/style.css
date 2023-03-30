@@ -55,8 +55,7 @@ details[open] summary ~ * {
     .sidebar{display: none}
     .navbar{display:inline-block; width: 100%; border-bottom: solid var(--light-gray) 2px; padding-bottom: 10px}
     .main{padding: 0 8px; margin: 0;
-    min-height: calc(100vh - 32px);
-    background-color: var(--white)}
+    min-height: calc(100vh - 32px)}
 }
 
 @media only screen and (max-width: 800px) {
