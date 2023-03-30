@@ -17,6 +17,18 @@ margin: 0;
 min-height: 100vh
 }
 
+.navbar{display: none}
+
+.sidebar{width: min(160px, 20vw);
+background-color: var(--light-gray);
+height: 100vh; position: sticky; top: 0}
+.sidebar ul{margin-top: -16px}
+.sidebar div{margin: 24px; margin-right: 0; width: fit-content}
+
+.main{flex: 1;
+padding: 24px;
+max-width: 35rem}
+
 h1{font-size: min(6.5vw, 2.9rem); margin: 8px 0 16px}
 
 ul{padding-left: 20px; list-style-type: "- "}
@@ -36,8 +48,13 @@ details[open] summary ~ * {
 
 @media only screen and (max-width: 800px) {
   body{width: min(calc(100vw - 32px), 35rem); 
-      display: block;
-      padding: 16px 0;
-      margin: 0 auto;
-      min-height: 100vh}
+    display: inline-block;
+    padding: 16px 0;
+    margin: 0 auto;
+    min-height: 100vh}
+    .sidebar{display: none}
+    .navbar{display:inline-block}
+    .main{padding: 16px 24px; margin: 0 16px; 
+    min-height: calc(100vh - 32px);
+    background-color: var(--white)}
 }
