@@ -26,7 +26,7 @@ height: 100vh; position: sticky; top: 0}
 .sidebar div{margin: 24px; margin-right: 0; width: fit-content}
 
 .main{flex: 1;
-padding: 0 16px;
+padding: 24px;
 max-width: 35rem}
 
 h1{font-size: min(8vw, 3rem); line-height: 1.2; margin: 0}
@@ -54,7 +54,7 @@ details[open] summary ~ * {
     min-height: 100vh}
     .sidebar{display: none}
     .navbar{display:inline-block}
-    .main{padding: 16px 24px; margin: 0 16px; 
+    .main{padding: 0 16px; margin: 0;
     min-height: calc(100vh - 32px);
     background-color: var(--white)}
 }
