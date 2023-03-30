@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Work-Sans:wght@400;800&amp;display=swap" rel="stylesheet">
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <title>nowhere in particular</title>
+        <link href="styles/style.css" rel="stylesheet" type="text/css" media="all"><style>
+            .page{width: 100vw; display: flex; flex-direction: row;}
+
+            a.buttons:hover{background-color: #7ba0cc; 
+            text-decoration-color:#101010; color: #101010; }
+            a.misc:hover{background-color: #404040;
+            text-decoration-color: #15c405; color: #15c405}
+            a.log:hover{background-color: #404040;
+            text-decoration-color: #ffa900; color: #ffa900}
+            a.websites:hover{background-color: #201868;
+            text-decoration-color: #f2cf68; color: #f2cf68}
+
+            h1{text-decoration: underline; text-decoration-thickness: min(5px, 1vw)}
+
+            .info{padding: 16px 24px;
+            width: 400px}
+            .summary{padding: 16px 24px;
+            margin: auto; width: 360px}
+
+            @media only screen and (max-width: 800px) {
+                body{background-color: #d4d4d4}
+                .page{width: min(calc(100vw - 64px), 35rem); 
+                    background-color: #f0f0f0; 
+                    display: block;
+                    padding: 16px;
+                    margin: 0 auto;
+                    min-height: 100vh}
+                h1{font-size: min(7.2vw, 3rem)}
+                .info{background-color: #00000000;}
+                .summary, .info{padding: 0; width: auto}
+                .summary a, .material-symbols-outlined{font-size: x-large}
+            }
+
+        </style></head>
+
+    <body>
+        <div class="page">
+            <div class="info">
+                <h1>nowhere in particular.</h1>
+                <p>Hi! Welcome to my bit of the web where i put stuff i like, stuff i do and other things too. (hey that rhymed)<br>
+                I... don't know how to explain or express this place exactly. It's got places you can go that have stuff in them you might want to look at. Basically.<br>
+                Making this website has been a very fun (and challenging) experience, including learning html and css, and i hope you like having a gander at it, however small this site may be.<br>
+                <details><summary style="font-weight: bold">current status</summary>
+                <div id="entry" style="margin: 0 20px"><div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=cvni81" defer></script></div></details></p>
+            </div>
+
+            <ul class="summary">
+                <li><a href="about"     title="me and what i like to do">about</a></li>
+                <li><a href="musicians" title="good music people">musicians</a></li>
+                <li><a href="websites"  title="cool websites"       class="websites">websites</a></li>
+                <li><a href="words"     title="poems and texts and things">words</a></li>
+                <li><a href="doodles"   title="stuff i drew">doodles</a></li>
+                <li><a href="blender"   title="3d renders in blender">blender</a></li>
+                <li><a href="misc"      title="general miscellanea" class="misc">misc</a></li>
+                <li><a href="buttons"   title="other folks' sites"  class="buttons">buttons</a></li>
+                <li><a href="sitelog"   title="what's changed"      class="log">sitelog</a></li>
+            </ul>
+        </div>
+    </body>
+</html>
