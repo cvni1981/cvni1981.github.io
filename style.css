@@ -1,5 +1,4 @@
 body{
-/* Colors */
 --white:#f0f0f0;
 --black:#101010;
 --gray:  #6b6b6b;
@@ -25,7 +24,7 @@ h1{font-size: min(8vw, 3rem); line-height: 1.2; margin: 0}
 
 ul{padding-left: 20px; list-style-type: "- "}
 
-a{color: var(--gray); }
+a{color: var(--gray); font-weight: bold;}
 a:hover{background-color: var(--gray); color: var(--white);
 text-decoration-color: var(--gray)}
 
