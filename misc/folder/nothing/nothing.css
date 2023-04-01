@@ -1,0 +1,9 @@
+body{background-color: #f0f0f0;
+    color: #202020;
+    font-family: 'Work Sans', sans-serif;
+    margin: 8px min(50px, 8vw);
+    font-size: 1.1rem}
+h1, h2{font-family: 'Crimson Pro', serif; font-weight: bold; margin-bottom: 5px}
+a{color: #202020; transition: all .2s cubic-bezier(.08,.82,.17,1)}
+a:hover{color: #f0f0f0; background-color: #202020}
+p{max-width: 40rem}
