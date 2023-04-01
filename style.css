@@ -1,4 +1,3 @@
-/* Desktop (width > 600px) */
 body{
 /* Colors */
 --white:      #f0f0f0;
@@ -8,7 +7,7 @@ body{
 background-color: var(--white);
 color: var(--black);
 
-font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Noto Sans', 'Droid Sans', 'Segoe UI', sans-serif; 
+font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Noto Sans', 'Droid Sans', 'Segoe UI', 'Liberation Sans', sans-serif; 
 font-size: 1rem;
 line-height: 1.2;
 
