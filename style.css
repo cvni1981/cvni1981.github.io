@@ -12,9 +12,9 @@ font-size: 1rem;
 line-height: 1.2;
 
 margin: 0 auto;
-padding-top: 16px;
+padding: 16px;
 min-height: 100vh;
-width: min(100vw, 35rem);
+width: min(calc(100vw - 36px), 35rem);
 border-right: solid var(--gray) 2px;
 border-left: solid var(--gray) 2px;
 }
