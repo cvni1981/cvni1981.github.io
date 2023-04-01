@@ -1,8 +1,8 @@
 body{
 /* Colors */
---white:      #f0f0f0;
---black:  #202020;
---light-gray: #a0a0a0;
+--white:#f0f0f0;
+--black:#101010;
+--gray:  #6b6b6b;
 
 background-color: var(--white);
 color: var(--black);
@@ -21,9 +21,9 @@ h1{font-size: min(8vw, 3rem); line-height: 1.2; margin: 0}
 
 ul{padding-left: 20px; list-style-type: "- "}
 
-a{color: var(--black); }
-a:hover{background-color: var(--black); color: var(--white);
-text-decoration-color: var(--black)}
+a{color: var(--gray); }
+a:hover{background-color: var(--gray); color: var(--white);
+text-decoration-color: var(--gray)}
 
 details[open] summary ~ * {
   animation: sweep .5s cubic-bezier(.08,.82,.17,1);
