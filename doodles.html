@@ -5,9 +5,18 @@
         <title>doodles</title>
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
         <link href="/website/styles/style.css" rel="stylesheet" type="text/css" media="all"><style>
-            body{background-color: #d0d0d0}
-            .list img:hover{background-color: #101010}
-            .list a:hover{background-color: #0000}
+
+        .c, .m, .y{background-color: #f0f0f0; width: 29%; margin-top: 10px}
+        .c:hover{background-color: #003351;}
+        .m:hover{background-color: #640c25;}
+        .y:hover{background-color: #806014;}
+        .main{padding-top: 20px}
+        h1{font-size: min(10vw, 3rem); font-style: italic;}
+        h2{margin-bottom: 10px; font-style: italic; font-size: 1.5rem;}
+        h2::before{content: "- "; color: #5d5e6c;}
+        a{color: #101010; text-decoration-color:#5d5e6c; text-decoration-thickness: 2px;}
+        a:hover{text-decoration-color:#101010; background-color: #101010; color: #d4d4d4}
+        a.button:hover{text-decoration-color:#00000000; background-color: #00000000}
         </style>
     </head>
 
@@ -20,7 +29,7 @@
                 <li><a href="/website/musicians">musicians</a></li>
                 <li><a href="/website/websites">websites</a></li>
                 <li><a href="/website/words">words</a></li>
-                <li><b>doodles</b></li>
+                <li><b><i>doodles</i></b></li>
                 <li><a href="/website/blender">blender</a></li>
                 <li><a href="/website/misc">misc</a></li>
                 <li><a href="/website/buttons">buttons</a></li>
@@ -29,7 +38,7 @@
         </div>
         <div class="main">
             
-        <img src="/website/doodles/doodles.gif" alt="{doodles}" style="height: min(20vw, 5.5rem)">
+        <h1>doodles</h1>
     
         <details class="navbar">
             <summary>back</summary>
@@ -38,7 +47,7 @@
             <a href="/website/musicians">musicians</a> . 
             <a href="/website/websites">websites</a><br>
             <a href="/website/words">words</a> . 
-            <b>doodles</b> . 
+            <b><i>doodles</i></b> . 
             <a href="/website/blender">blender</a> . 
             <a href="/website/misc">misc</a><br>
             <a href="/website/buttons">buttons</a> . 
@@ -46,10 +55,9 @@
         </details>
 
         <p>this is a place where i'll put a bunch of my drawings, i like to doodle a lot and want to share some of them with you! i hope you like looking at them! (more to come (hopefully (probably)))</p>
-        <div class="list">
-        <a href="doodles/people"><img            style="border: solid #05a1fc 2px" src="doodles/people.gif" alt="people button"></a>
-        <a href="doodles/ruler_and_compass"><img style="border: solid #fc074c 2px" src="doodles/rac.gif" alt="ruler and compass button"></a>
-        <a href="doodles/etc"><img               style="border: solid #ffb400 2px" src="doodles/etc.gif" alt="etc button"></a>
+        <a href="doodles/people" class="button"><img src="doodles/people.gif" alt="people button"                    style="border: solid #05a1fc min(5px, 0.75vw)" class="c"></a>
+        <a href="doodles/ruler_and_compass" class="button"><img src="doodles/rac.gif" alt="ruler and compass button" style="border: solid #fc074c min(5px, 0.75vw)" class="m"></a>
+        <a href="doodles/etc" class="button"><img src="doodles/etc.gif" alt="etc button"                             style="border: solid #ffb400 min(5px, 0.75vw)" class="y"></a>
         </div>
         </div>
     </body>
