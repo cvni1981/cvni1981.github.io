@@ -1,0 +1,27 @@
+/* Desktop (width > 600px) */
+body{
+  /* Colors */
+  --yellow:     #f2cf68;
+  --dark-blue:  #020013;
+  --light-blue: #4B3E84;
+  
+  background-color: var(--dark-blue);
+  color: var(--yellow);}
+
+::selection{background-color: var(--yellow); color: var(--dark-blue)}
+
+.sidebar{border-right-color: var(--light-blue)}
+
+a{color: var(--yellow); }
+a:hover{background-color: var(--yellow); color: var(--dark-blue);
+text-decoration-color: var(--yellow)}
+
+h2{font-size: 1.25rem}
+h2 a{text-decoration-thickness: 2px}
+h2::before{content: "- "}
+
+/* Mobile (width < 600px) */
+@media only screen and (max-width: 600px) {
+  .navbar{border-bottom-color: var(--light-blue)}
+
+}

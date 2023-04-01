@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;1,700&display=swap" rel="stylesheet"> 
+        <title>{etc}</title>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/website/styles/style.css" rel="stylesheet" type="text/css" media="all"><style>
+        body{background-image:url(background.jpg);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-attachment: fixed;
+            color: #101010;
+            font-family: 'Literata', serif;}
+        .main{padding-top: 20px}
+        h1{font-size: min(10vw, 3rem); font-style: italic;}
+        h2{margin-bottom: 10px; font-style: italic; font-size: 1.5rem;}
+        h2::before{content: "- "; color: #5d5e6c;}
+        a{color: #101010; text-decoration-color:#5d5e6c; text-decoration-thickness: 2px;}
+        a:hover{text-decoration-color:#101010; background-color: #101010; color: #d4d4d4}
+        a.button:hover{text-decoration-color:#00000000; background-color: #00000000}
+        .sidebar{background-color: #d4d4d4;
+            box-shadow: #40404040 4px 0 4px}
+        .sidebar div{margin: 24px}
+        img{border: solid #080808 min(3px, 0.6vw)}
+        .header{border: solid 0px}
+        #drawings{line-height:0; column-count: 1; column-gap: 12px; margin-top: 20px}
+        #drawings img{margin-bottom: 6px; width: 100%}
+        #drawings img:hover{transform: scale(125%)}
+        @media only screen and (min-width: 500px){
+            #drawings{column-count: 2;}}
+        @media only screen and (max-width: 600px) {
+            body{background-color: #d4d4d4;
+            background-image:none}
+            .main{background-image:url(background.jpg);
+                background-attachment: fixed;
+                box-shadow: #40404080 0 0 8px}
+        }
+        </style>
+    </head>
+
+    <body>
+        <div class="sidebar">
+            <div>
+            <p><a href="/website/doodles">doodles</a></p>
+            <ul>
+                <li><a href="people">people</a></li>
+                <li><a href="ruler_and_compass">ruler and compass</a></li>
+                <li><b><i>etc</i></b></li>
+            </ul></div>
+        </div>
+        <div class="main">
+            
+            <img src="etcheader.gif" alt="etc" style="max-width: 60%" class="header"><br>
+    
+        <details class="navbar">
+            <summary><a href="/website/doodles">back to doodles</a></summary>
+            <a href="people">people</a> . 
+            <a href="ruler_and_compass">ruler and compass</a> . 
+            <b><i>etc</i></b>
+        </details>
+
+        <div id="drawings">
+            <img src="etc/creatures2.jpg" alt="creatures2">
+            <img src="etc/noise.jpg" alt="noise">
+            <img src="etc/light.jpg" alt="light">
+            <img src="etc/creatures.jpg" alt="creatures">
+            <img src="etc/lines.jpg" alt="lines">
+            <img src="etc/cat_doodles.jpg" alt="cat doodles">
+            <img src="etc/cat_spotlight.jpg" alt="cat spotlight">
+            <img src="etc/et.jpg" alt="et">
+            <img src="etc/graphite.jpg" alt="graphite">
+            <img src="etc/hypercube.jpg" alt="hypercube">
+            <img src="etc/mobius.jpg" alt="mobius">
+            <img src="etc/waveform.jpg" alt="waveform">
+            <img src="etc/new.jpg" alt="new">
+            <img src="etc/new2.jpg" alt="new2">
+            <img src="etc/new3.jpg" alt="new3">
+            <img src="etc/creature.jpg" alt="creature">
+            <img src="etc/creature2.jpg" alt="creature2">
+            <img src="etc/square.jpg" alt="square">
+            <img src="etc/creature3.png" alt="creature3">
+            </div>
+        </div>
+    </body>
+</html>
