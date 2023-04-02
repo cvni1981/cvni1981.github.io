@@ -10,8 +10,6 @@ color: var(--white);
 font-family: 'Space Grotesk', sans-serif;
 line-height: 1.4rem}
 
-.sidebar, .navbar{border-color: var(--dark-green)}
-
 ul{list-style-type: "> "}
 
 a{color: var(--green); text-decoration-color: var(--green)}
