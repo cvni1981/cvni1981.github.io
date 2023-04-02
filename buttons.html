@@ -6,30 +6,25 @@
         <title>buttons</title>
         <link href="styles/style.css" rel="stylesheet" type="text/css" media="all"><style>
             body{--light-blue: #b8cadf;
-                --dark-blue: #9dafc3;
-                --grey: #5d5e6c;
+                --dark-blue: #466ea0;
                 --black: #101010;
-                background-color: #b8cadf;
+                background-color: var(--light-blue);
                 color: var(--black);
                 font-family: 'Literata', serif;}
-            h1{font-size: min(10vw, 3rem); font-style: italic;}
+
+            a, .sidebar, .navbar{border-color: var(--dark-blue);}
+
+            h1{font-style: italic;}
             h2{margin-bottom: 10px; font-style: italic; font-size: 1.5rem;}
-            h2::before{content: "- "; color: var(--grey);}
-            a{color: var(--black); text-decoration-color: var(--grey);text-decoration-thickness: 2px;}
-            a:hover{text-decoration-color:var(--black); background-color: var(--black); color: var(--light-blue)}
-            a.button::after, a.button::before{content:""}
-            a.button:hover{background-color: #00000000; text-decoration-color: #00000000}
-            .sidebar{background-color: var(--dark-blue)}
-            @media only screen and (max-width: 600px) {
-            body{background-color: var(--dark-blue);
-            background-image:none}
-            .main{background-color: var(--light-blue)}}</style>
+            h2::before{content: "- "; color: var(--dark-blue);}
+            a:hover{text-decoration-color:var(--dark-blue); background-color: var(--dark-blue); color: var(--light-blue)}
+            a.button:hover{background-color: #00000000; text-decoration-color: #00000000}</style>
     </head>
 
     <body>
         <div class="sidebar">
             <div>
-            <p><a href="/website/home">home</a></p>
+            <p><a href="/website/">home</a></p>
             <ul>
                 <li><a href="/website/about">about</b></li>
                 <li><a href="/website/musicians">musicians</a></li>
@@ -47,7 +42,8 @@
     <h1>buttons</h1>
     
         <details class="navbar">
-            <summary><a href="/website/home">home</a></summary>
+            <summary>back</summary>
+            <a href="/website/">home</a><br>
             <a href="/website/about">about</a> . 
             <a href="/website/musicians">musicians</a> . 
             <a href="/website/websites">websites</a><br>
