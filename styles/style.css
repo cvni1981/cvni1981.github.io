@@ -1,6 +1,6 @@
 body{
   --white:      #f0f0f0;
-  --black:  #202020;
+  --black:      #202020;
   --light-gray: #a0a0a0;
   
   background-color: var(--white);
