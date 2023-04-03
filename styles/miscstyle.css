@@ -5,7 +5,8 @@ body{
 --green:      #15c405;
 
 background-color: var(--black);
-color: var(--white)}
+color: var(--white);
+font-family: 'Space Grotesk', sans-serif}
 
 .sidebar, .navbar{border-color: #808080}
 
