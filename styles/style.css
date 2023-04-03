@@ -1,20 +1,16 @@
 /* Desktop (width > 600px) */
 body{
 /* Colors */
---white:      #f0f0f0;
---black:  #202020;
---light-gray: #a0a0a0;
+--white:#f0f0f0;
+--black:#101010;
+--gray: #404040;
 
-background-color: var(--white);
-color: var(--black);
+background-color: var(--black);
+color: var(--white);
 
 font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Noto Sans', 'Droid Sans', 'Segoe UI', 'Liberation Sans', sans-serif; 
 font-size: 1rem;
 line-height: 1.2;
-
-display: flex;
-margin: 0;
-min-height: 100vh
 }
 
 ::selection{background-color: var(--black); color: var(--white)}
