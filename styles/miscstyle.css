@@ -8,6 +8,8 @@ background-color: var(--black);
 color: var(--white);
 font-family: 'Space Grotesk', sans-serif; line-height: 1.25}
 
+::selection{background-color: var(--green); color: var(--black)}
+
 .sidebar, .navbar{border-color: #808080}
 
 ul{list-style-type: "> "}
