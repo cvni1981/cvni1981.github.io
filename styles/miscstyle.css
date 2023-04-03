@@ -6,7 +6,7 @@ body{
 
 background-color: var(--black);
 color: var(--white);
-font-family: 'Space Grotesk', sans-serif}
+font-family: 'Space Grotesk', sans-serif; line-height: 1.25}
 
 .sidebar, .navbar{border-color: #808080}
 
