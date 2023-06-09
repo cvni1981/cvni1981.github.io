@@ -1,0 +1,34 @@
+body{--black: #080808;
+     --grey:  #444;
+     --white: #f0f0f0;
+     background-color: var(--white); color: var(--black);
+     font-size: 1.0625rem;
+     font-family: 'Work Sans', sans-serif;
+     margin: 0}
+
+::selection{background-color: var(--black); color: var(--white)}
+
+.main{max-width: 40rem;
+     margin: 16px max(min(10rem, calc((100vw - 40rem) / 2)), 24px) 0}
+
+h1{margin: 0}
+
+ul{padding-left: 20px; list-style-type: "- "; margin: 8px 0 16px}
+
+p{max-width: 40rem}
+
+a{color: var(--black); }
+a:hover{background-color: var(--black); color: var(--white);
+text-decoration-color: var(--black)}
+
+summary{font-weight: bold;}
+
+details[open] summary ~ * {
+animation: sweep .5s cubic-bezier(.08,.82,.17,1);
+}
+
+@keyframes sweep {
+from {opacity: 0; transform: translateY(-0.5rem)}
+to   {opacity: 1; transform: translateY(0)}
+}
+     
