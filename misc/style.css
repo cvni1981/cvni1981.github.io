@@ -1,1 +1,25 @@
-body{font-family: 'Space Grotesk', sans-serif;}
+body{
+--black:      #080808;
+--white:      #f0f0f0;
+--dark-green: #0c7403;
+--green:      #15c405;
+font-family: 'Space Grotesk', sans-serif;
+background-color: var(--black);
+color: var(--white);
+font-family: 'Space Grotesk', sans-serif; line-height: 1.25}
+
+::selection{background-color: var(--green); color: var(--black)}
+
+ul{list-style-type: "> "}
+
+a{color: var(--green); text-decoration-color: var(--green)}
+a:hover{color: var(--black);
+text-decoration-color: var(--green); background-color: var(--green);}
+
+h1{font-size: 2.5rem;
+text-decoration: underline;
+text-decoration-color: var(--green);
+text-decoration-thickness: 4px}
+h1:before{content: "> "; color: var(--green)}
+h2{font-size: 1.5rem}
+h2:before{content: "- "; color: var(--green);}
