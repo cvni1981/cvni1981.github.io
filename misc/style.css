@@ -10,6 +10,9 @@ font-family: 'Space Grotesk', sans-serif; line-height: 1.25}
 
 ::selection{background-color: var(--green); color: var(--black)}
 
+.main{max-width: 40rem;
+    margin: 16px max(min(10rem, calc((100vw - 40rem) / 2)), 24px) 0}
+
 ul{list-style-type: "> "}
 
 a{color: var(--green); text-decoration-color: var(--green)}
