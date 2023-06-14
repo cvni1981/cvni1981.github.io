@@ -10,10 +10,10 @@
         <title>> misc</title><style>
             li{font-size: 1.5rem; font-weight: bold}
             div.indicator{content: url(folder/images/dotdotdot.png); margin: 0 auto; display: block}
-            a.journal:hover ~ div.indicator{content: url(folder/images/journal.png);}
-            a.notes:hover ~ div.indicator{content: url(folder/images/notes.png);}
-            a.folder:hover ~ div.indicator{content: url(folder/images/folder.png);}
-            a.exit:hover ~ div.indicator{content: url(folder/images/exit.png);}
+            div.journal:hover ~ div.indicator{content: url(folder/images/journal.png);}
+            div.notes:hover ~ div.indicator{content: url(folder/images/notes.png);}
+            div.folder:hover ~ div.indicator{content: url(folder/images/folder.png);}
+            div.exit:hover ~ div.indicator{content: url(folder/images/exit.png);}
         </style></head>
 
     <body><div class="main">
@@ -26,10 +26,10 @@
            covered with sticky notes.
         </p>
         <ul>
-            <li><a class="journal" href="journal">open the notebook</a></li>
-            <li><a class="notes" href="wall">look at the sticky notes</a></li>
-            <li><a class="folder" href="folder/">open the folder</a></li>
-            <li><a class="exit" href="/website/">walk back out the door</a></li>
+            <li><div class="journal"><a href="journal">open the notebook</a></li>
+            <li><div class="notes"><a href="wall">look at the sticky notes</a></li>
+            <li><div class="folder"><a href="folder/">open the folder</a></li>
+            <li><div class="exit"><a href="/website/">walk back out the door</a></li>
         </ul>
         <div class="indicator"></div>
     </div></body>
