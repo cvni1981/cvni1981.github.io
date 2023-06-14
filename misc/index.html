@@ -8,7 +8,7 @@
         <link href="style.css" rel="stylesheet" type="text/css" media="all">
         <link rel="icon" type="image/x-icon" href="misc/folder/favicons/misc.jpg">
         <title>> misc</title><style>
-            li{font-size: 1.5rem; font-weight: bold}
+            .journal, .notes, .folder, .exit{font-size: 1.5rem; font-weight: bold}
             div.indicator{content: url(folder/images/dotdotdot.png); margin: 0 auto; display: block}
             div.journal:hover ~ div.indicator{content: url(folder/images/journal.png);}
             div.notes:hover ~ div.indicator{content: url(folder/images/notes.png);}
@@ -25,12 +25,10 @@
            There is a drawing table with a folder and a notebook; the wall besides it is worn and
            covered with sticky notes.
         </p>
-        <ul>
-            <div class="journal"><li><a href="journal">open the notebook</a></li></div>
-            <div class="notes"><li><a href="wall">look at the sticky notes</a></li></div>
-            <div class="folder"><li><a href="folder/">open the folder</a></li></div>
-            <div class="exit"><li><a href="/website/">walk back out the door</a></li></div>
-        </ul>
+        <div class="journal">> <a href="journal">open the notebook</a></div>
+        <div class="notes">> <a href="wall">look at the sticky notes</a></div>
+        <div class="folder">> <a href="folder/">open the folder</a></div>
+        <div class="exit">> <a href="/website/">walk back out the door</a></div><br>
         <div class="indicator"></div>
     </div></body>
 </html>
