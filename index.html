@@ -3,36 +3,74 @@
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@450;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap&text=nowhereinparticular" rel="stylesheet"> 
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
         <link href="style.css" rel="stylesheet" type="text/css" media="all">
         <link rel="icon" type="image/x-icon" href="misc/folder/favicons/icon.jpg">
         <title>nowhere in particular</title><style>
-            h2{margin: 0 0 8px}
-            a.misc:hover{background-color: #202020; color: #15c405}
-            a.log:hover{background-color: #202020; color: #ffa900}
+            body{--back: #faf9ff;
+                --text: #001a43;
+                --color: #2b5cb1;
+                --shadow: #afc6ff;
+                display: flex}
+
+            h1{font-family: 'Inconsolata'; font-size: 3.5rem; padding-bottom: 16px}
+
+            .info{padding: 24px; width: 400px;
+                border-right: solid var(--color) 1px}
+            .info details{padding-bottom: 8px}
+            .summary{padding: 0 24px; margin: 48px; font-size: 2rem}
+
+            .summary a{text-decoration: none}.info{width:400px}
+
+            #entry{color: #410001;} 
+            #entry a{color:#c0000c} 
+            #entry a:hover{background-color: #c0000c; text-decoration-color: #c0000c; color: #fff8f7}
+
+            /*- Details about each page -*/
+            li a:hover::after{margin-left: 8px; font-size: 1.5rem;}
+
+            .about:hover::after{content: "(me and what i like to do)"}
+
+            .log:hover{background-color: #ffa900; color: #0c0905}
+            .log:hover::after{content: "(what's changed)"}
+
+            /*- For mobile screens -*/
+
+            @media only screen and (max-width: 700px) {
+                body{display:block}
+                .info{border-right: none; 
+                    width: auto;
+                    border-bottom: solid var(--color) 1px; padding-bottom: 16px}
+                h1{font-size: min(3.5rem, 15vw)}
+                .summary{margin-left: 48px; margin-top: 24px; padding: 0; width: auto}
+                }
         </style></head>
 
-    <body><div class="main">
-        <h1>nowhere in particular...</h1>
-        <p>Oh hey, someone's here, welcome!<br>
-        This is a place the webmaster puts stuff about themselves, what they like and what they do...
-        Or at least what's here right now-<br>
-        We're putting more stuff here, slowly; this place will be under construction for a bit.<br>
-        If you wanna check some stuff out, that's cool. If you don't, that's cool too. Fair even.
-        And if you want to contact the webmaster, here's their contacts. And their latest status.cafe too.</p>
-        <details><summary><a>contacts</a></summary>
-        <ul>
-            <li><b>discord: </b>cvni81#4837</li>
-            <li><b>email: </b>cvni1981@gmail.com</li>
-        </ul></details>
-        <details><summary><a>current status</a></summary>
-            <div id="entry" style="margin: 8px 20px 16px"><div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=cvni81" defer></script></div></details>
+    <body>
+    <div class="info">
+        <h1>nowhere in<br>particular</h1>
+        Oh hey! Welcome to this place, where i put stuff about me,
+        what i like and what i do! Or... at least i try to. This place is
+        basically in an eternal state of 'UNDER CONSTRUCTION'. But hey it happens.
+        If you wanna check some stuff out, cool! If you don't, that's cool too!
+        ...sorry i don't have much to say, it isn't really my thing to say much.<br><br>
+        <details><summary>contacts</summary>
+            <ul>
+                <li><b>discord: </b>cvni81#4837</li>
+                <li><b>email: </b>cvni1981@gmail.com</li>
+            </ul></details>
+            <details><summary>current status</summary>
+                <div id="entry" style="margin: 8px 20px 16px"><div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=cvni81" defer></script></div></details>
+    
+        
+    </div>
+    <ul class="summary">
+        <li><a href="about"     class="about"  >about</a></li>
+        <li><a href="buttons"   class="buttons">buttons</a></li>
+        <li><a href="sitelog"   class="log"    >sitelog</a></li>
+    </ul>
 
-        <h2 style="margin-top: 16px"><a href="about" style="text-decoration: none; ">about</a></h2>
-        <h2><a href="blender/" style="text-decoration: none;">blender</a></h2>
-        <h2><a class="misc" href="misc/" style="text-decoration: none;">misc</a></h2>
-        <h2><a class="log" href="sitelog" style="text-decoration: none;">sitelog</a></h2>
-
-    </div></body>
+</body>
 </html>
