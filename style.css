@@ -6,15 +6,16 @@ body{background-color: var(--back); color: var(--text);
 
 ::selection{background-color: var(--color); color: var(--back)}
 
-.main{max-width: 40rem;
-     margin: 16px max(min(10rem, calc((100vw - 40rem) / 2)), 24px) 0}
+.main, .title{max-width: 40rem;
+     margin: 0 max(min(10rem, calc((100vw - 40rem) / 2)), 24px) 0}
 
-.cmain, .title{max-width: 40rem;
+.cmain, .ctitle{max-width: 40rem;
      margin: 0 max(calc((100vw - 40rem) / 2), 24px) 24px}
 
 .title{background-color: var(--back); position: sticky; top: 0; padding-top: 16px}
 
-h1{margin: 0; text-shadow: var(--shadow) 3px 3px}
+h1{margin: 0; text-shadow: var(--shadow) 3px 3px; font-size: min(10vw, 2.5rem)}
+h2{font-size: 1.25rem; margin-bottom: 0}
 
 ul{padding-left: 20px; list-style-type: "- "; margin: 8px 0 16px}
 

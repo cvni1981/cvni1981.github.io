@@ -14,13 +14,20 @@
             --color: #0b458e;
             --shadow: #6690de;
             font-family: 'Lora', serif}
-            h1{font-size: min(10vw, 3rem); font-family: 'IBM Plex Serif', serif}
-            h2{font-size: 1.25rem; margin-bottom: 0; font-family: 'IBM Plex Serif', serif; margin-bottom: 8px}
+            h1, h2{font-family: 'IBM Plex Serif', serif; margin-bottom: 8px}
+            h1{font-size: min(10vw, 3rem)}
             h2::before{content:"- "; color: var(--color);}
-            p{margin-top: 8px}
+            .button:hover img{animation: rise .25s cubic-bezier(.08,.82,.17,1) forwards}
+
+            @keyframes rise {
+            from {box-shadow: var(--back) 0 0; }
+            to   {box-shadow: var(--color) 3px 3px;}
+            }
+            
+            .button:hover{background-color: var(--back)}
         </style></head>
 
-    <body><div class="title">
+    <body><div class="ctitle">
         <h1>buttons</h1>
         <a href="/website/">go back</a>
         <div style="width: auto; background: var(--text); height: 1px; margin-top: 16px"></div></div>
@@ -38,7 +45,7 @@
         <a class="button" href="https://jmibo.neocities.org/"><img src="https://jmibo.neocities.org/assets/button.png"></a> 
         <a href="https://kpwu.xyz/" class="button"><img id="button_self" src="https://kpwu.xyz/images/kpwu_button.png" alt="kpwu button"></a>
         <h2>other neat places</h2>
-        <a href="https://zenmai.neocities.org/" target="_blank" ><img src="https://zenmai.neocities.org/image/banner.png"></a><br>
+        <a href="https://zenmai.neocities.org/" class="button" ><img src="https://zenmai.neocities.org/image/banner.png" alt="zenmai"></a><br>
         <a href="https://worldendling.neocities.org/" class="button"><img width="88" height="31" src="worldendling.gif" alt="worldendling"></a>
         <a href="https://moondvsted.neocities.org/" class="button"><img src="https://f2.toyhou.se/file/f2-toyhou-se/images/47052159_rd5iWTFAMmQWrMr.gif"></a>
         <a href="https://telepoet.neocities.org/" class="button"><img src="https://telepoet.neocities.org/images/buttons/telepoet8831.gif" alt="TELEPOET"></a> 
