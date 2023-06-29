@@ -10,7 +10,7 @@ body{background-color: var(--back); color: var(--text);
      margin: 0 max(min(10rem, calc((100vw - 40rem) / 2)), 24px) 0}
 
 .cmain, .ctitle{max-width: 40rem;
-     margin: 0 max(calc((100vw - 40rem) / 2), 24px) 26px}
+     margin: 0 max(calc((100vw - 40rem) / 2), 24px) 16px}
 
 .title, .ctitle{background-color: var(--back); position: sticky; top: 0; padding-top: 16px}
 
