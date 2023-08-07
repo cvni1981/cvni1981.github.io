@@ -3,34 +3,78 @@
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap&text=underconstruction" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@450;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap&text=nowhereinparticular" rel="stylesheet"> 
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-        <title>nowhere</title><style>
-            pre{font-family: 'Inconsolata', monospace; font-size:1.5rem;
-            margin:1.5rem; padding: 1.5rem; border: solid #f0f0f0 3px; line-height: 1.35rem; width:fit-content; height: fit-content}
-            body{background-color: #040404;
-                color: #f0f0f0; margin: 0}
+        <link href="style.css" rel="stylesheet" type="text/css" media="all">
+        <link rel="icon" type="image/x-icon" href="images/icon.jpg">
+        <title>nowhere in particular</title><style>
+            body{--back: #080808;
+                --text: #f0f0f0;
+                --color: #f0f0f0;
+                --shadow: #404040;
+                --border: #404040;
+                --details: #f0f0f010;
+                display: flex}
+
+            h1{font-family: 'Inconsolata'; font-size: 3.5rem; padding-bottom: 16px;
+            margin-bottom: 16px; border-bottom: solid var(--color) 1px}
+
+            .info{padding: 12px 24px 0; width: 400px;
+                border-right: solid var(--color) 2px}
+            .info details{padding-bottom: 8px; margin-bottom: 8px}
+            .summary{padding: 0 24px; margin: 48px; font-size: 2rem}
+
+            .summary a{text-decoration: none; color: var(--text)}
+            .summary a:hover{color: var(--back)}
+            .info{width:400px}
+
+            .discord, .bandcamp, .spotify, .email{padding: 4px 8px; border: solid 1px var(--shadow); margin: 4px; display: inline-block;
+            text-decoration: none; transition: all .5s cubic-bezier(.08,.82,.17,1)}
+
+            .discord:hover{background-color: #4600c750; border-color: #4600c7}
+            .bandcamp:hover{background-color: #0084ff50; border-color: #0084ff}
+            .spotify:hover{background-color: #00c72150; border-color: #00c721}
+            .email:hover{background-color: #f0f0f050; border-color: #f0f0f0}
+
+            .status:hover, .status[open]{border-color:#70462e; background-color: #70462e50}
+            .status[open] summary{border-color:#70462e;}
+
+            #entry a{color:var(--text); text-decoration-color: #da9268;} 
+            #entry a:hover{color: #da9268}
+
+            /*- For mobile screens -*/
+
+            @media only screen and (max-width: 700px) {
+                body{display:block}
+                .info{border-right: none; 
+                    width: auto;
+                    border-bottom: solid var(--color) 2px; margin-bottom: 12px}
+                h1{font-size: min(3.5rem, 15vw); margin-bottom: 0; border-bottom: none}
+                .summary{margin-left: 48px; margin-top: 24px; padding: 0; width: auto}
+                }
+
         </style></head>
 
-    <body><pre>
-under construction
-<span style="color: hsl(0, 0%, 100%, calc(17 / 18))">nder construction</span> <span style="color: hsl(0, 0%, 100%, calc(1 / 18))">u
-<span style="color: hsl(0, 0%, 100%, calc(16 / 18))">der construction</span> <span style="color: hsl(0, 0%, 100%, calc(2 / 18))">un
-<span style="color: hsl(0, 0%, 100%, calc(15 / 18))">er construction</span> <span style="color: hsl(0, 0%, 100%, calc(3 / 18))">und
-<span style="color: hsl(0, 0%, 100%, calc(14 / 18))">r construction</span> <span style="color: hsl(0, 0%, 100%, calc(4 / 18))">unde
-<span style="color: hsl(0, 0%, 100%, calc(13 / 18))"> construction</span> <span style="color: hsl(0, 0%, 100%, calc(5 / 18))">under
-<span style="color: hsl(0, 0%, 100%, calc(12 / 18))">construction</span> <span style="color: hsl(0, 0%, 100%, calc(6 / 18))">under 
-<span style="color: hsl(0, 0%, 100%, calc(11 / 18))">onstruction</span> <span style="color: hsl(0, 0%, 100%, calc(7 / 18))">under c
-<span style="color: hsl(0, 0%, 100%, calc(10 / 18))">nstruction</span> <span style="color: hsl(0, 0%, 100%, calc(8 / 18))">under co
-<span style="color: hsl(0, 0%, 100%, calc(9 / 18))">struction</span> <span style="color: hsl(0, 0%, 100%, calc(9 / 18))">under con
-<span style="color: hsl(0, 0%, 100%, calc(8 / 18))">truction</span> <span style="color: hsl(0, 0%, 100%, calc(10 / 18))">under cons
-<span style="color: hsl(0, 0%, 100%, calc(7 / 18))">ruction</span> <span style="color: hsl(0, 0%, 100%, calc(11 / 18))">under const
-<span style="color: hsl(0, 0%, 100%, calc(6 / 18))">uction</span> <span style="color: hsl(0, 0%, 100%, calc(12 / 18))">under constr
-<span style="color: hsl(0, 0%, 100%, calc(5 / 18))">ction</span> <span style="color: hsl(0, 0%, 100%, calc(13 / 18))">under constru
-<span style="color: hsl(0, 0%, 100%, calc(4 / 18))">tion</span> <span style="color: hsl(0, 0%, 100%, calc(14 / 18))">under construc
-<span style="color: hsl(0, 0%, 100%, calc(3 / 18))">ion</span> <span style="color: hsl(0, 0%, 100%, calc(15 / 18))">under construct
-<span style="color: hsl(0, 0%, 100%, calc(2 / 18))">on</span> <span style="color: hsl(0, 0%, 100%, calc(16 / 18))">under constructi
-<span style="color: hsl(0, 0%, 100%, calc(1 / 18))">n</span> <span style="color: hsl(0, 0%, 100%, calc(17 / 18))">under constructio
- under construction
-</pre></body>
+    <body>
+    <div class="info">
+        <h1>nowhere in particular</h1>
+        <p>Oh hey! Welcome to this place, where... well there's nothing here right now, 
+            we're in the middle of a(nother) redesign, we just have contacts right now,
+            in case you wanna talk to me or what we listen to! I'll just... put this blinky here
+        </p><br>
+        <img src="underconstruction.gif" alt="under construction"><br><br>
+        <details><summary>places i am in</summary>
+            <a href="https://discord.com/users/691348576093077535" class="discord">discord</a>
+            <a href="https://bandcamp.com/cvni1981" class="bandcamp">bandcamp</a>
+            <a href="https://open.spotify.com/user/1tqpqbcrw16yda1b4kc4nuu92" class="spotify">spotify</a>
+            <a href="mailto:cvni1981@gmail.com" class="email">email</a>
+        </details>
+        <details class="status"><summary>current status</summary>
+            <div id="entry" style="margin: 8px 20px 16px"><div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=cvni81" defer></script></div></details>
+    
+        
+    </div>
+
+</body>
 </html>

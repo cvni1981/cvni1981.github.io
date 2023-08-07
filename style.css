@@ -21,18 +21,19 @@ ul{padding-left: 20px; list-style-type: "- "; margin: 8px 0 16px}
 
 p{max-width: 40rem; line-height: 1.3; margin: 0}
 
-a{color: var(--text); text-decoration-color: var(--color);}
+a{color: var(--text); text-decoration-color: var(--color); transition: all .5s cubic-bezier(.08,.82,.17,1)}
 a:hover{color: var(--color)}
 
 summary{font-weight: bold;}
 
-details{padding: 8px 16px; background-color: var(--details); 
-    border: solid 1px var(--shadow); width: fit-content}
+details{padding: 8px 16px; border: solid 1px var(--shadow); width: fit-content;
+    transition: all .5s cubic-bezier(.08,.82,.17,1)}
+details:hover, details[open]{background-color: var(--details);}
 
 details[open] summary ~ * {
-animation: sweep .5s cubic-bezier(.08,.82,.17,1);
-}
-details[open] summary{
+animation: sweep .5s cubic-bezier(.08,.82,.17,1);}
+
+details[open] summary {
     border-bottom: dashed 1px var(--shadow); padding-bottom: 8px; margin-bottom: 8px
 }
 
