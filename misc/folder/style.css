@@ -33,7 +33,7 @@ details:hover, details[open]{background-color: var(--details);}
 details[open] summary ~ * {
 animation: sweep .5s cubic-bezier(.08,.82,.17,1);}
 
-details[open] summary {
+details[open] > summary {
     border-bottom: dashed 1px var(--shadow); padding-bottom: 8px; margin-bottom: 8px
 }
 
