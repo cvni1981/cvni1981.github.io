@@ -24,8 +24,8 @@
             .info details{padding-bottom: 8px; margin-bottom: 8px}
             .summary{padding: 0 24px; margin: 48px; font-size: 2rem}
 
-            .summary a{text-decoration: none; color: var(--text)}
-            .summary a:hover{color: var(--back)}
+            .summary a{padding: 8px 16px; border: solid 2px var(--shadow); margin: 8px 0 8px; display: inline-block;
+            text-decoration: none}
             .info{width:400px}
 
             .discord, .bandcamp, .spotify, .email{padding: 4px 8px; border: solid 1px var(--shadow); margin: 4px; display: inline-block;
@@ -42,6 +42,18 @@
             #entry a{color:var(--text); text-decoration-color: #da9268;} 
             #entry a:hover{color: #da9268}
 
+
+            .summary a:hover::after{margin-left: 8px; font-size: 1.5rem}
+
+            .bookmarks:hover{background-color: #110563; color: #ffb135; border-color: #ffb135;}
+            .bookmarks:hover::after{content: "(cool websites i've collected)"}
+
+            .misc:hover{background-color: #15c40510; color: #15c405; border-color: #15c405;}
+            .misc:hover::after{content: "(ellaneous)"}
+
+            .sitelog:hover{background-color: #ffa90010; color: #ffa900; border-color: #ffa900;}
+            .sitelog:hover::after{content: "(what's changed)"}
+
             /*- For mobile screens -*/
 
             @media only screen and (max-width: 700px) {
@@ -50,7 +62,7 @@
                     width: auto;
                     border-bottom: solid var(--color) 2px; margin-bottom: 12px}
                 h1{font-size: min(3.5rem, 15vw); margin-bottom: 0; border-bottom: none}
-                .summary{margin-left: 48px; margin-top: 24px; padding: 0; width: auto}
+                .summary{margin: 12px 24px 0; padding: 0; width: auto;}
                 }
 
         </style></head>
@@ -71,8 +83,15 @@
         </details>
         <details class="status"><summary>current status</summary>
             <div id="entry" style="margin: 8px 20px 16px"><div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=cvni81" defer></script></div></details>
-    
         
+    </div>
+
+    <div class="summary">
+
+        <a href="bookmarks" class="bookmarks">bookmarks</a><br>
+        <a href="misc" class="misc">misc</a><br>
+        <a href="sitelog" class="sitelog">sitelog</a><br>
+
     </div>
 
 </body>
