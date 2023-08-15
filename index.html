@@ -52,12 +52,6 @@
 
             /*- For mobile screens -*/
 
-            @media only screen and (min-width: 700px) {
-               .bookmarks:hover::after{content: "(cool websites i've collected)"} 
-               .buttons:hover::after{content: "(other folks' sites)"}
-               .misc:hover::after{content: "(ellaneous)"}
-               .sitelog:hover::after{content: "(what's changed)"}
-            }
             @media only screen and (max-width: 700px) {
                 body{display:block}
                 .info{border-right: none; 
@@ -65,7 +59,6 @@
                     border-bottom: solid var(--color) 2px; margin-bottom: 12px}
                 h1{font-size: min(3.5rem, 15vw); margin-bottom: 0; border-bottom: none}
                 .summary{margin: 12px 24px 48px; padding: 0; width: auto;}
-                .h{display: none}
                 }
 
         </style></head>
@@ -91,10 +84,12 @@
 
     <div class="summary">
 
-        <a href="bookmarks" class="bookmarks">bookmarks</a><br>
-        <a href="buttons" class="buttons">buttons</a><br class="h">
-        <a href="misc" class="misc">misc</a><br class="h">
-        <a href="sitelog" class="sitelog">sitelog</a>
+        <a href="bookmarks" class="bookmarks" title="(cool websites i've collected)">bookmarks</a><br>
+        <a href="buttons" class="buttons" title="(other folks' sites)">buttons</a>
+        <a href="misc" class="misc" title="(ellaneous)">misc</a>
+        <a href="sitelog" class="sitelog" title="(what's changed)">sitelog</a>
+
+        <br><p class="hover"> </p>
 
     </div>
 
