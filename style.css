@@ -14,7 +14,7 @@ body{background-color: var(--back); color: var(--text);
 border-bottom: solid var(--text) 1px; box-shadow: 0 5px 5px var(--back);}
 
 h1, h2{font-family: 'Inconsolata', monospace;}
-h1{margin: 0; text-shadow: var(--shadow) 3px 3px; font-size: min(10vw, 3rem)}
+h1{margin: 0; text-shadow: var(--shadow) 3px 3px; font-size: min(13vw, 3rem)}
 h2{font-size: 1.25rem; margin-bottom: 0}
 
 ul{padding-left: 20px; list-style-type: "- "; margin: 8px 0 16px}
