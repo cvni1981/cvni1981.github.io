@@ -11,11 +11,11 @@ body{--back: #010113;
 
 ::selection{background-color: var(--color); color: var(--back)}
 
-.main, .top{max-width: 40rem; padding-top: 16px;
+.main, header, nav{max-width: 40rem; padding-top: 16px;
     margin: 0 max(min(10rem, calc((100vw - 40rem) / 2)), 24px);
     }
 
-.top{background-color: var(--back); position: sticky; top: 0; padding-bottom: 16px;
+nav{background-color: var(--back); position: sticky; top: 0; padding-bottom: 16px;
 border-bottom: solid var(--text) 1px; box-shadow: 0 5px 5px var(--back);}
 
 h1{margin: 0; text-shadow: var(--shadow) 3px 3px; font-size: min(13vw, 3rem); line-height: 1.3em}
