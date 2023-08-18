@@ -16,18 +16,20 @@
             div.folder:hover ~ div.indicator{content: url(folder/folder.png);}
             div.exit:hover ~ div.indicator{content: url(folder/exit.png);}
         </style></head>
-    <body><div class="top"><h1>misc</h1></div>
-    <div class="main">
-    <p>After going down the stairs and into the basement, you wander into a green door.
-        You step into a dark room, it's completely empty and somehow lit by a 
-        monochromatic green light. It's slightly nauseating. You see a drawing table. 
-        On it is a notebook and a folder. Besides the table is a heavily scratched wall 
-        covered in sticky notes. 
-    </p><br>
-    <div class="journal">> <a href="journal">open the notebook</a></div>
-    <div class="folder">> <a href="folder">open the folder</a></div>
-    <div class="notes">> <a href="wall">look at the wall</a></div>
-    <div class="exit">> <a href="../">walk out the door</a></div>
-    <div class="indicator"></div>
-    </div></body>
-</html>
+        <body><header>
+            <h1>misc</h1></header>
+            <nav><a href="./">go back</a></nav>
+        <div class="main">
+        <p>After going down the stairs and into the basement, you wander into a green door.
+            You step into a dark room, it's completely empty and somehow lit by a 
+            monochromatic green light. It's slightly nauseating. You see a drawing table. 
+            On it is a notebook and a folder. Besides the table is a heavily scratched wall 
+            covered in sticky notes. 
+        </p><br><div id="pages">
+        <div class="journal">> <a href="journal">open the notebook</a></div>
+        <div class="folder">> <a href="folder">open the folder</a></div>
+        <div class="notes">> <a href="wall">look at the wall</a></div>
+        <div class="exit">> <a href="../">walk out the door</a></div>
+        <div class="indicator"></div></div>
+        </div></body>
+    </html>

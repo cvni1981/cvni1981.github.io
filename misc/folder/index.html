@@ -16,14 +16,16 @@
             .image{display: flex; margin: 24px 0; align-items: start;}
 
         </style></head>
-    <body><div class="main"><h1>folder</h1></div>
-        <div class="top"><a href="#">back to top</a> <span style="color: var(--shadow)">—————</span> <a href="../">go back</a></div>
+    <body><header>
+        <h1>folder</h1></header>
+        <nav><a href="#">back to top</a> <span style="color: var(--shadow)">—————</span> <a href="../">back to misc</a></nav>
     <div class="main">
     <p>
         You open the folder to find... more folders. And a sticky note saying that the pages sometimes use other fonts and the ones that do have an asterisk (*) after them.
+        And another one saying these pages may not be screenreader friendly.
     </p>
 
-    <details>
+    <details id="indexes">
         <summary>index(es)</summary>
         <ul>
             <li><a href="indexes/index">index</a>*: the earliest version, with rounded corners.</li>
@@ -37,7 +39,7 @@
         </ul>
     </details>
 
-    <details>
+    <details id="doodles page">
         <summary>handdrawn/doodles</summary>
         <p>When i originally made the handdrawn/doodles page, as the name suggested, everything was supposed to be handdrawn, even the text. But after trying to chroma key the text+drawings out (because i didn't want an ugly border in the images), 
         once with black on white and then with black on green to see if it helped (it didn't, i suck at chroma key), i just gave up and had to settle for the separated text and drawing.</p>
@@ -61,7 +63,7 @@
 
     </details>
 
-    <details>
+    <details id="removed pages">
         <summary>html/css experiments/other removed pages</summary>
         <ul>
             <li><a href="other/difference">difference</a>: a thing about the importance of difference. Moved it here because it... doesn't really fit. (Also i keep having to change this page every time i change the design of the site.) (and also because i now understand that <b>difference isn't as important as equality</b>.)</li>
@@ -73,10 +75,10 @@
         </ul>
     </details>
 
-    <details>
+    <details id="removed images">
         <summary>miscellaneous images</summary>
 
-        <details>
+        <details id="buttons">
             <summary>buttons</summary>
             <p>With (almost) every site redesign came the need for a new button to match.</p><br>
             <div class="image"><img src="images/nowhere1.gif">
@@ -93,7 +95,7 @@
                 <p>A 200x40 button that took a while to make but looks pleasing!</p></div>
         </details>
 
-        <details>
+        <details id="dingus">
             <summary>dingus</summary>
             <p>The images i used in my <a href="/website/about">about me</a> and status.cafe pages.</p><br>
             <div class="image"><img style="background-color: var(--back)" src="images/dingus.png">

@@ -23,7 +23,7 @@ h2{font-size: 1.25rem; margin: 12px auto 0}
 
 ul{padding-left: 20px; list-style-type: "- "; margin: 8px 0 16px}
 
-p{max-width: 40rem; line-height: 1.5; margin: 0; font-size: 1.175rem;}
+phrase{max-width: 40rem; line-height: 1.5; margin: 0; font-size: 1.175rem;}
 
 a{color: var(--text); text-decoration-color: var(--color); 
     transition: all .5s cubic-bezier(.08,.82,.17,1)}
@@ -54,17 +54,17 @@ to   {opacity: 1; transform: translateY(0)}
 }
 
 .sp{font-family:'linja lipamanka'}
-.p{font-size:1.5rem;margin: 24px 0; 
+.phrase{font-size:1.5rem;margin: 24px 0; 
     border-left: solid 1px var(--shadow); 
     padding: 8px 0 8px 16px; width: fit-content}
-.p .la{font-weight: bold; color: var(--color); display: inline}
-.p .sp{margin-left: 8px; font-weight:bold; display: inline}
-.p .m{font-size: 1.125rem;color: #8585a4; margin-left: 8px}
+.phrase .latin{font-weight: bold; color: var(--color); display: inline}
+.phrase .sitelen-pona{margin-left: 8px; font-weight:bold; display: inline}
+.phrase .meaning{font-size: 1.125rem;color: #8585a4; margin-left: 8px}
 
-.p .la .s, .p .la .v, .p .la .o{
+.phrase .latin .s, .phrase .latin .v, .phrase .latin .o{
     text-decoration:none; border: solid 1px; border-radius: 4px;
     padding: 0 8px}
 
-.p .la .s{background-color: #ff256d10}
-.p .la .v{background-color: #ffbb3910}
-.p .la .o{background-color: #01ca9210}
+.phrase .latin .s{background-color: #ff256d10}
+.phrase .latin .v{background-color: #ffbb3910}
+.phrase .latin .o{background-color: #01ca9210}
