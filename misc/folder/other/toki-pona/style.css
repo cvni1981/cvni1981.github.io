@@ -1,0 +1,70 @@
+body{--back: #010113;
+    --text: #d1d1ec;
+    --color: #ffbb39;
+    --shadow: #6c6cff50;
+    --details: #6c6cff10;
+    background-color: var(--back); color: var(--text);
+    font-size: 1.0625rem;
+    font-family: 'Andika', sans-serif;
+    margin: 0;
+    min-height: 100vh;}
+
+::selection{background-color: var(--color); color: var(--back)}
+
+.main, .top{max-width: 40rem; padding-top: 16px;
+    margin: 0 max(min(10rem, calc((100vw - 40rem) / 2)), 24px);
+    }
+
+.top{background-color: var(--back); position: sticky; top: 0; padding-bottom: 16px;
+border-bottom: solid var(--text) 1px; box-shadow: 0 5px 5px var(--back);}
+
+h1{margin: 0; text-shadow: var(--shadow) 3px 3px; font-size: min(13vw, 3rem); line-height: 1.3em}
+h2{font-size: 1.25rem; margin: 12px auto 0}
+
+ul{padding-left: 20px; list-style-type: "- "; margin: 8px 0 16px}
+
+p{max-width: 40rem; line-height: 1.5; margin: 0; font-size: 1.175rem;}
+
+a{color: var(--text); text-decoration-color: var(--color); 
+    transition: all .5s cubic-bezier(.08,.82,.17,1)}
+a:hover{color: var(--color)}
+h2 a{text-decoration-thickness: 2px;}
+
+summary{font-weight: bold;}
+
+details{padding: 4px 16px; border: solid 1px var(--shadow); width: fit-content;
+    transition: all .5s cubic-bezier(.08,.82,.17,1)}
+details:hover, details[open]{background-color: var(--details); border-color: var(--color)}
+
+details[open] summary ~ * {
+animation: sweep .5s cubic-bezier(.08,.82,.17,1);}
+
+details[open] > summary {
+    border-bottom: dashed 1px var(--shadow); padding-bottom: 8px; margin-bottom: 8px
+}
+
+@keyframes sweep {
+from {opacity: 0; transform: translateY(-0.5rem);}
+to   {opacity: 1; transform: translateY(0)}
+}
+
+@font-face {
+    font-family: 'linja lipamanka';
+    src: url('linjalipamanka-normal.woff');
+}
+
+.sp{font-family:'linja lipamanka'}
+.p{font-size:1.5rem;margin: 24px 0; 
+    border-left: solid 1px var(--shadow); 
+    padding: 8px 0 8px 16px; width: fit-content}
+.p .la{font-weight: bold; color: var(--color); display: inline}
+.p .sp{margin-left: 8px; font-weight:bold; display: inline}
+.p .m{font-size: 1.125rem;color: #8585a4; margin-left: 8px}
+
+.p .la .s, .p .la .v, .p .la .o{
+    text-decoration:none; border: solid 1px; border-radius: 4px;
+    padding: 0 8px}
+
+.p .la .s{background-color: #ff256d10}
+.p .la .v{background-color: #ffbb3910}
+.p .la .o{background-color: #01ca9210}
