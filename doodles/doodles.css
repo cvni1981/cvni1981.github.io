@@ -1,0 +1,4 @@
+h1, h2{font-family: 'Lora', serif; font-style: italic;}
+        #images img{max-width: 100%;}
+        #images p{margin: 8px 0 32px;
+        padding-bottom: 8px; border-bottom: solid 1px var(--shadow)}
