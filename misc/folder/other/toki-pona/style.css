@@ -60,7 +60,3 @@ to   {opacity: 1; transform: translateY(0)}
 .phrase .latin{font-weight: bold; color: var(--color); display: inline}
 .phrase .sitelen-pona{margin-left: 8px; font-weight:bold; display: inline; font-size: 2rem}
 .phrase .meaning{font-size: 1.125rem;color: #8585a4; margin-left: 8px}
-
-.phrase .latin .s, .phrase .latin .v, .phrase .latin .o{
-    text-decoration:none; border: solid 1px; border-radius: 4px;
-    padding: 0 8px}
