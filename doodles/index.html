@@ -17,17 +17,18 @@
         h2 a:hover {
         background-color: var(--color);
         color: var(--text);}
+        #notebooks{display:flex}
         </style></head>
         <body><header>
-            <h1><img src="doodles.gif" alt="{doodles}"></h1></header>
+            <h1><img src="doodles.gif" alt="{doodles}" style="max-width: 100%"></h1></header>
             <nav><a href="../">go back</a></nav>
     <div class="main">
         <p>Things i've drawn on numbered notebooks. If you want to ask the meaning of any, do so through discord.
             " ; " separates drawing blocks, if there are multiple doodles within, they are separated by " , ", "{ }"
             indicates meaning, " [ ] " indicates speech.
         </p>
-        <ul id="notebooks">
-            <li><h2><a href="15" style="--color: #ccb184"># 15</a></h2></li>
-        </ul>
+        <div id="notebooks">
+            <h2><a href="15" style="--color: #ccb184"># 15</a></h2>
+        </div>
     </div></body>
 </html>
