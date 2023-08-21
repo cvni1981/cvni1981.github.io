@@ -28,13 +28,15 @@
             text-decoration: none}
             .info{width:400px}
 
-            .discord, .bandcamp, .spotify, .email{padding: 4px 8px; border: solid 1px var(--shadow); margin: 4px; display: inline-block;
+            #links{margin: 8px 0; display:flex; gap: 8px; flex-wrap: wrap;}
+            #links a{padding: 4px 8px; border: solid 1px var(--shadow); display: inline-block;
             text-decoration: none; transition: all .5s cubic-bezier(.08,.82,.17,1)}
 
-            .discord:hover{background-color: #4600c750; border-color: #4600c7}
-            .bandcamp:hover{background-color: #0084ff50; border-color: #0084ff}
-            .spotify:hover{background-color: #00c72150; border-color: #00c721}
-            .email:hover{background-color: #f0f0f050; border-color: #f0f0f0}
+            #links a.discord:hover{background-color: #4600c780; border-color: #4600c7;}
+            #links a.lastfm:hover{background-color: #c5010180; border-color: #c50101;}
+            #links a.bandcamp:hover{background-color: #0084ff80; border-color: #0084ff;}
+            #links a.spotify:hover{background-color: #00c72180; border-color: #00c721;}
+            #links a.email:hover{background-color: #f0f0f080; border-color: #f0f0f0;}
 
             .status:hover, .status[open]{border-color:#70462e; background-color: #70462e50}
             .status[open] summary{border-color:#70462e;}
@@ -74,12 +76,13 @@
             If you wanna talk to us, our contacts are below! I'll just... put this blinky here
         </p><br>
         <img src="underconstruction.gif" alt="under construction"><br><br>
-        <details id="links"><summary>places i am in</summary>
+        <div id="links">
             <a href="https://discord.com/users/691348576093077535" class="discord">discord</a>
-            <a href="https://bandcamp.com/cvni1981" class="bandcamp">bandcamp</a>
+            <a href="https://www.last.fm/user/cvni81" class="lastfm">last.fm</a>
             <a href="https://open.spotify.com/user/1tqpqbcrw16yda1b4kc4nuu92" class="spotify">spotify</a>
+            <a href="https://bandcamp.com/cvni1981" class="bandcamp">bandcamp</a>
             <a href="mailto:cvni1981@gmail.com" class="email">email</a>
-        </details>
+        </div>
         <details class="status"><summary>current status</summary>
             <div id="entry" style="margin: 8px 20px 16px"><div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=cvni81" defer></script></div></details>
         
