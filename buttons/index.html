@@ -20,8 +20,8 @@
         .buttons{display:flex; gap: 8px; flex-wrap: wrap; padding-top: 8px}
         .button{height: 31px}
 
-        .button img{outline: solid var(--back) 0px ;transition: outline .2s linear}
-        .button:hover img{outline: solid var(--color) 4px}
+        .button img{outline: solid var(--back) 0px ;transition: box-shadow .5s cubic-bezier(.08,.82,.17,1)}
+        .button:hover img{box-shadow: 4px 4px var(--shadow)}
         
         h2::before{content:"- "; color: var(--color); padding-right: 8px}
         p{margin-top: 8px}
