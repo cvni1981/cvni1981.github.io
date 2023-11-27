@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet" type="text/css" media="all">
+        <title>nowhere in particular</title><style>
+            body{--back: #080808;
+                --text: #f0f0f0;
+                --color: #ef7c23;
+                --shadow: #404040;
+                --border: #404040;
+                --details: #f0f0f010;
+                display: flex}
+            
+            .center{margin:auto auto; display:flex; 
+                flex-direction: column; gap: .5rem;
+                align-items: center;}
+
+            a{outline: 2px solid var(--border); text-decoration: none;
+            padding: 4px 8px;}
+
+            a:hover{background-color: var(--color); color: var(--back);
+            outline-color: var(--back); outline-offset: -4px;}
+
+            img{max-width: 200px; outline:solid var(--back) 5px;
+            outline-offset: -10px; border-radius: 1rem;}
+        </style></head>
+
+    <body style="height:100vh; display: flex">
+        <div class="center">
+            <p>this page doesn't exist</p>
+            <img src="images/walking.gif">
+            <p>eternally under construction</p><br>
+            <a href="/home.html">back home</a>
+        </div>
+    </body>
+</html>
