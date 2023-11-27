@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet" type="text/css" media="all">
+        <link rel="icon" type="image/x-icon" href="assets/upright.png">
+        <title>home</title><style>
+            body{--back: #080808;
+                --text: #f0f0f0;
+                --color: #f0f0f0;
+                --shadow: #404040;
+                --border: #404040;
+                display: flex; padding: 2rem; min-height: auto}
+
+            .left-top{padding: 12px 24px; width: 400px;
+                border-right: solid var(--color) 2px}
+            .left-top details{padding-bottom: 8px; margin-bottom: 8px}
+            .right-bottom{margin: 12px 24px; font-size: 1.5rem; display: grid; height: fit-content}
+
+            .right-bottom a{padding: 6px 12px; border: solid 2px var(--shadow); margin: 8px 4px; display: inline-block;
+            text-decoration: none}
+            .right-bottom a::before{content: "→"; margin-right: 12px}
+            .left-top{width:400px}
+
+            .lastfm{text-decoration-color: #ff2020;}
+            .lastfm:hover{color: #ff2020}
+            .spotify{text-decoration-color: #20ff20;}
+            .spotify:hover{color: #20ff20}
+            .bandcamp{text-decoration-color: #20a0ff;}
+            .bandcamp:hover{color: #20a0ff}
+            .email{text-decoration-color: #808080;}
+            .email:hover{color: #808080}
+            .statuscafe{text-decoration-color: rgb(138, 88, 65);}
+            .statuscafe:hover{color: rgb(138, 88, 65)}
+
+            #statuscafe-username a{display: none}
+            #statuscafe{margin: 8px}
+
+            .normal:hover{background-color: #f0f0f010; border-color: #f0f0f0}
+            .bookmarks:hover{background-color: #0d0542; color: #ffb135; border-color: #ffb135;}
+            .bookshelf:hover{background-color: #fbf3b2; color: #1e1e1e; border-color: #bba915;}
+            .doodles:hover{background-color: #f0f0f0; color: #080808; border-color: #808080;}
+            .sitelog:hover{background-color: #ffa90010; color: #ffa900; border-color: #ffa900;}
+            .buttons:hover{background-color: #b8cadf; color: #001a40; border-color: #0b458e;}
+            .misc:hover{background-color: #15c40510; color: #f0f0f0; border-color: #15c405;}
+            .sitelog:hover{background-color: #ffa90010; color: #ffa900; border-color: #ffa900;}
+
+            /*- For mobile screens -*/
+
+            @media only screen and (max-width: 700px) {
+                body{display:block; padding: 0}
+                .left-top{border-right: none; 
+                    width: auto; padding: 24px;
+                    border-bottom: solid var(--color) 2px; 
+                    margin-bottom: 12px}
+                h1{font-size: min(3.5rem, 15vw); margin-bottom: 0; border-bottom: none}
+                .right-bottom{margin: 12px 24px 48px; padding: 0; width: auto; display: block}
+                }
+
+        </style></head>
+
+    <body>
+    <div class="left-top">
+        <p>Hello! Welcome to this website, we're under our... 7th redesign. Hopefully this one stays.<br>
+            There's not much here right now, we're pretty much perpetually under construction, so there'll
+            (hopefully) be more stuff here soon. If you wanna talk to us, some links are below!
+        </p><br>
+        <details class="status"><summary>links</summary>
+            <ul>
+                <li>discord: cvni81</li>
+                <li><a href="https://www.last.fm/user/cvni81" class="lastfm">last.fm</a></li>
+                <li><a href="https://open.spotify.com/user/1tqpqbcrw16yda1b4kc4nuu92" class="spotify">spotify</a></li>
+                <li><a href="https://bandcamp.com/cvni1981" class="bandcamp">bandcamp</a></li>
+                <li>email: <a href="mailto:cvni1981@gmail.com" class="email">cvni1981@gmail.com</a></li>
+                <li><a href="https://status.cafe/users/cvni81" class="statuscafe">status.cafe</a>: <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=cvni81" defer></script></div></li>
+            </ul>
+        
+    </div>
+
+    <div class="right-bottom">
+        <a href="bookmarks" class="bookmarks" title="(cool websites i've collected)">bookmarks</a>
+        <a href="bookshelf" class="bookshelf" title="(books i've read/am reading)">bookshelf</a>
+        <a href="doodles" class="doodles" title="(stuff i've drawn)">doodles</a>
+        <a href="blender" class="normal" title="(stuff made in blender)">blender</a>
+        <a href="misc" class="misc" title="(ellaneous)">misc</a>
+        <a href="buttons" class="buttons" title="(other folks' sites)">buttons</a>
+        <a href="sitelog" class="sitelog" title="(what's changed)">sitelog</a>
+    </div>
+
+</body>
+</html>
