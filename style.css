@@ -1,22 +1,85 @@
 @font-face {
-    font-family: 'Work Sans';
-    src: url(assets/WorkSans[wght].ttf);
+    font-family: 'Public Sans';
+    font-weight: normal;
+    src: url(assets/PublicSans-Regular.otf);
 }
 @font-face {
-    font-family: 'Inconsolata';
-    src: url(assets/Inconsolata-VariableFont_wdth\,wght.ttf);
+    font-family: 'Public Sans';
+    font-weight: bold;
+    src: url(assets/PublicSans-Bold.otf);
 }
 
-*{transition: all .5s cubic-bezier(.08,.82,.17,1);}
+@font-face {
+    font-family: 'Iosevka';
+    font-weight: normal;
+    font-style: normal;
+    src: url(assets/Iosevka-Extended.woff2);
+}
+@font-face {
+    font-family: 'Iosevka';
+    font-weight: bold;
+    font-style: normal;
+    src: url(assets/Iosevka-ExtendedExtraBold.woff2);
+}
+@font-face {
+    font-family: 'Iosevka';
+    font-weight: normal;
+    font-style: italic;
+    src: url(assets/Iosevka-ExtendedItalic.woff2);
+}
+@font-face {
+    font-family: 'Iosevka';
+    font-weight: bold;
+    font-style: italic;
+    src: url(assets/Iosevka-ExtendedExtraBoldItalic.woff2);
+}
+
+@font-face {
+    font-family: 'Libre Franklin';
+    font-weight: normal;
+    src: url(assets/librefranklin-regular.ttf);
+}
+@font-face {
+    font-family: 'Libre Franklin';
+    font-weight: bold;
+    src: url(assets/librefranklin-bold.ttf);
+}
+
+@font-face {
+    font-family: 'Charis SIL';
+    font-weight: normal;
+    font-style: normal;
+    src: url(assets/CharisSILR.ttf);
+}
+@font-face {
+    font-family: 'Charis SIL';
+    font-weight: bold;
+    font-style: normal;
+    src: url(assets/CharisSILB.ttf);
+}
+@font-face {
+    font-family: 'Charis SIL';
+    font-weight: normal;
+    font-style: italic;
+    src: url(assets/CharisSILI.ttf);
+}
+@font-face {
+    font-family: 'Charis SIL';
+    font-weight: bold;
+    font-style: italic;
+    src: url(assets/CharisSILBI.ttf);
+}
 
 body{background-color: var(--back); color: var(--text);
     font-size: 1.0625rem;
-    font-family: 'Work Sans', sans-serif;
-    margin: 0; font-weight: 450;
-    min-height: 100vh;
-}
+    font-family: 'Public Sans', sans-serif;
+    margin: 0;
+    min-height: 100vh;}
 
-b{font-weight: 700}
+.monospace, pre{font-family: 'Iosevka', monospace;
+letter-spacing: -.06em;}
+
+.serif{font-family: 'Charis SIL', serif}
 
 ::selection{background-color: var(--color); color: var(--back)}
 
@@ -27,28 +90,31 @@ b{font-weight: 700}
 nav{background-color: var(--back); position: sticky; top: 0; padding-bottom: 16px;
 border-bottom: solid var(--text) 1px; box-shadow: 0 5px 5px var(--back);}
 
-h1, h2{font-family: 'Inconsolata', monospace;}
-h1{margin: 0; text-shadow: var(--shadow) 3px 3px; font-size: min(13vw, 3rem)}
+h1{margin: 0; font-size: min(10vw, 2.5rem);
+    text-shadow: var(--shadow) 3px 3px}
 h2{font-size: 1.25rem; margin-bottom: 0}
 
 ul{padding-left: 20px; list-style-type: "→ "; margin: 8px 0 16px}
-li{margin: 10px 0}
 
-p{max-width: 40rem; line-height: 1.3; margin: 0}
+p{max-width: 40rem; line-height: 1.2; margin: 0}
 
 a{color: var(--text); text-decoration-color: var(--color); transition: all .5s cubic-bezier(.08,.82,.17,1)}
 a:hover{color: var(--color)}
 
 h2 a, h3 a{text-decoration-thickness: 2px}
 
-summary{font-weight: bold; padding-bottom: 8px; 
-    border-bottom: solid var(--color) 1px; 
-    list-style-type: "→ ";}
-summary::marker{font-weight: normal}
+summary{font-weight: bold; list-style-type: '→ ';
+    border-bottom: dotted 1px var(--text); 
+    padding-bottom: 8px; margin-bottom: 8px;}
 
-details[open] summary ~ * {animation: sweep .5s cubic-bezier(.08,.82,.17,1);}
+details{padding: 8px 0; transition: all .5s cubic-bezier(.08,.82,.17,1)}
 
-details[open] > summary {margin-bottom: 16px; list-style-type: "↓ "}
+details[open] summary ~ * {
+animation: sweep .5s cubic-bezier(.08,.82,.17,1);}
+
+details[open] > summary {
+    list-style-type: '↓ ';
+}
 
 @keyframes sweep {
 from {opacity: 0; transform: translateY(-0.5rem);}
