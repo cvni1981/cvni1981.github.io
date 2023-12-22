@@ -33,7 +33,7 @@
             .pages div{background-color: var(--text); height: 1px; 
                 width: 50%; margin: -1px auto; z-index: -1;}
 
-            .about:hover{background-color: #e0e0e0; color: #202020}
+            .about:hover, .doodles:hover{background-color: #e0e0e0; color: #202020}
             .bookmarks:hover{background-color: #0d0542; color: #ffb135; 
                 outline-color: #ffb135;}
             .blender:hover{background-color: #498cff10; color: var(--text);
@@ -44,6 +44,10 @@
                 outline-color: #15c405;}
             .sitelog:hover{background-color: #ffa90010; color: #ffa900; 
             outline-color: #ffa900}
+
+
+            .about, .doodles, .bookmarks, .blender, .words, .buttons, .misc, .sitelog{display: none}
+            .pages div{display:none}
 
             .divider{background-color: var(--text)}
 
@@ -78,7 +82,7 @@
             <div class="pages">
                 <a class="about" href="about"><b>→</b> about</a>
                 <a class="bookmarks" href="bookmarks"><b>→</b> bookmarks</a><div></div>
-                <a class="about" style="margin-top: -1px" href="/doodles"><b>→</b> doodles</a>
+                <a class="doodles" style="margin-top: -1px" href="/doodles"><b>→</b> doodles</a>
                 <a class="blender" href="/blender"><b>→</b> blender</a>
                 <a class="words" href="/words"><b>→</b> words</a><div></div>
                 <a class="buttons" style="margin-top: -1px" href="/buttons"><b>→</b> buttons</a>
