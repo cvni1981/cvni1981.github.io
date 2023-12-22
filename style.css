@@ -95,6 +95,7 @@ border-bottom: solid var(--text) 1px; box-shadow: 0 5px 5px var(--back);}
 h1{margin: 0; font-size: min(10vw, 2.5rem);
     text-shadow: var(--shadow) 3px 3px}
 h2{font-size: 1.25rem; margin-bottom: 0}
+h1::before, h2::before{content: "→ "}
 
 ul{padding-left: 20px; list-style-type: "→ "; margin: 8px 0 16px}
 
