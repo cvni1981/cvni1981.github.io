@@ -107,10 +107,12 @@ a:hover{color: var(--color)}
 h2 a, h3 a{text-decoration-thickness: 2px}
 
 summary{font-weight: bold; list-style-type: '→ ';
+    list-style-position: outside;
     border-bottom: dotted 1px var(--text); 
     padding-bottom: 8px; margin-bottom: 8px;}
 
-details{padding: 8px 0; transition: all .5s cubic-bezier(.08,.82,.17,1)}
+details{padding: 8px 0; margin-left: 20px;
+    transition: all .5s cubic-bezier(.08,.82,.17,1);}
 
 details[open] summary ~ * {
 animation: sweep .5s cubic-bezier(.08,.82,.17,1);}
