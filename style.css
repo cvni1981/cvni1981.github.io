@@ -90,7 +90,8 @@ letter-spacing: -.06em;}
     }
 
 nav{background-color: var(--back); position: sticky; top: 0; padding-bottom: 16px;
-border-bottom: solid var(--text) 1px; box-shadow: 0 5px 5px var(--back);}
+border-bottom: solid var(--text) 1px; box-shadow: 0 5px 5px var(--back)}
+.space{display:inline-block; width: 2rem}
 
 h1{position: relative; margin: 0; 
     font-size: min(10vw, 2.5rem); 
@@ -100,7 +101,7 @@ h1::before, h2::before{content: "→ "}
 
 ul{padding-left: 20px; list-style-type: "- "; margin: 8px 0 16px}
 
-p{max-width: 40rem; line-height: 1.2; margin: 0}
+p{max-width: 40rem; line-height: 1.3; margin: 0}
 
 a{color: var(--text); text-decoration-color: var(--color); transition: all .5s cubic-bezier(.08,.82,.17,1)}
 a:hover{color: var(--color)}
