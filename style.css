@@ -92,7 +92,7 @@ letter-spacing: -.06em;}
 nav{background-color: var(--back); position: sticky; top: 0; padding-bottom: 16px;
 border-bottom: solid var(--text) 1px; box-shadow: 0 5px 5px var(--back);}
 
-h1{margin: 0; font-size: min(10vw, 2.5rem)}
+h1{margin: 0; font-size: min(10vw, 2.5rem); line-height: 1;}
 h2{font-size: 1.25rem; margin-bottom: 0}
 h1::before, h2::before{content: "→ "}
 
