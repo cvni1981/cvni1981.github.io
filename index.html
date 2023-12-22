@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet" type="text/css" media="all">
+        <title>nwipc</title><style>
+            body{--back: #040404;
+                --text: #f0f0f0}
+            a{font-size: min(15vw, 5rem);  font-weight: bold;
+                text-decoration: none; line-height:1}
+            a::before{content: "→"; transition: all .5s cubic-bezier(.08,.82,.17,1);}
+            a.c::before{color: #05a1fc}
+            a.m::before{color: #ff0060}
+            a.y::before{color: #ffb400}
+            a.c:hover{color: #05a1fc}
+            a.m:hover{color: #ff0060}
+            a.y:hover{color: #ffb400}
+            a:hover::before{color: var(--text)}
+            .main{margin-top:32px}
+        </style></head>
+    <body><div class="main">
+        <a class="c" href="home">nowhere</a><br>
+        <a class="m" href="home">in</a><br>
+        <a class="y" href="home">particular</a><br>
+    </div>
+    </body>
+</html>
