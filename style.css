@@ -2,13 +2,13 @@
     font-family: 'Uncut Sans';
     font-weight: normal;
     src: url(assets/Uncut-Sans-Regular.otf);
-    font-feature-settings: 'ss04', 'ss03';
+    font-feature-settings: 'ss04', 'ss03', 'ss01';
 }
 @font-face {
     font-family: 'Uncut Sans';
     font-weight: bold;
     src: url(assets/Uncut-Sans-Bold.otf);
-    font-feature-settings: 'ss04', 'ss03';
+    font-feature-settings: 'ss04', 'ss03', 'ss01';
 }
 
 @font-face {
