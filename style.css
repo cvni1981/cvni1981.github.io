@@ -1,12 +1,14 @@
 @font-face {
-    font-family: 'Public Sans';
+    font-family: 'Uncut Sans';
     font-weight: normal;
-    src: url(assets/PublicSans-Regular.otf);
+    src: url(assets/Uncut-Sans-Regular.otf);
+    font-feature-settings: 'ss04';
 }
 @font-face {
-    font-family: 'Public Sans';
+    font-family: 'Uncut Sans';
     font-weight: bold;
-    src: url(assets/PublicSans-Bold.otf);
+    src: url(assets/Uncut-Sans-Bold.otf);
+    font-feature-settings: 'ss04';
 }
 
 @font-face {
@@ -46,40 +48,40 @@
 }
 
 @font-face {
-    font-family: 'Charis SIL';
+    font-family: 'c059';
     font-weight: normal;
     font-style: normal;
-    src: url(assets/CharisSILR.ttf);
+    src: url(assets/C059-Roman.otf);
 }
 @font-face {
-    font-family: 'Charis SIL';
+    font-family: 'c059';
     font-weight: bold;
     font-style: normal;
-    src: url(assets/CharisSILB.ttf);
+    src: url(assets/C059-Bold.otf);
 }
 @font-face {
-    font-family: 'Charis SIL';
+    font-family: 'c059';
     font-weight: normal;
     font-style: italic;
-    src: url(assets/CharisSILI.ttf);
+    src: url(assets/C059-Italic.otf);
 }
 @font-face {
-    font-family: 'Charis SIL';
+    font-family: 'c059';
     font-weight: bold;
     font-style: italic;
-    src: url(assets/CharisSILBI.ttf);
+    src: url(assets/C059-BdIta.otf);
 }
 
 body{background-color: var(--back); color: var(--text);
     font-size: 1.0625rem;
-    font-family: 'Public Sans', sans-serif;
+    font-family: 'Uncut Sans', sans-serif;
     margin: 0;
     min-height: 100vh;}
 
 .monospace, pre{font-family: 'Iosevka', monospace;
 letter-spacing: -.06em;}
 
-.serif{font-family: 'Charis SIL', serif}
+.serif{font-family: 'c059', serif}
 
 ::selection{background-color: var(--color); color: var(--back)}
 
