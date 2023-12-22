@@ -97,7 +97,7 @@ h1{margin: 0; font-size: min(10vw, 2.5rem);
 h2{font-size: 1.25rem; margin-bottom: 0}
 h1::before, h2::before{content: "→ "}
 
-ul{padding-left: 20px; list-style-type: "→ "; margin: 8px 0 16px}
+ul{padding-left: 20px; list-style-type: "- "; margin: 8px 0 16px}
 
 p{max-width: 40rem; line-height: 1.2; margin: 0}
 
