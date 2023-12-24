@@ -2,13 +2,13 @@
     font-family: 'Space Grotesk';
     font-weight: normal;
     src: url(SpaceGrotesk-Regular.otf);
-    font-feature-settings:'ss02', 'ss03', 'ss04', 'ss05';
+    font-feature-settings:'ss02', 'ss03', 'ss04', 'ss05', 'case';
 }
 @font-face {
     font-family: 'Space Grotesk';
     font-weight: bold;
     src: url(SpaceGrotesk-Bold.otf);
-    font-feature-settings:'ss02', 'ss03', 'ss04', 'ss05';
+    font-feature-settings:'ss02', 'ss03', 'ss04', 'ss05', 'case';
 }
 
 body{--back: #040404;
@@ -16,4 +16,6 @@ body{--back: #040404;
     --text: #f0f0f0;
     font-family: 'Space Grotesk', sans-serif;}
 
-h1::before, h2::before{content: "> "; color: var(--color)}
+h1::before, h2::before{content: "/ "; color: var(--color)}
+h2::before{content: "> "}
+h2{font-size:1.5rem}
