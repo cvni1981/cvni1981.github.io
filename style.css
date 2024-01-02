@@ -85,6 +85,8 @@ details[open] > summary {
     list-style-type: '↓ ';
 }
 
+summary:hover, details[open] > summary{border-color: var(--color); color: var(--color)}
+
 @keyframes sweep {
 from {opacity: 0; transform: translateY(-0.5rem);}
 to   {opacity: 1; transform: translateY(0)}
