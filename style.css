@@ -75,8 +75,9 @@ summary{font-weight: bold; list-style-type: '→ ';
     border-bottom: dotted 1px var(--text); 
     padding-bottom: 8px; margin-bottom: 8px;}
 
-details{padding: 8px 0; margin-left: 20px;
-    transition: all .5s cubic-bezier(.08,.82,.17,1);}
+details{padding: 8px 0; margin-left: 20px}
+
+details, summary{transition: all .5s cubic-bezier(.08,.82,.17,1);}
 
 details[open] summary ~ * {
 animation: sweep .5s cubic-bezier(.08,.82,.17,1);}
