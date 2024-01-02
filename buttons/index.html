@@ -22,14 +22,21 @@
         h1::before, h2::before{content:'🙚 '}
         h1{margin-top: 16px}
 
-        img{display: inline-block; width: min-content; margin: 4px;
+        .button img{display: inline-block; width: min-content; margin: 4px;
             transition: all .125s linear; outline: solid 0px var(--back)}
-        img:hover{outline: solid 4px var(--color)}
+        .button:hover img{outline: solid 4px var(--color)}
 
         #mante{transition: all .5s cubic-bezier(.08,.82,.17,1)}
         #mante:not(:hover){border-color: var(--color); color: var(--color);
             border-radius: 0; box-shadow: 0px 0px var(--back); background-color: var(--back)}
         #mante:not(:hover) a{color: var(--color); text-decoration-color: var(--color);}
+
+        #our_buttons{display: grid; grid-template-columns: 50% 50%; gap: 8px}
+        textarea{border: solid #001a43 1px; border-radius: 7px;
+            background-color: #faf9ff; color: #001a43}
+
+        @media only screen and (max-width: 480px) {
+            #our_buttons{grid-template-columns: auto}}
 
         </style></head>
     <body><header>
@@ -37,9 +44,18 @@
         <nav><a href="../home">home</a></nav>
     <div class="main">
         <p>This is the place where we put buttons to other ppl's websites, be they acquaintances or
-            other neat websites we think are cool, found on status.cafe.<br>Our button is in the works
-            (again), so check in here again in {some time} if you wanna add it to your own site.
+            other neat websites we think are cool, found on status.cafe.<br>If you wanna add our own
+            button to your website, they're right below (200x40 button in the works)
         </p>
+
+        <details><summary>our buttons</summary>
+            <div id="our_buttons">
+                <div><img src="88x31.gif"><br>
+                <textarea>&lt;a href="https://cvni1981.github.io/website"&gt;&lt;img src="https://cvni1981.github.io/website/buttons/88x31.gif" alt="nowhere in particular"&gt;&lt;/a&gt;</textarea></div>
+                <div><img src="static.gif"><br>
+                <textarea>&lt;a href="https://cvni1981.github.io/website"&gt;&lt;img src="https://cvni1981.github.io/website/buttons/static.gif" alt="nowhere in particular"&gt;&lt;/a&gt;</textarea></div>
+            </div>
+        </details>
 
         <h2>acquaintances</h2><div class="buttons">
             <a href=https://tabby-the-tabby.neocities.org class="button"><img src=https://tabby-the-tabby.neocities.org/assets/tabbutton.gif alt="tabby"></a> 

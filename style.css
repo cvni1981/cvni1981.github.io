@@ -92,3 +92,5 @@ summary:hover, details[open] > summary{border-color: var(--color); color: var(--
 from {opacity: 0; transform: translateY(-0.5rem);}
 to   {opacity: 1; transform: translateY(0)}
 }
+
+textarea{font-family: 'Iosevka', monospace; font-size: .8em;}
