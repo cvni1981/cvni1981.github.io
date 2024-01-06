@@ -29,9 +29,9 @@
             .pages{display: grid; height: min-content}
             .pages a{display:block; font-size: 2rem; height: fit-content;
                 border:bottom; padding: 8px 18px 8px 16px; text-decoration: none;
-                outline: solid 1px #00000000; outline-offset: -1px;}
+                outline: solid 1px #00000000; outline-offset: 0;}
             .pages div{background-color: var(--text); height: 1px; 
-                width: 50%; margin: -1px auto; z-index: -1;}
+                width: 50%; margin: 0 auto; z-index: -1;}
 
             .about:hover{background-color: #f0f0f0; color: #2b5cb1}
             .doodles:hover{background-color: #e0e0e0; color: #202020}
@@ -45,8 +45,6 @@
                 outline-color: #15c405;}
             .sitelog:hover{background-color: #ffa90010; color: #ffa900; 
             outline-color: #ffa900}
-
-            .pages div{display:none}
 
             .divider{background-color: var(--text)}
 
@@ -80,6 +78,8 @@
             <div class="divider"></div>
             <div class="pages">
                 <a class="about" href="about"><b>→</b> about</a>
+                <a class="bookmarks" href="bookmarks"><b>→</b> bookmarks</a>
+                <div></div>
                 <a class="misc" href="misc/"><b>→</b> misc</a>
                 <a class="buttons" href="buttons/"><b>→</b> buttons</a>
                 <a class="sitelog" href="sitelog"><b>→</b> sitelog</a>
