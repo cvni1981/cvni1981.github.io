@@ -1,0 +1,11 @@
+body{--back: #040404;
+--text: #f0f0f0;
+--color: #498cff}
+
+h1::before{content: "/"}
+.image{display:grid; grid-template-columns: 50% calc(50% - 16px); gap: 16px}
+img{max-width: 100%}
+
+@media only screen and (max-width: 500px) {
+    .image{display: block}
+}
