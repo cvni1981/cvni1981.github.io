@@ -13,54 +13,54 @@
                  padding: 0;
                 gap: 16px;}
 
-            .lastfm{text-decoration-color: #FF2424;}
-            .lastfm:hover{color: #FF2424}
-            .spotify{text-decoration-color: #00ff00}
-            .spotify:hover{color: #00ff00}
-            .bandcamp{text-decoration-color: #20A0FF}
-            .bandcamp:hover{color: #20A0FF}
-            .email{text-decoration-color: #999999}
-            .email:hover{color: #999999}
-            .statuscafe{text-decoration-color: #F67809;}
-            .statuscafe:hover{color: #F67809;}
+            #lastfm{text-decoration-color: #FF2424;}
+            #lastfm:hover{color: #FF2424}
+            #spotify{text-decoration-color: #00ff00}
+            #spotify:hover{color: #00ff00}
+            #bandcamp{text-decoration-color: #20A0FF}
+            #bandcamp:hover{color: #20A0FF}
+            #email{text-decoration-color: #999999}
+            #email:hover{color: #999999}
+            #statuscafe{text-decoration-color: #F67809;}
+            #statuscafe:hover{color: #F67809;}
             #statuscafe-username a{display: none}
             #statuscafe{margin: 8px}
 
-            .pages{display: grid; height: min-content}
-            .pages a{display:block; font-size: 2rem; height: fit-content;
+            #pages{display: grid; height: min-content}
+            #pages a{display:block; font-size: 2rem; height: fit-content;
                 border:bottom; padding: 8px 18px 8px 16px; text-decoration: none;
                 outline: solid 1px #00000000; outline-offset: 0;}
-            .pages div{background-color: var(--text); height: 1px; 
+            #pages div{background-color: var(--text); height: 1px; 
                 width: 50%; margin: 0 auto; z-index: -1;}
 
-            .about:hover{background-color: #f0f0f0; color: #2b5cb1}
-            .doodles:hover{background-color: #e0e0e0; color: #202020}
-            .bookmarks:hover{background-color: #0d0542; color: #ffb135; 
+            #about:hover{background-color: #f0f0f0; color: #2b5cb1}
+            #doodles:hover{background-color: #e0e0e0; color: #202020}
+            #bookmarks:hover{background-color: #0d0542; color: #ffb135; 
                 outline-color: #ffb135;}
-            .blender:hover{background-color: #498cff10; color: var(--text);
+            #blender:hover{background-color: #498cff10; color: var(--text);
                 outline-color: #498cff;}
-            .words:hover{background-color: #efd9b3; color: #2B2008}
-            .buttons:hover{background-color: #b8cadf; color: #001a40;
+            #words:hover{background-color: #efd9b3; color: #2B2008}
+            #buttons:hover{background-color: #b8cadf; color: #001a40;
                 outline-color: #b8cadf;}
-            .misc:hover{background-color: #15c40510; color: var(--text); 
+            #misc:hover{background-color: #15c40510; color: var(--text); 
                 outline-color: #15c405;}
-            .sitelog:hover{background-color: #ffa90010; color: #ffa900; 
+            #sitelog:hover{background-color: #ffa90010; color: #ffa900; 
             outline-color: #ffa900}
 
             .divider{background-color: var(--text)}
 
             @media only screen and (max-width: 550px) {
                 .main{display:block; margin-top: 24px}
-                .info{width: auto}
+                #info{width: auto}
                 h1{font-size: min(3.5rem, 15vw); margin-bottom: 0; border-bottom: none}
-                .pages{margin: 0; padding: 0; width: auto; display: block}
-                .pages div{display:none}
+                #pages{margin: 0; padding: 0; width: auto; display: block}
+                #pages div{display:none}
                 .divider{height: 1px}
                 }
         </style></head>
     <body>
         <div class="main">
-            <div class="info">
+            <div id="info">
                 <p>Hello! Welcome to this website, we're under our... 7th redesign. Hopefully this one stays.<br>
                     There's not much here right now, we're pretty much perpetually under construction, so there'll
                     (hopefully) be more stuff here soon. If you wanna talk to us, some links are below!
@@ -68,24 +68,25 @@
                 <details><summary>links</summary>
                     <ul>
                         <li>discord: cvni81</li>
-                        <li><a href="https://www.last.fm/user/cvni81" class="lastfm">last.fm</a></li>
-                        <li><a href="https://open.spotify.com/user/1tqpqbcrw16yda1b4kc4nuu92" class="spotify">spotify</a></li>
-                        <li><a href="https://bandcamp.com/cvni1981" class="bandcamp">bandcamp</a></li>
-                        <li>email: <a href="mailto:cvni1981@gmail.com" class="email">cvni1981@gmail.com</a></li>
-                        <li><a href="https://status.cafe/users/cvni81" class="statuscafe">status.cafe</a>: <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=cvni81" defer></script></li>
+                        <li><a href="https://www.last.fm/user/cvni81" id="lastfm">last.fm</a></li>
+                        <li><a href="https://open.spotify.com/user/1tqpqbcrw16yda1b4kc4nuu92" id="spotify">spotify</a></li>
+                        <li><a href="https://bandcamp.com/cvni1981" id="bandcamp">bandcamp</a></li>
+                        <li>email: <a href="mailto:cvni1981@gmail.com" id="email">cvni1981@gmail.com</a></li>
+                        <li><a href="https://status.cafe/users/cvni81" id="statuscafe">status.cafe</a>: <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=cvni81" defer></script></li>
                     </ul>
             </details>
             </div>
             <div class="divider"></div>
-            <div class="pages">
-                <a class="about" href="about"><b>→</b> about</a>
-                <a class="bookmarks" href="bookmarks"><b>→</b> bookmarks</a>
+            <div id="pages">
+                <a id="about" href="about"><b>→</b> about</a>
+                <a id="bookmarks" href="bookmarks"><b>→</b> bookmarks</a>
                 <div></div>
-                <a class="blender" href="blender"><b>→</b> blender</a>
-                <a class="misc" href="misc/"><b>→</b> misc</a>
+                <a id="blender" href="blender"><b>→</b> blender</a>
+                <a id="doodles" href="doodles/"><b>→</b> doodles</a>
+                <a id="misc" href="misc/"><b>→</b> misc</a>
                 <div></div>
-                <a class="buttons" href="buttons/"><b>→</b> buttons</a>
-                <a class="sitelog" href="sitelog"><b>→</b> sitelog</a>
+                <a id="buttons" href="buttons/"><b>→</b> buttons</a>
+                <a id="sitelog" href="sitelog"><b>→</b> sitelog</a>
             </div>
             </div>
         </div>
