@@ -9,9 +9,11 @@
             --text: #101010;
             --color: #404040;}
         
-        #drawings img{margin-bottom: 16px; width: 100%;
+        .image{break-inside: avoid;}
+        .image img{width: 100%;
         outline:solid var(--color) 1px; outline-offset: -1px;}
-        #drawings{line-height:0; column-count: 2; column-gap: 16px; margin-top: 20px}
+        .image p{margin: 2px 0 8px; color: var(--color)}
+        #drawings{column-count: 2; column-gap: 16px; margin-top: 20px}
         @media only screen and (min-width: 500px){
             #drawings{column-count: 3;}}
         </style></head>
