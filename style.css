@@ -55,7 +55,7 @@ border-bottom: solid var(--text) 1px; box-shadow: 0 5px 5px var(--back)}
 nav a{text-decoration: none; color: var(--color)}
 nav a:hover{color: var(--text)}
 
-h1{position: relative; margin: 0; 
+h1{position: relative;  
     font-size: min(10vw, 2.5rem); 
     line-height: 1; z-index: 1;}
 h2{font-size: 1.25rem; margin-bottom: 0}
