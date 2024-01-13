@@ -13,3 +13,11 @@ body{font-family: 'c059', serif;}
 h1::before{content:'{'; color: var(--color)}
 h1::after{content:'}'; color: var(--color)}
 h1{margin-top: 8px}
+
+.image{break-inside: avoid;}
+.image img{width: 100%;
+outline:solid var(--color) 1px; outline-offset: -1px;}
+.image p{margin: 0 0 8px; color: var(--color)}
+#drawings{column-count: 2; column-gap: 16px; margin-top: 20px}
+@media only screen and (min-width: 500px){
+    #drawings{column-count: 3;}}
