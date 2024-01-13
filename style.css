@@ -44,7 +44,7 @@ body{background-color: var(--back); color: var(--text);
 
 ::selection{background-color: var(--color); color: var(--back)}
 
-.main, h1, nav{max-width: 40rem; padding-top: 16px;
+main, h1, nav{max-width: 40rem; padding-top: 16px;
     margin: 0 max(min(10rem, calc((100vw - 40rem) / 2)), 24px);
     }
 
