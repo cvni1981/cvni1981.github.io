@@ -5,7 +5,7 @@
         <link href="style.css" rel="stylesheet" type="text/css" media="all">
         <title>→ home</title><style>
             body{--back: #040404;
-            --text: #f0f0f0;
+            --text: #f0f0f0; min-height: fit-content;
             --color: #f0f0f0; margin-top: 3rem}
             .main{display:grid; grid-auto-flow: column;
                 grid-template-columns: auto  1px auto;
@@ -49,7 +49,8 @@
             .divider{background-color: var(--text)}
 
             @media only screen and (max-width: 550px) {
-                .main{display:block; margin-top: 24px}
+                .main{display:block}
+                body{margin-top: 24px}
                 #info{width: auto}
                 h1{font-size: min(3.5rem, 15vw); margin-bottom: 0; border-bottom: none}
                 #pages{margin: 0; padding: 0; width: auto; display: block}
