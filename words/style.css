@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'c059';
+    font-weight: normal;
+    src: url(../assets/C059-Roman.otf);
+}
+@font-face {
+    font-family: 'c059';
+    font-weight: bold;
+    src: url(../assets/C059-BdIta.otf);
+}
+
+body{font-family: 'c059', serif;
+--back: #ebddd2; 
+--text: #1a1613;
+--color: #6b00f7;}
+h1::before{content:'...'; color: var(--color)}
+h2::before{color: var(--color)}
