@@ -55,6 +55,8 @@
             summary{list-style-type: '→ ';list-style-position: outside;
             margin-left: 1em}
             details[open] > summary {list-style-type: '↓ ';}
+
+            .about{text-decoration: dotted; cursor: help;}
             
 
             @media only screen and (max-width: 500px) {
@@ -80,8 +82,8 @@
             <p><b>Precipitation</b></p><p id="precip"></p>
             <p><b>Humidity     </b></p><p id="humidity"></p>
             <p><b>Pressure     </b></p><p id="pressure"></p>
-            <p><b>Visibility   </b></p><p id="visibility"></p>
-            <p><b>UV index     </b></p><p id="uvIndex"></p>
+            <p><b class="about" title="how far you can see with (or without) fog in the way">Visibility   </b></p><p id="visibility"></p>
+            <p><b class="about" title="strength of sunlight (0-10), high values can cause skin damage">UV index     </b></p><p id="uvIndex"></p>
             <p><b>Cloud cover  </b></p><p id="cloudcover"></p></div></section>
         <div id="three-day_forecast">
 
@@ -90,7 +92,7 @@
             <table id="hourly0"></table>
             <details class="temp"><summary>Temperatures (°C)</summary>
                 <table id="temp0">
-                    <tr><th>time</th><th>temp.</th><th>feel</th><th>heat index</th><th>dew pt.</th></tr>
+                    <tr><th>time</th><th>temp.</th><th>feel</th><th class="about" title="percieved temperature in the shade, calculated using humidity and true temp">heat index</th><th class="about" title="the temp the air needs to be for water to condense; the optimal for comfort is 4 to 24.5°C">dew pt.</th></tr>
                 </table></details>
             <details><summary>Precipitation</summary>
                 <table id="prec0">
@@ -99,7 +101,7 @@
             </details>
             <details><summary>Wind</summary>
                 <table id="wind0">
-                    <tr><th>time</th><th>speed</th><th colspan="2" style="padding-right: 0">direction</th><th>gust</th><th>chill</th></tr>
+                    <tr><th>time</th><th>speed</th><th colspan="2" style="padding-right: 0">direction</th><th class="about" title="a brief increase in wind speed">gust</th><th class="about" title="how cool the air becomes with cooler wind">chill</th></tr>
                 </table></details>
             <details><summary>Chances (%)</summary>
             <table id="chance0">
@@ -107,7 +109,7 @@
             </table></details>
             <details><summary>More info</summary>
                 <table id="more0">
-                    <tr><th>time</th><th>humidity</th><th>cloud cover</th><th>pressure</th><th>UV index</th><th>visibility</th></tr>
+                    <tr><th>time</th><th>humidity</th><th>cloud cover</th><th>pressure</th><th class="about" title="strength of sunlight (0-10), high values can cause skin damage">UV index</th><th class="about" title="how far you can see with (or without) fog in the way">visibility</th></tr>
                 </table>
                 <div id="more20"></div></details></details></section>
     
@@ -116,7 +118,7 @@
             <table id="hourly1"></table>
             <details class="temp"><summary>Temperatures (°C)</summary>
                 <table id="temp1">
-                    <tr><th>time</th><th>temp.</th><th>feel</th><th>heat index</th><th>dew pt.</th></tr>
+                    <tr><th>time</th><th>temp.</th><th>feel</th><th class="about" title="percieved temperature in the shade, calculated using humidity and true temp">heat index</th><th class="about" title="the temp the air needs to be for water to condense; the optimal for comfort is 4 to 24.5°C">dew pt.</th></tr>
                 </table></details>
             <details><summary>Precipitation</summary>
                 <table id="prec1">
@@ -125,7 +127,7 @@
             </details>
             <details><summary>Wind</summary>
                 <table id="wind1">
-                    <tr><th>time</th><th>speed</th><th colspan="2" style="padding-right: 0">direction</th><th>gust</th><th>chill</th></tr>
+                    <tr><th>time</th><th>speed</th><th colspan="2" style="padding-right: 0">direction</th><th class="about" title="a brief increase in wind speed">gust</th><th class="about" title="how cool the air becomes with cooler wind">chill</th></tr>
                 </table></details>
             <details><summary>Chances (%)</summary>
                 <table id="chance1">
@@ -133,7 +135,7 @@
                 </table></details>
             <details><summary>More info</summary>
                 <table id="more1">
-                    <tr><th>time</th><th>humidity</th><th>cloud cover</th><th>pressure</th><th>UV index</th><th>visibility</th></tr>
+                    <tr><th>time</th><th>humidity</th><th>cloud cover</th><th>pressure</th><th class="about" title="strength of sunlight (0-10), high values can cause skin damage">UV index</th><th class="about" title="how far you can see with (or without) fog in the way">visibility</th></tr>
                 </table>
                 <div id="more21"></div></details></details></section>
 
@@ -142,7 +144,7 @@
             <table id="hourly2"></table>
             <details class="temp"><summary>Temperatures (°C)</summary>
                 <table id="temp2">
-                    <tr><th>time</th><th>temp.</th><th>feel</th><th>heat index</th><th>dew pt.</th></tr>
+                    <tr><th>time</th><th>temp.</th><th>feel</th><th class="about" title="percieved temperature in the shade, calculated using humidity and true temp">heat index</th><th class="about" title="the temp the air needs to be for water to condense; the optimal for comfort is 4 to 24.5°C">dew pt.</th></tr>
                 </table></details>
             <details><summary>Precipitation</summary>
                 <table id="prec2">
@@ -151,7 +153,7 @@
             </details>
             <details><summary>Wind</summary>
                 <table id="wind2">
-                    <tr><th>time</th><th>speed</th><th colspan="2" style="padding-right: 0">direction</th><th>gust</th><th>chill</th></tr>
+                    <tr><th>time</th><th>speed</th><th colspan="2" style="padding-right: 0">direction</th><th class="about" title="a brief increase in wind speed">gust</th><th class="about" title="how cool the air becomes with cooler wind">chill</th></tr>
                 </table></details>
             <details><summary>Chances (%)</summary>
                 <table id="chance2">
@@ -159,7 +161,7 @@
                 </table></details>
             <details><summary>More info</summary>
                 <table id="more2">
-                    <tr><th>time</th><th>humidity</th><th>cloud cover</th><th>pressure</th><th>UV index</th><th>visibility</th></tr>
+                    <tr><th>time</th><th>humidity</th><th>cloud cover</th><th>pressure</th><th class="about" title="strength of sunlight (0-10), high values can cause skin damage">UV index</th><th class="about" title="how far you can see with (or without) fog in the way">visibility</th></tr>
                 </table>
                 <div id="more22"></div></details></details></section>
     

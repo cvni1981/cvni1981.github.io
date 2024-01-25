@@ -65,7 +65,7 @@ async function getweather() {
     const chancehourly = document.querySelector("#chance"+i);
     const morehourly = document.querySelector("#more"+i);
     const morehourly2 = document.querySelector("#more2"+i);
-    const morehour2 = '<p><b>Total snow</b></p><p>'+weather[i]['totalSnow_cm']+'cm</p><p><b>Sun hours</b></p><p>'+weather[i]['sunHour']+'h</p><p><b>Sunrise</b></p><p>'+weather[i]['astronomy'][0]['sunrise']+'</p><p><b>Sunset</b></p><p>'+weather[i]['astronomy'][0]['sunset']+'</p><p><b>Moon phase</b></p><p>'+weather[i]['astronomy'][0]['moon_phase']+'</p><p><b>Moon illumination</b></p><p>'+weather[i]['astronomy'][0]['moon_illumination']+'%</p><p><b>Moonrise</b></p><p>'+weather[i]['astronomy'][0]['moonrise']+'</p><p><b>Moonset</b></p><p>'+weather[i]['astronomy'][0]['moonset']+'</p>'
+    const morehour2 = '<p><b>Total snow</b></p><p>'+weather[i]['totalSnow_cm']+'cm</p><p><b class="about" title="for how long the sun stays up in the sky">Sun hours</b></p><p>'+weather[i]['sunHour']+'h</p><p><b>Sunrise</b></p><p>'+weather[i]['astronomy'][0]['sunrise']+'</p><p><b>Sunset</b></p><p>'+weather[i]['astronomy'][0]['sunset']+'</p><p><b>Moon phase</b></p><p>'+weather[i]['astronomy'][0]['moon_phase']+'</p><p><b>Moon illumination</b></p><p>'+weather[i]['astronomy'][0]['moon_illumination']+'%</p><p><b>Moonrise</b></p><p>'+weather[i]['astronomy'][0]['moonrise']+'</p><p><b>Moonset</b></p><p>'+weather[i]['astronomy'][0]['moonset']+'</p>'
     morehourly2.insertAdjacentHTML("beforeend", morehour2)
 
     for (let j = 0; j < 8; j++){
