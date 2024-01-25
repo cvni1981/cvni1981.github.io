@@ -32,7 +32,7 @@ async function getweather() {
     const feels_like = document.querySelector("#feels_like");
     feels_like.textContent = 'Feels like '+current_condition['FeelsLikeC']+'°C'
     const wind = document.querySelector("#wind");
-    wind.textContent = current_condition['windspeedKmph']+' km/h '+current_condition['winddir16Point']+' '
+    wind.textContent = Math.round(current_condition['windspeedKmph']/3.6)+' m/s '+current_condition['winddir16Point']+' '
     const windarrow = document.querySelector('#current_arrow');
     windarrow.style.transform = 'rotate('+current_condition['winddirDegree']+'deg)'
 
@@ -78,7 +78,7 @@ async function getweather() {
       const prechour = '<tr><th>'+(j*3)+'h</th><td>'+weather[i]['hourly'][j]['chanceofrain']+'%</td><td>'+weather[i]['hourly'][j]['precipMM']+'mm</td></tr>'
       prechourly.insertAdjacentHTML("beforeend", prechour)
 
-      const windhour = '<tr><th>'+(j*3)+'h</th><td>'+weather[i]['hourly'][j]['windspeedKmph']+'km/h</td><td style="padding-right: 4px">'+weather[i]['hourly'][j]['winddir16Point']+'</td><td style="width:min-content; display: inline-block; padding: 0; transform: rotate('+weather[i]['hourly'][j]['winddirDegree']+'deg)">↑</td><td style="padding-left: 12px">'+weather[i]['hourly'][j]['WindGustKmph']+'km/h</td><td>'+weather[i]['hourly'][j]['WindChillC']+'°C</td></tr>'
+      const windhour = '<tr><th>'+(j*3)+'h</th><td>'+Math.round(weather[i]['hourly'][j]['windspeedKmph']/3.6)+'m/s</td><td style="padding-right: 4px">'+weather[i]['hourly'][j]['winddir16Point']+'</td><td style="width:min-content; display: inline-block; padding: 0; transform: rotate('+weather[i]['hourly'][j]['winddirDegree']+'deg)">↑</td><td style="padding-left: 12px">'+Math.round(weather[i]['hourly'][j]['WindGustKmph']/3.6)+'m/s</td><td>'+weather[i]['hourly'][j]['WindChillC']+'°C</td></tr>'
       windhourly.insertAdjacentHTML("beforeend", windhour)
       
       const chancehour = '<tr><th>'+(j*3)+'h</th><td>'+weather[i]['hourly'][j]['chanceofrain']+'</td><td>'+weather[i]['hourly'][j]['chanceofovercast']+'</td><td>'+weather[i]['hourly'][j]['chanceofthunder']+'</td><td>'+weather[i]['hourly'][j]['chanceofsnow']+'</td><td>'+weather[i]['hourly'][j]['chanceofwindy']+'</td><td>'+weather[i]['hourly'][j]['chanceoffog']+'</td><td>'+weather[i]['hourly'][j]['chanceofsunshine']+'</td><td>'+weather[i]['hourly'][j]['chanceofhightemp']+'</td><td>'+weather[i]['hourly'][j]['chanceoffrost']+'</td></tr>'
