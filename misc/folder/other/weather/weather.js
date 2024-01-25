@@ -72,7 +72,7 @@ async function getweather() {
       const hour = '<tr><th>'+(j*3)+'h</th><td>'+weather[i]['hourly'][j]['weatherDesc'][0]['value']+'</td><td>'+weather[i]['hourly'][j]['tempC']+'°C</td><td>'+weather[i]['hourly'][j]['chanceofrain']+'%</td></tr>'
       hourly.insertAdjacentHTML("beforeend", hour)
 
-      const temphour = '<tr><th>'+(j*3)+'h</th><td>'+weather[i]['hourly'][j]['tempC']+'°C</td><td>'+weather[i]['hourly'][j]['FeelsLikeC']+'</td><td>'+weather[i]['hourly'][j]['HeatIndexC']+'</td><td>'+weather[i]['hourly'][j]['DewPointC']+'</td></tr>'
+      const temphour = '<tr><th>'+(j*3)+'h</th><td>'+weather[i]['hourly'][j]['tempC']+'</td><td>'+weather[i]['hourly'][j]['FeelsLikeC']+'</td><td>'+weather[i]['hourly'][j]['HeatIndexC']+'</td><td>'+weather[i]['hourly'][j]['DewPointC']+'</td></tr>'
       temphourly.insertAdjacentHTML("beforeend", temphour)
 
       const prechour = '<tr><th>'+(j*3)+'h</th><td>'+weather[i]['hourly'][j]['chanceofrain']+'%</td><td>'+weather[i]['hourly'][j]['precipMM']+'mm</td></tr>'
@@ -81,7 +81,7 @@ async function getweather() {
       const windhour = '<tr><th>'+(j*3)+'h</th><td>'+weather[i]['hourly'][j]['windspeedKmph']+'km/h</td><td style="padding-right: 4px">'+weather[i]['hourly'][j]['winddir16Point']+'</td><td style="width:min-content; display: inline-block; padding: 0; transform: rotate('+weather[i]['hourly'][j]['winddirDegree']+'deg)">↑</td><td style="padding-left: 12px">'+weather[i]['hourly'][j]['WindGustKmph']+'km/h</td><td>'+weather[i]['hourly'][j]['WindChillC']+'°C</td></tr>'
       windhourly.insertAdjacentHTML("beforeend", windhour)
       
-      const chancehour = '<tr><th>'+(j*3)+'h</th><td>'+weather[i]['hourly'][j]['chanceofrain']+'%</td><td>'+weather[i]['hourly'][j]['chanceofovercast']+'</td><td>'+weather[i]['hourly'][j]['chanceofthunder']+'</td><td>'+weather[i]['hourly'][j]['chanceofsnow']+'</td><td>'+weather[i]['hourly'][j]['chanceofwindy']+'</td><td>'+weather[i]['hourly'][j]['chanceoffog']+'</td><td>'+weather[i]['hourly'][j]['chanceofsunshine']+'</td><td>'+weather[i]['hourly'][j]['chanceofhightemp']+'</td><td>'+weather[i]['hourly'][j]['chanceoffrost']+'</td></tr>'
+      const chancehour = '<tr><th>'+(j*3)+'h</th><td>'+weather[i]['hourly'][j]['chanceofrain']+'</td><td>'+weather[i]['hourly'][j]['chanceofovercast']+'</td><td>'+weather[i]['hourly'][j]['chanceofthunder']+'</td><td>'+weather[i]['hourly'][j]['chanceofsnow']+'</td><td>'+weather[i]['hourly'][j]['chanceofwindy']+'</td><td>'+weather[i]['hourly'][j]['chanceoffog']+'</td><td>'+weather[i]['hourly'][j]['chanceofsunshine']+'</td><td>'+weather[i]['hourly'][j]['chanceofhightemp']+'</td><td>'+weather[i]['hourly'][j]['chanceoffrost']+'</td></tr>'
       chancehourly.insertAdjacentHTML("beforeend", chancehour)
 
       const morehour = '<tr><th>'+(j*3)+'h</th><td>'+weather[i]['hourly'][j]['humidity']+'%</td><td>'+weather[i]['hourly'][j]['cloudcover']+'%</td><td>'+weather[i]['hourly'][j]['pressure']+'mbar</td><td>'+weather[i]['hourly'][j]['uvIndex']+'</td><td>'+weather[i]['hourly'][j]['visibility']+'km</td></tr>'
