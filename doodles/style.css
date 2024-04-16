@@ -13,7 +13,7 @@ body{font-family: 'Source Serif 4', serif;
 line-height: 1.3}
 h1::before{content:'{'; color: var(--color)}
 h1::after{content:'}'; color: var(--color)}
-h1{margin-bottom: 8px}
+
 
 .image{break-inside: avoid;}
 .image img{width: 100%;

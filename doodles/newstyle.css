@@ -12,8 +12,10 @@ header a{text-decoration: none; color: var(--color)}
 header a:hover{color: var(--text)}
 
 header{border-right: solid 1px var(--text);
-    padding: 16px 24px;
-    width: 14rem; text-align: right}
+    padding: 16px 24px; height: calc(100vh - 32px);
+    width: 14rem; text-align: right;
+    position:sticky; top: 0}
+nav.top{padding-top: 10px}
 
 main{max-width: 40rem; padding: 24px}
 
@@ -52,7 +54,12 @@ textarea{font-family: 'Iosevka', monospace; font-size: .8em;}
 
 @media only screen and (max-width: 500px){
     body{flex-direction: column;}
-    header{border-right: none;
+    header{border-right: none; height: unset;
         border-bottom: solid 1px var(--text);
-        padding: 16px 24px;
-        width: 100vw; text-align: left}}
+        padding: 16px 24px 8px; position: sticky;
+        top: calc(((2em * 1.3) + 16px) * (-1));
+        width: calc(100vw - 48px); text-align: left;
+        box-shadow: 0 5px 5px var(--back);
+        background-color: var(--back); }
+    nav.top{padding: 14px 0 8px}
+    .space{display:inline-block; width: 2rem}}
