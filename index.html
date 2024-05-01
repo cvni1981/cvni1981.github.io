@@ -2,26 +2,22 @@
 <html>
     <head>
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-        <link href="style.css" rel="stylesheet" type="text/css" media="all">
         <title>nowhere in particular</title><style>
-            body{--back: #040404;
-                --text: #f0f0f0; min-height: fit-content}
-            a{font-size: min(15vw, 5rem);  font-weight: bold;
-                text-decoration: none; line-height:1}
-            a::before{content: "→"; transition: all .5s cubic-bezier(.08,.82,.17,1);}
-            a.c::before{color: #05a1fc}
-            a.m::before{color: #ff0060}
-            a.y::before{color: #ffb400}
-            a.c:hover{color: #05a1fc}
-            a.m:hover{color: #ff0060}
-            a.y:hover{color: #ffb400}
-            a:hover::before{color: var(--text)}
-            .main{margin-top: 32px}
+            @font-face {
+                font-family: 'Inconsolata';
+                font-weight: 900;
+                font-variation-settings: 'wdth' 140;
+                src: url(fonts/Inconsolata-VariableFont_wdth\,wght.ttf);}
+            body{font-family: 'Inconsolata'; margin: 0; width: 100vw; height: 100vh;
+            display: flex; text-align: right}
+            main{margin: auto; width: fit-content}
+            h1{margin: 0}
+            ::selection{background-color: black; color: white}
+            a{color: black; transition: all .5s cubic-bezier(0,1,0,1)}
+            a:hover{background-color: black; color: white; text-decoration: black}
         </style></head>
     <body><main>
-        <a class="c" href="home">nowhere</a><br>
-        <a class="m" href="home">in</a><br>
-        <a class="y" href="home">particular</a><br>
+        <h1>NOWHERE IN<br>PARTICULAR</h1><div style="margin-top: 24px"><h1><a href="corridor">enter ↘</a></span></h1></div>
     </main>
     </body>
 </html>
