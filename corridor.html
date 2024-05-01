@@ -10,7 +10,7 @@
             body{background-color: black; color: white;
                 font-family: 'Inconsolata'; 
                 margin: 0; width: 100vw; height: 100vh;}
-            main{margin: auto 24px auto 48px; padding-top: 24px; max-width: 30rem}
+            main{margin: auto 24px auto max(min(48px, calc((100vw - 30rem) / 2)), 24px); padding-top: 24px; max-width: 30rem}
             p{margin: 0}
             ::selection{background-color: white; color: black}
             a{color: black; transition: all .5s cubic-bezier(0,1,0,1)}

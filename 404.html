@@ -9,7 +9,7 @@
                 src: url(/website/fonts/Inconsolata-VariableFont_wdth\,wght.ttf);}
             body{background-color: gray; color: black;
                 font-family: 'Inconsolata'; margin: 0;}
-            main{margin: auto 24px auto 48px; padding-top: 24px; max-width: 30rem}
+            main{margin: auto 24px auto max(min(48px, calc((100vw - 30rem) / 2)), 24px); padding-top: 24px; max-width: 30rem}
             p{margin: 0}
             ::selection{background-color: white; color: black}
             a{color: black; transition: all .5s cubic-bezier(0,1,0,1); text-decoration: underline;}
