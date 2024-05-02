@@ -15,9 +15,16 @@
             a{color: black; transition: all .5s cubic-bezier(0,1,0,1); text-decoration: underline;}
             a:hover{background-color: orangered; text-decoration: orangered}
 
+            p:last-child{margin-top: 8px}
+            a{outline: 1px solid black; text-decoration: none; 
+            padding: 4px 8px 4px 0; outline-offset: 0px; transition: all .5s cubic-bezier(0,1,0,1)}
+
+            a:hover{background-color: orangered; color: black;
+            outline-color: black; outline-offset: -2px}
+
         </style></head>
     <body><main>
-        <p>You entered a door that doesn't exist. somehow.<br><a href="/website/corridor">↙ back to corridor</a></p>
+        <p>You entered a door that doesn't exist. somehow.</p><p><a href="/website/corridor">↙ back to corridor</a></p>
     </main>
     </body>
 </html>
