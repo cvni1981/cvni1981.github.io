@@ -2,61 +2,24 @@
 <html>
     <head>
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet" type="text/css" media="all">
         <title>sitelog</title><style>
-            @font-face {
-                font-family: 'IBM Plex Mono';
-                font-weight: normal;
-                font-style: normal;
-                src: url(fonts/IBMPlexMono-Text.otf);}
-            @font-face {
-                font-family: 'IBM Plex Mono';
-                font-weight: normal;
-                font-style: italic;
-                src: url(fonts/IBMPlexMono-TextItalic.otf);}
-            @font-face {
-                font-family: 'IBM Plex Mono';
-                font-weight: bold;
-                font-style: normal;
-                src: url(fonts/IBMPlexMono-Bold.otf);}
-            body{background-color: black; color: orange;
-                font-family: 'IBM Plex Mono'; display: flex;
-                flex-direction: row; align-items: stretch;
-                margin: 0; width: 100vw}
-
-            main, header{max-width: 40rem}
-            main{padding: 24px}
-
-            header{align-self: flex-start;
-                position: sticky; top: 0; height: 100vh; text-align: right;
-                padding: 0 24px 0 max(min(48px, calc((100vw - 30rem) / 2)), 24px);}
-            nav{display: flex; flex-direction: column; align-items: end; margin: 16px 0}
-            nav a{display: block; width: fit-content}
-            p{margin: 0} h1{margin: 24px 0 0; line-height: 1.125}
-            h1::before{content:"/"; color: sienna; line-break: strict;}
-            ::selection{background-color: orange; color: black}
-            a{color: orange; transition: all .5s cubic-bezier(0,1,0,1); text-decoration-color: sienna}
-            a:hover{background-color: sienna; color: black; text-decoration-color: none}
+            back{--back: black;
+                --text: orange;
+                --color: sienna;
+                --max: 600px;
+                font-family: 'Inconsolata', monospace}
 
             h3{margin: 0; color: sienna}
             h3::before{content: "> "} 
             .entry{margin-bottom: 16px}
-
-            @media (max-width: 600px) {
-                body{display: block}
-                header{height:auto; border-right: none; box-shadow: 0 8px 8px black;
-                    background-color: black; text-align: left;
-                    max-width: none; position:sticky; top: calc(-2em - 10px); padding: 0 24px}
-                main{max-width: none; padding-top: 16px}
-                nav{display:inline-block}
-                nav a{display: inline}}
-
         </style></head>
     <body><header><h1>site&shy;log</h1>
         <nav><a href="#">↑ top</a> <a href="corridor">↩ back</a></nav></header>
     <main>
         <div class="entry">
             <h3>2/5/2024 16:21</h3>
-            <p>We're doing redesign number 8 by my count now! much simpler things, with less borders and boxes.</p> 
+            <p>We're doing redesign number 8 by my count now! much simpler things, and back with the sidebar now.</p> 
         </div><div class="entry">
             <h3>6/3/2024 18:38</h3>
             <p>Added <a href="doodles/14">notebook no.14</a>, the biggest one with 70 drawings. Also i feel like experimenting with css again, so expect changes in some places.</p> 
