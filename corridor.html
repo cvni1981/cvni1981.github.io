@@ -13,8 +13,11 @@
             main{margin: auto 24px auto max(min(48px, calc((100vw - 30rem) / 2)), 24px); padding-top: 24px; max-width: 30rem}
             p{margin: 0}
             ::selection{background-color: white; color: black}
-            a{color: black; transition: all .5s cubic-bezier(0,1,0,1)}
-            a:hover{background-color: black; color: white; text-decoration: black}
+            a{color: white; transition: all .5s cubic-bezier(0,1,0,1); font-weight: 900;
+                text-decoration-thickness: 2px;}
+            a:hover{background-color: black; color: white;}
+
+            #sitelog:hover{background-color: black; color: orange; text-decoration-color: sienna;}
 
             #note{border: solid 1px white; margin: 24px 0; padding: 8px 12px; 
                 width: fit-content; transition: all .5s cubic-bezier(0,1,0,1)}
@@ -38,9 +41,12 @@
             of OFL fonts!<br>ig its a party trick of mine. or a sign of adhd.<br>so yeah. 
             expect more stuff here in the future!<br><br>-- cvni81
         </p></details>
-        <p>Aside from that, you see doors on either side of the corridor, but you can't
-            enter any of them.
+        <p>Aside from that, you see doors on either side of the corridor, but you can only enter
+            an orange one on your left.
         </p>
+        <nav>
+            <h2 style="text-align: right;"><a id='sitelog' href="sitelog">sitelog</a> →</h2>
+        </nav>
     </main>
     </body>
 </html>
