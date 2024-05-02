@@ -7,11 +7,10 @@ body{background-color: var(--back); color: var(--text);
     display: flex; margin: 0; width: 100vw;
     flex-direction: row; align-items: stretch}
 
-main, header{max-width: 40rem}
-main{padding: 24px}
+main{padding: 24px; max-width: 40rem}
 
 header{border-right: solid 1px var(--color); align-self: flex-start;
-    position: sticky; top: 0; height: 100vh; text-align: right;
+    position: sticky; top: 0; height: 100vh; text-align: right; max-width: 15rem;
     padding: 0 24px 0 max(min(48px, calc((100vw - 30rem) / 2)), 24px);}
 
 nav{display: flex; flex-direction: column; align-items: end; margin: 16px 0}
@@ -25,12 +24,3 @@ h1::before{content:"/"; color: var(--color); line-break: strict;}
 
 a{color: var(--text); transition: all .5s cubic-bezier(0,1,0,1); text-decoration-color: var(--color)}
 a:hover{background-color: var(--color); color: var(--back); text-decoration-color: none}
-
-@media (max-width: var(--max)) {
-    body{display: block}
-    header{height:auto; border-right: none; border-bottom: solid 1px var(--color);
-        background-color: var(--back); text-align: left;
-        max-width: none; position:sticky; top: calc(-2em - 10px); padding: 0 24px}
-    main{max-width: 40rem}
-    nav{display:block;}
-    nav a{display: inline}}

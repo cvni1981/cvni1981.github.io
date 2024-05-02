@@ -9,10 +9,24 @@
                 --color: sienna;
                 --max: 600px;
                 font-family: 'Inconsolata', monospace}
+            
+            h1, h3{font-weight: 900}
 
             h3{margin: 0; color: sienna}
             h3::before{content: "> "} 
             .entry{margin-bottom: 16px}
+            .entry p{margin: 0 0 0 8px;
+                border-left: solid 1px sienna;
+                padding-left: 12px;}
+
+            @media (max-width: 600px) {
+                body{display: block}
+                header{height:auto; border-right: none; border-bottom: solid 1px var(--color);
+                    background-color: var(--back); text-align: left;
+                    max-width: none; position:sticky; top: calc(-2em - 10px); padding: 0 24px}
+                main{max-width: 40rem}
+                nav{display:block;}
+                nav a{display: inline}}
         </style></head>
     <body><header><h1>site&shy;log</h1>
         <nav><a href="#">↑ top</a> <a href="corridor">↩ back</a></nav></header>
