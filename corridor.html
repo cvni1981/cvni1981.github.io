@@ -13,11 +13,11 @@
             main{margin: auto 24px auto max(min(48px, calc((100vw - 30rem) / 2)), 24px); padding-top: 24px; max-width: 30rem}
             p{margin: 0}
             ::selection{background-color: white; color: black}
-            a{color: white; transition: all .5s cubic-bezier(0,1,0,1); font-weight: 900;
-                text-decoration-thickness: 2px;}
-            a:hover{background-color: black; color: white;}
+            a{color: white; transition: all .5s cubic-bezier(0,1,0,1); 
+                font-weight: 900; text-decoration: none;
+                border: solid 1px white; padding: 8px 12px}
 
-            #sitelog:hover{background-color: black; color: orange; text-decoration-color: sienna;}
+            #sitelog:hover{color: orange; border-color: sienna;}
 
             #note{border: solid 1px white; margin: 24px 0; padding: 8px 12px; 
                 width: fit-content; transition: all .5s cubic-bezier(0,1,0,1)}
@@ -45,7 +45,7 @@
             an orange one on your left.
         </p>
         <nav>
-            <h2 style="text-align: right;"><a id='sitelog' href="sitelog">sitelog</a> →</h2>
+            <h2 style="text-align: right;"><a id='sitelog' href="sitelog">sitelog →</a></h2>
         </nav>
     </main>
     </body>
