@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet" type="text/css" media="all">
+        <title>about</title><style>
+            body{--back: ghostwhite;
+                --text: black;
+                --color: royalblue;
+                --max: 600px;
+                font-family: 'Uncut Sans', sans-serif}
+            
+            ::selection{background-color: var(--color)}
+            h2::before{content: '-'; color: var(--color)}
+            h1::before{content:none}
+            h1{text-shadow: lightgrey .15rem .15rem;}
+
+            ul{list-style-type: "- ";}
+            details{margin: 8px 0 8px 40px}
+            details:hover, details[open]{border-color: black; background-color: black}
+
+            #lastfm:hover{background-color: crimson; text-decoration-color: crimson;}
+            #spotify:hover{background-color: green; text-decoration-color: green;}
+            #bandcamp:hover{background-color: deepskyblue; text-decoration-color: deepskyblue;}
+            #email:hover{background-color: grey; text-decoration-color: grey;}
+
+            img{margin: 0 auto auto}
+            @media only screen and (min-width: 500px) {
+                .about{display: grid; grid-template-columns: 1fr 3fr;}
+                img{margin: 0 20px 20px 0; align-self: center}}
+
+            @media (max-width: 600px) {
+                body{display: block}
+                header{height:auto; border-right: none; border-bottom: solid 1px var(--color);
+                    background-color: var(--back); text-align: left;
+                    max-width: none; position:sticky; top: calc(-2em - 10px); padding: 0 24px}
+                main{max-width: 40rem}
+                nav{display:block;}
+                nav a{display: inline}}
+        </style></head>
+    <body><header><h1><span style="color: #05a1fc">.</span><span style="color: #ff0060">.</span><span style="color: #ffb400">.</span>about</h1>
+        <nav><a href="#">↑ top</a> <a href="corridor">↩ back</a></nav></header>
+    <main>
+        <p style="margin-bottom: 24px">You look closer at the board. It has notes that talk about
+            the webmaster(s) and the website.
+        </p>
+        <h2>about the webmaster(s)</h2>
+
+        <div class="about">
+            <div style="display: flex"><img src="assets/dingus.png" alt="a drawing of a guy" style="align-self: start; border-radius: 100%"></div>
+            <div>
+            <b>cvni81</b>
+            <ul style="margin-top: 0px">
+                <li><b>we speak:</b> <span style="text-decoration: underline dotted;" title="brazillian portuguese (native)">pt-br</span>, <span style="text-decoration: underline dotted;" title="english (eh it's good)">en</span>, <a href="https://en.wikipedia.org/wiki/Toki_Pona" title="toki pona (advanced)">tok</a></li>
+                <li><b>pronouns:</b> they/them/ask</li>
+                <li><b>age:</b> under 18</li>
+                <li><b>we like:</b> chatting in Discord, listening to <a href="https://www.last.fm/user/cvni81">music</a>, composing stuffs in jummbox, anarchy and antiracism, <a href="doodles/">doodling things</a>, taking pictures and researching <a href='bookmarks'>things</a>.</li>
+                <li><b>contacts:</b> discord (@cvni81)&nbsp;· 
+                    <a href="https://www.last.fm/user/cvni81" id="lastfm">last.fm</a>&nbsp;·
+                    <a href="https://open.spotify.com/user/1tqpqbcrw16yda1b4kc4nuu92" id="spotify">spotify</a>&nbsp;·
+                    <a href="https://bandcamp.com/cvni1981" id="bandcamp">bandcamp</a>&nbsp;·
+                    <a href="mailto:cvni1981@gmail.com" id="email">email</a> (cvni1981@gmail.com)</li>
+        </details></div>
+            </div>
+        <p>Hi there! This website is kept up and made by a group of ppl, going collectively by <b>cvni81</b>
+            on the web. Yeah not that good a name but. eh. There used to be a doodle here but it's not
+            very accurate, given yk. multiple ppl. So have this dingus guy. If we feel like it we'll put
+            names indicating who's doing what! The one you're reading was made by <b style="text-decoration: underline dotted #00966c 2px;">turquoise</b>, hi :3
+            We all like a bunch of stuff, old TV IDs, flags, fonts, design, old coins, history, prob other stuff i'm missing.</p>
+        <p>I spend most of my time watching YT vids, as you do, as well as playing around on Inkscape
+            and Blender and Jummbox making doodles and music, as well as listening to music (you can see what
+            we listen to on <a href="https://open.spotify.com/user/1tqpqbcrw16yda1b4kc4nuu92" style="--color: green">spotify</a> 
+            and <a href="https://www.last.fm/user/cvni81" style="--color: crimson">last.fm</a>!). More rarely, coding in python and making drawings. I really should do that more often tbh</p>
+        <p>We live in Brasil, speak Portuguese natively and English... almost natively h as well as
+            a neat constructed language called <a href="https://tokipona.org/">toki pona</a> that has only 120 words that i super duper
+            recommend learning. We're also working on a font for its writing system which we'll put
+            here in a room sometime soon!!!</p>
+        <p>Also, we're <a href="https://theanarchistlibrary.org/special/index" style="--color:black">anarchists</a>. 
+            As in ppl ruling over other ppl is Bad no matter who does it. Also as in
+            antiracism, anticolonialism, feminism, all the good stuff. The world sucks. So we'll try to
+            do our part in making it suck less for everyone, no exceptions.</p>
+        <p>Gender-wise, we all have different genders obvsly so asking pronouns is the best bet,
+            but <b>they/them</b> works for all of us :3</p>
+        <h2>about the website</h2>
+        <p>This website started off as a carrd, prob in 2021, that doesnt exist anymore. too limiting. We then moved to
+            neocities, but it has a file limit. Github repositories don't have limits so're here since july 2022.<br>
+            Bc we're indecisive and out tastes change with time, this place's been remade 8 times if i'm
+            not mistaken. Changed fonts, changed colors, changed structure. There used to be a basement
+            section called {i} fsr, now it's just the misc room. We're hoping this corridor
+            and doors structure stays at least for a while. <br>Here, we put stuff we make, stuff we like and other
+            stuff. That's. basically all.
+        </p>
+    </main>
+    </body>
+</html>

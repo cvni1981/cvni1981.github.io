@@ -1,7 +1,20 @@
 @font-face {
     font-family: 'Inconsolata';
     font-variation-settings: 'wdth' 112;
-    src: url(/website/fonts/Inconsolata-VariableFont_wdth\,wght.ttf);}
+    src: url(assets/Inconsolata-VariableFont_wdth\,wght.ttf);}
+
+@font-face {
+    font-family: 'Uncut Sans';
+    font-weight: normal;
+    src: url(assets/Uncut-Sans-Regular.otf);
+    font-feature-settings: 'ss04', 'ss03', 'ss01';
+}
+@font-face {
+    font-family: 'Uncut Sans';
+    font-weight: bold;
+    src: url(assets/Uncut-Sans-Bold.otf);
+    font-feature-settings: 'ss04', 'ss03', 'ss01';
+}
 
 body{background-color: var(--back); color: var(--text);
     display: flex; margin: 0; width: 100vw;
@@ -13,14 +26,29 @@ header{border-right: solid 1px var(--color); align-self: flex-start;
     position: sticky; top: 0; height: 100vh; text-align: right; max-width: 15rem;
     padding: 0 24px 0 max(min(48px, calc((100vw - 30rem) / 2)), 24px);}
 
-nav{display: flex; flex-direction: column; align-items: end; margin: 16px 0}
+nav{display: flex; flex-direction: column; align-items: end; margin: 4px 0 16px}
 nav a{display: block; width: fit-content; padding: 4px 6px;margin: 2px;}
 
 p{margin: 0}
 h1{margin: 24px 0 0; line-height: 1.125}
 h1::before{content:"/"; color: var(--color); line-break: strict;}
 
+details{border: solid 1px var(--color); margin: 24px 0; padding: 8px 12px; 
+    width: fit-content; transition: all .5s cubic-bezier(0,1,0,1)}
+details:hover, details[open]{background-color: var(--color); color: var(--back)}
+summary{font-weight: bold; list-style-type: '→ ';}
+details a{color: var(--back)}
+details a:hover{color: var(--text); background-color: var(--back)}
+details[open] > summary {list-style-type: '↓ ';
+    border-bottom: dotted 1px var(--back); 
+    padding-bottom: 8px; margin-bottom: 8px;}
+
+
 ::selection{background-color: var(--text); color: var(--back)}
 
 a{color: var(--text); transition: all .5s cubic-bezier(0,1,0,1); text-decoration-color: var(--color)}
 a:hover{background-color: var(--color); color: var(--back); text-decoration-color: none}
+
+
+@media (max-width: 600px) {
+    nav{margin: 16px 0}}

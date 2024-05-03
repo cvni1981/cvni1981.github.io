@@ -6,7 +6,7 @@
             @font-face {
                 font-family: 'Inconsolata';
                 font-variation-settings: 'wdth' 112;
-                src: url(fonts/Inconsolata-VariableFont_wdth\,wght.ttf);}
+                src: url(assets/Inconsolata-VariableFont_wdth\,wght.ttf);}
             body{background-color: black; color: white;
                 font-family: 'Inconsolata'; 
                 margin: 0; width: 100vw; height: 100vh;}
@@ -14,10 +14,14 @@
             p{margin: 0}
             ::selection{background-color: white; color: black}
             a{color: white; transition: all .5s cubic-bezier(0,1,0,1); 
-                font-weight: 900; text-decoration: none;
-                border: solid 1px white; padding: 8px 12px}
+                font-weight: 900}
+            nav a{text-decoration: none;
+                border: solid 1px black; padding: 8px 12px}
+
+            nav h2{display: inline-block; width: 100%; margin: 12px 0}
 
             #sitelog:hover{color: orange; border-color: sienna;}
+            #about:hover{background-color: ghostwhite; color: royalblue}
 
             #note{border: solid 1px white; margin: 24px 0; padding: 8px 12px; 
                 width: fit-content; transition: all .5s cubic-bezier(0,1,0,1)}
@@ -27,6 +31,19 @@
             details[open] > summary {list-style-type: '↓ ';
                 border-bottom: dotted 1px black; 
                 padding-bottom: 8px; margin-bottom: 8px;}
+
+            @keyframes marquee {
+                from {transform: translateX(30rem)}
+                to   {transform: translateX(-100%)}}
+            .marquee {overflow: hidden; max-width: 30rem;
+            margin: 16px 0; border: dotted 1px grey; padding: 8px 0}
+            .marquee > div {animation: linear 20s marquee infinite;
+                white-space: nowrap; display: flex; gap: 8px;
+                width: fit-content}
+            #statuscafe{display: flex; gap: 8px}
+            #statuscafe-username{display: none}
+            #statuscafe_link{text-decoration-color: chocolate;}
+            #statuscafe_link:hover{background-color: chocolate; color: black}
 
         </style></head>
     <body><main>
@@ -41,10 +58,16 @@
             of OFL fonts!<br>ig its a party trick of mine. or a sign of adhd.<br>so yeah. 
             expect more stuff here in the future!<br><br>-- cvni81
         </p></details>
-        <p>Aside from that, you see doors on either side of the corridor, all shut and unopenable.
-            The only other thing is a computer at the end of the corridor.
+        <p>You see doors on either side of the corridor, all shut and unopenable.
+            There is also a markee above the entrance door, an info board to your right and
+            a computer at the very end.
         </p>
+        <div class="marquee"><div>
+            <p><a href="https://status.cafe/users/cvni81" id="statuscafe_link">latest status</a><b>:</b> </p><div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=cvni81" defer></script>
+            <p>|</p><p><b>latest site addition:</b> added about page and this marquee!</p>
+        </div></div>
         <nav>
+            <h2 style="text-align: right;"><a id='about' href="about">about →</a></h2>
             <h2 style="text-align: center;"><a id='sitelog' href="sitelog">sitelog →</a></h2>
         </nav>
     </main>
