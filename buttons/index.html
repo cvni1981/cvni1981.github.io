@@ -32,6 +32,9 @@
             #mante:not(:hover) a{color: var(--text); text-decoration-color: var(--color);}
             #mante a:hover{background-color: #003621; color: #e0ffe8}
 
+            td.webring-prev a{content: "← previous"}
+            td.webring-next a{content: "next →"}
+
             @media (max-width: 600px) {
                 body{display: block}
                 header{height:auto; border-left: none; border-bottom: solid 1px var(--color);
@@ -42,7 +45,7 @@
                 nav a{display: inline}}
         </style></head>
     <body><header><h1>but&shy;tons</h1>
-        <nav><a href="#">↑ top</a> <a href="corridor">↩ back</a></nav></header>
+        <nav><a href="#">↑ top</a> <a href="corridor">← back</a></nav></header>
     <main>
         <p style="margin-bottom: 24px">You approach the pin board, painted with soft shades of blue.
             Here you see buttons that lead you to other sites the webmasters like, acquaintances or found
