@@ -31,6 +31,19 @@
                 border-radius: 0; box-shadow: 0px 0px var(--back); background-color: var(--back)}
             #mante:not(:hover) a{color: var(--text); text-decoration-color: var(--color);}
             #mante a:hover{background-color: #e0ffe8}
+            #mante:hover{border-color: #e0ffe8;}
+
+            details:hover, details[open]{background-color: palevioletred; border-color: palevioletred;
+                color: rgb(43, 0, 27)}
+            details[open]{width: unset}
+            details[open] > summary{border-color: rgb(43, 0, 27)}
+            #our_buttons{display: grid; grid-template-columns: 50% 50%; gap: 8px}
+            textarea{border: solid rgb(43, 0, 27) 1px; border-radius: 7px; font-family: 'Inconsolata', monospace;
+                background-color: mistyrose; color: rgb(110, 4, 71); font-size: .9rem}
+
+            @media only screen and (max-width: 480px) {
+                #our_buttons{grid-template-columns: auto}}
+
 
             @media (max-width: 600px) {
                 body{display: block}
@@ -47,6 +60,19 @@
         <p style="margin-bottom: 24px">You approach the pin board, painted with soft shades of blue.
             Here you see buttons that lead you to other sites the webmasters like, acquaintances or found
             on status.cafe, As well as a couple of their own to bring home and add to your own website corridor.</p>
+        <details><summary>our buttons</summary>
+            <p style="margin-bottom: 16px">These are from the previous redesign, but they look good still so i'll keep them here. More buttons
+                (hopefully) in the works.
+                Also, best practice is to download the images to your site directory, so it doesn't disappear when i make
+                another redesign!
+            </p>
+            <div id="our_buttons">
+                <div><img src="88x31.gif"><br>
+                <textarea>&lt;a href="https://cvni1981.github.io/website"&gt;&lt;img src="https://cvni1981.github.io/website/buttons/88x31.gif" alt="nowhere in particular"&gt;&lt;/a&gt;</textarea></div>
+                <div><img src="static.gif"><br>
+                <textarea>&lt;a href="https://cvni1981.github.io/website"&gt;&lt;img src="https://cvni1981.github.io/website/buttons/static.gif" alt="nowhere in particular"&gt;&lt;/a&gt;</textarea></div>
+            </div>
+        </details>
         <h2>acquaintances</h2>
         <div class="buttons">
             <a href="https://tabby.nekoweb.org/" class="button"><img src="tabbutton.gif" alt="tabby"></a> 
@@ -65,6 +91,7 @@
             <a href="https://noodledesk.net/" class="button"><img src="noodlebutton.gif" alt="noodle desk"></a>
             <a href="https://lazybones.neocities.org/" class="button"><img src="lazybonesicon4.png" alt="lazybones"></a>
             <a href="https://status.cafe" class="button"><img src="https://status.cafe/assets/button.png" alt="Status Cafe"></a>
+            <a href="https://status.cafe/users/cvni81"><img src="https://status.cafe/users/cvni81/badge.png" alt="Status Cafe Profile"/></a>
         </div>
         <div id='mante'>
             <script type="text/javascript" src="https://the-blob-system.neocities.org/mante_webring/onionring-variables.js"></script>
