@@ -26,6 +26,12 @@
             .button img{transition: all .12s linear; outline: 0px solid var(--text); display: inline-block}
             .button:hover img{outline: 4px solid var(--color)}
 
+            #mante{transition: all .5s cubic-bezier(0,1,0,1)}
+            #mante:not(:hover){border-color: var(--color); color: var(--color);
+                border-radius: 0; box-shadow: 0px 0px var(--back); background-color: var(--back)}
+            #mante:not(:hover) a{color: var(--color); text-decoration-color: var(--color);}
+            #mante a:hover{background-color: #003621; color: #e0ffe8}
+
             @media (max-width: 600px) {
                 body{display: block}
                 header{height:auto; border-left: none; border-bottom: solid 1px var(--color);
