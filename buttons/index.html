@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../style.css" rel="stylesheet" type="text/css" media="all">
+        <title>buttons</title><style>
+            body{--back: lightsteelblue;
+                --text: black;
+                --color: royalblue;
+                font-weight: 300;
+                font-family: 'Fraunces', sans-serif}
+
+            h1, h2{font-weight: 600; font-style: italic;}
+            h2::before{content: "→ "; color: var(--color)}
+
+            header{order: 1; text-align: left;
+            border-right: none; border-left: solid var(--color) 1px;
+            padding: 0 max(min(48px, calc((100vw - 30rem) / 2)), 24px) 0 24px;}
+            nav{align-items: start;}
+            main{padding-left: max(min(48px, calc((100vw - 30rem) / 2)), 24px);}
+
+            ::selection{background-color: var(--color)}
+
+            .buttons{display: flex; flex-wrap: wrap; gap: 12px}
+            .button:hover{background-color: #0000;}
+            .button img{transition: all .12s linear; outline: 0px solid var(--text); display: inline-block}
+            .button:hover img{outline: 4px solid var(--color)}
+
+            @media (max-width: 600px) {
+                body{display: block}
+                header{height:auto; border-left: none; border-bottom: solid 1px var(--color);
+                    background-color: var(--back); text-align: right;
+                    max-width: none; position:sticky; top: calc(-2em - 10px); padding: 0 24px}
+                main{max-width: 40rem}
+                nav{display:block;}
+                nav a{display: inline}}
+        </style></head>
+    <body><header><h1>but&shy;tons</h1>
+        <nav><a href="#">↑ top</a> <a href="corridor">↩ back</a></nav></header>
+    <main>
+        <p style="margin-bottom: 24px">You approach the pin board, painted with soft shades of blue.
+            Here you see buttons that lead you to other sites the webmasters like, acquaintances or found
+            on status.cafe, As well as a couple of their own to bring home and add to your own website corridor.</p>
+        <h2>acquaintances</h2>
+        <div class="buttons">
+            <a href="https://tabby.nekoweb.org/" class="button"><img src="tabbutton.gif" alt="tabby"></a> 
+            <a href="https://the-blob-system.neocities.org" class="button"><img src="kulupu%20ko.png" alt="come to the wormliest place in the world, kulupu ko's website!"></a>
+            <a href="https://motan.gay/" class="button" ><img src="motan.png" alt="motan"></a> 
+            <a href="https://nyxnet.neocities.org" class="button"><img src="nyxnet.png" alt="nyxnet! ^o^"></a> 
+            <a href="https://temmiemew.neocities.org/" class="button"><img src="temmie-mew-button.png" alt="temmie mew"></a>
+            <a href="https://jmibo.neocities.org/" class="button" ><img src="jmibo.png" alt="jmibo"></a> 
+            <a href="https://kpwu.observer/" class="button"><img id="button_self" src="kpwu_button.png" alt="kpwu"></a></div>
+        <h2>other cool places</h2><div class="buttons">
+            <a href="https://zenmai.neocities.org/" class="button" style="height:40px"><img src="zenmai.png" alt="zenmai"></a>
+            <a href="https://worldendling.neocities.org/" class="button"><img width="88" height="31" src="worldendling.gif" alt="worldendling"></a>
+            <a href="https://moondvsted.neocities.org/" class="button"><img src="moondvsted.gif" alt="moondvsted"></a>
+            <a href="https://telepoet.neocities.org/" class="button"><img src="telepoet8831.gif" alt="TELEPOET"></a> 
+            <a href="https://nyanseong.neocities.org/" class="button"><img width="88" height="31" src="nyanseong-wink.png" alt="nyanseong"></a>
+            <a href="https://noodledesk.net/" class="button"><img src="noodlebutton.gif" alt="noodle desk"></a>
+            <a href="https://lazybones.neocities.org/" class="button"><img src="lazybonesicon4.png" alt="lazybones"></a>
+            <a href="https://status.cafe" class="button"><img src="https://status.cafe/assets/button.png" alt="Status Cafe"></a>
+        </div>
+        <div id='mante'>
+            <script type="text/javascript" src="https://the-blob-system.neocities.org/mante_webring/onionring-variables.js"></script>
+            <script type="text/javascript" src="https://the-blob-system.neocities.org/mante_webring/onionring-widget.js"></script>
+            </div>
+    </main>
+    </body>
+</html>
