@@ -1,7 +1,8 @@
 @font-face {
     font-family: 'Inconsolata';
     font-variation-settings: 'wdth' 112;
-    src: url(assets/Inconsolata-VariableFont_wdth\,wght.ttf);}
+    src: url(assets/Inconsolata-VariableFont_wdth\,wght.ttf);
+}
 
 @font-face {
     font-family: 'Uncut Sans';
@@ -14,6 +15,17 @@
     font-weight: bold;
     src: url(assets/Uncut-Sans-Bold.otf);
     font-feature-settings: 'ss04', 'ss03', 'ss01';
+}
+
+@font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    src: url(assets/Fraunces[SOFT\,WONK\,opsz\,wght].ttf);
+}
+@font-face {
+    font-family: 'Fraunces';
+    font-style: italic;
+    src: url(assets/Fraunces-Italic[SOFT\,WONK\,opsz\,wght].ttf);
 }
 
 body{background-color: var(--back); color: var(--text);
