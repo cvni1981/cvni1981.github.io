@@ -20,13 +20,13 @@
 @font-face {
     font-family: 'Fraunces';
     font-style: normal;
-    font-variation-settings: 'wonk' 0;
+    font-variation-settings: 'WONK' 0;
     src: url(assets/Fraunces[SOFT\,WONK\,opsz\,wght].ttf);
 }
 @font-face {
     font-family: 'Fraunces';
     font-style: italic;
-    font-variation-settings: 'wonk' 0;
+    font-variation-settings: 'WONK' 0;
     src: url(assets/Fraunces-Italic[SOFT\,WONK\,opsz\,wght].ttf);
 }
 
