@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../style.css" rel="stylesheet" type="text/css" media="all">
+        <title>fonts</title><style>
+            body{--back: black;
+                --text: white;
+                --color: deeppink;
+                font-family: 'Gothic A1', sans-serif}
+
+            details, summary{--color: mediumseagreen}
+
+            #fonts-by-type{max-width: 20rem;}
+            #fonts-by-type a{text-decoration: none; width: auto;
+                border: solid 1px grey; padding: 8px 12px}
+            #fonts-by-type h2{display: inline-block; width: 100%; 
+                margin: 12px 0}
+            #fonts-by-type a:hover{background-color: white; 
+                color: black; border-color: white}
+
+            #grotesques a{background-image: url(grotesques/button.png);
+                background-position: right; background-repeat: no-repeat;
+                background-size: contain;}
+            
+            ::selection{background-color: var(--color)}
+            details[open]> ::selection{background-color: black; color: mediumseagreen}
+            details a{text-decoration-color: black}
+
+            @media (max-width: 600px) {
+                body{display: block}
+                header{height:auto; border-right: none; border-bottom: solid 1px var(--color);
+                    background-color: var(--back); text-align: left;
+                    max-width: none; position:sticky; top: calc(-2em - 10px); padding: 0 24px}
+                main{max-width: 40rem}
+                nav{display:block;}
+                nav a{display: inline}
+                #fonts-by-type a{display: block}}
+        </style></head>
+    <body><header><h1>fonts</h1>
+        <nav><a href="corridor">↩ back</a></nav></header>
+    <main>
+        <p>You open the door and are greeted by lots of drawers containing cases of movable type, however
+            all but one are locked. 
+            The smell of wood fills the room. On the wall beside you is an explanatory note.</p>
+
+            <details><summary>read the note</summary>
+            <p>hi there! i've been a font connoisseur for a while now, specifically free fonts.
+            Though, if you buy a font for. the high prices they command, you're very likely to have
+            a higher quality font, more attention to detail and stuff (fontmaking is tedious and 
+            sometimes painful work so i kinda get it). But that doesnt take away from the fact that 
+            some wonderful souls have made great fonts and made it available for free, for everyone!
+            All the fonts on this site are such! And even with. maybe lower quality or weirder fonts,
+            you can still make some bangin' designs with them. Except for default fonts, they look boring.<br>
+            
+            This page is basically all the free fonts i've found so far, as well as the people and 
+            foundries who made them and other fontful sites so, if you didn't find a font you like here,
+            you'll find them there! Most of the fonts here are under the Open Font License (in super short 
+            terms, you can use it freely, modify and redistribute it but sometimes you need to change the name, 
+            and be credited for your work. please read the 
+            <a href="https://openfontlicense.org/open-font-license-official-text/">full license</a> for the actual words.)
+            But some fonts are under different licenses, and i'll reference their respective licenses.<br>
+            
+            Some are unique, some are bland, some are overused, some are clones. Download and use them today!
+            or don't im not your mom</p></details>
+            
+            <nav id="fonts-by-type">
+                <h2 id="grotesques"><a href="grotesques">grotesques</a></h2>
+            </nav>
+    </main>
+    </body>
+</html>
