@@ -27,7 +27,7 @@ details[open]> ::selection{background-color: var(--color); color: var(--back)}
 .subcategory:hover > summary h2, 
 .subcategory[open] > summary h2{color: var(--color)}
 
-.font{border: dotted 1px var(--color); padding: 12px; 
+.font{border: dotted 1px var(--color); padding: 12px 12px 0; 
     border-radius: 12px; margin: 16px 0; width: fit-content}
 .font img{width: 100%}
 .font p{max-width: 500px}
