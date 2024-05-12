@@ -4,12 +4,24 @@
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
         <link href="../style.css" rel="stylesheet" type="text/css" media="all">
         <title>fonts</title><style>
+            @font-face {
+                font-family: 'Gothic A1';
+                font-weight: normal;
+                src: url(../assets/GothicA1-Regular.ttf);
+            }
+            @font-face {
+                font-family: 'Gothic A1';
+                font-weight: bold;
+                src: url(../assets/GothicA1-Bold.ttf);
+            }
             body{--back: black;
                 --text: white;
                 --color: deeppink;
                 font-family: 'Gothic A1', sans-serif}
 
             details, summary{--color: mediumseagreen}
+
+            h1, h2, b{font-weight: 700;}
 
             #fonts-by-type{max-width: 20rem;}
             #fonts-by-type a{text-decoration: none; width: auto;

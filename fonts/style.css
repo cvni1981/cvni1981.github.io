@@ -6,10 +6,10 @@
 @font-face {
     font-family: 'Gothic A1';
     font-weight: bold;
-    src: url(../assets/GothicA1-Black.ttf);
+    src: url(../assets/GothicA1-Bold.ttf);
 }
 
-h1, h2, b{font-weight: 800;}
+h1, h2, b{font-weight: 700;}
 h2{margin: 0 0 8px; display: inline; font-size: 1em}
 h3::before{content: "- "; color: var(--color)}
 h3{margin: 0 0 8px}
