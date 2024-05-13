@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Space Grotesk';
+    font-weight: normal;
+    src: url(SpaceGrotesk-Regular.otf);
+    font-feature-settings:'ss02', 'ss03', 'ss04', 'ss05', 'case';
+}
+@font-face {
+    font-family: 'Space Grotesk';
+    font-weight: bold;
+    src: url(SpaceGrotesk-Bold.otf);
+    font-feature-settings:'ss02', 'ss03', 'ss04', 'ss05', 'case';
+}
+
+body{--back: #040404;
+    --text: #f0f0f0;
+    --color: #15c405;
+    font-family: 'Space Grotesk', sans-serif}
+::selection{background-color: var(--color);}
+
+@media (max-width: 600px) {
+    body{display: block}
+    header{height:auto; border-right: none; border-bottom: solid 1px var(--color);
+        background-color: var(--back); text-align: left;
+        max-width: none; position:sticky; top: calc(-2em - 10px); padding: 0 24px}
+    main{max-width: 40rem}
+    nav{display:block;}
+    nav a{display: inline}}

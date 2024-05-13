@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <title>basement</title><style>
+            @font-face {
+                font-family: 'Inconsolata';
+                font-variation-settings: 'wdth' 112;
+                src: url(../assets/Inconsolata-VariableFont_wdth\,wght.ttf);}
+            body{background-color: aliceblue; color: darkslategray;
+                font-family: 'Inconsolata'; 
+                margin: 0; width: 100vw; height: 100vh;}
+            main{margin: auto 24px auto max(min(48px, calc((100vw - 30rem) / 2)), 24px); padding-top: 24px; max-width: 30rem}
+            p{margin: 0}
+            ::selection{color: aliceblue; background-color: darkslategray}
+            a{color: darkslategrey; transition: all .5s cubic-bezier(0,1,0,1); 
+                font-weight: 900}
+
+            #back:hover{background-color: black; color: white}
+            #misc:hover{background-color: #040404; color: #15c405}
+
+            nav{margin: 24px 0}
+            nav a{text-decoration: none; display: inline-block;
+                border: solid 1px aliceblue; padding: 8px 12px}
+            nav h2{display: inline-block; width: 100%; margin: 12px 0}
+        </style></head>
+    <body><main>
+        <p>You walk down the stairs into the basement, lit up by cool white lights.
+            Hospital vibes. Once again, you see doors but you can only open one of them,
+            with the words "staff only" scribbled over with sharpie.
+        </p>
+        <nav>
+            <h2 style="text-align: left;"><a id='back' href="../corridor">↖ back to corridor</a></h2>
+            <h2 style="text-align: right;"><a id='misc' href="misc">misc →</a></h2>
+        </nav>
+    </main>
+    </body>
+</html>

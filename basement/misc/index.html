@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../../style.css" rel="stylesheet" type="text/css" media="all">
+        <link href="style.css" rel="stylesheet" type="text/css" media="all">
+        <title>> misc</title><style>
+            h1::before{content: ">"} 
+
+            #objects{align-items: start; font-weight: bold; font-size: 1.5rem; padding-left: 24px}
+            #objects a{text-decoration: solid underline 2px var(--color); display: inline-block;
+                border: solid 1px #040404; padding: 8px 12px;}
+            #objects{list-style-type: "> "; color: var(--color)}
+            #objects a:hover{border-color: var(--color); background-color: var(--back);
+                color: var(--color)}
+        </style></head>
+    <body><header><h1>misc</h1>
+        <nav><a href="../../basement">↩ back</a></nav></header>
+    <main>
+        <p>As you enter the room, you wonder why you haven't seen a single person here yet.
+            You wonder if you are being watched. Doesn't look like it.<br>
+            You wander carefully around the room, with air smelling  of drywall and lit up 
+            sparsely by monochromatic green lights. It's nauseating.<br>
+            Other than that, you see a writing table with a notebook on it.
+            You also see a filing cabinet next to a scratched and dented wall, covered with
+            sticky notes.
+        </p>
+        <ul role="navigation" id="objects">
+            <li><a href="journal">open the notebook</a></li>
+        </ul>
+    </main>
+    </body>
+</html>
