@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../style.css" rel="stylesheet" type="text/css" media="all">
+        <title>blender</title><style>
+            body{--back: black;
+                --text: ghostwhite;
+                --color: royalblue;
+                font-family: 'Uncut Sans', sans-serif}
+
+            details:hover, details[open]{--back: var(--text)}
+
+            #expos a{width: fit-content; margin: 0;
+                font-weight: bold;
+                font-size: 1.5rem; padding: 8px 16px; 
+                display: inline; text-decoration: none}
+            #expos a:hover {
+                background-color: var(--color);
+                color: var(--back);}
+
+            #expos{display:block}
+
+            @media (max-width: 600px) {
+                body{display: block}
+                header{height:auto; border-right: none; border-bottom: solid 1px var(--color);
+                    background-color: var(--back); text-align: left;
+                    max-width: none; position:sticky; top: calc(-2em - 10px); padding: 0 24px}
+                main{max-width: 40rem}
+                nav{display:block;}
+                nav a{display: inline}}
+        </style></head>
+    <body><header><h1>blender</h1>
+        <nav><a href="corridor">↩ back</a></nav></header>
+    <main>
+        <p>You enter the room and see many 3d rendered images framed on walls,
+            lit up by lights like a museum exposition. Each is marked by the expo name with
+            the number of images in parentheses. And beside you is an information plaque.</p>
+        <details id="info"><summary>read the plaque</summary>
+            <p>Hi! These are (most) of the things i've done in blender over the last while.
+            The original files are 1920x1080 (bigger even than my own display lol), so 
+            they're 400x225 to save your bandwidth at least a little bit.<br>
+            Also these images (and this site) are licensed under GPLv3.<br>
+            Most of these series weren't made in one sitting, mostly over months of suddenly 
+            wanting to do that one thing again.<br>
+            You can see how many images each page has next to the link, so if your internet 
+            isn't too good, maybe these won't be the fastest loading times...</p></details>
+        <nav id="expos">
+            <a href="icossymetry">icossymetry (40)</a>
+        </nav>
+        <img src="shadow.png" alt="a handdrawn sphere casting a shadow" style="margin: 5rem 0 0 ; max-width: 100%; width: auto">
+    </main>
+    </body>
+</html>
