@@ -1,0 +1,12 @@
+body{background-color: #f8f8f8; color: #101010;
+    margin: 24px max(min(10rem, calc((100vw - 40rem) / 2)), 24px);
+    font-family: 'Uncut Sans', sans-serif; max-width: 40rem;
+    --color: #734030;
+    font-feature-settings: 'ss04', 'ss03', 'ss02', 'ss01';}
+a{text-decoration: underline .1em var(--color);
+    color: #101010;
+    transition: all .5s cubic-bezier(.08,.82,.17,1)}
+a:hover{color: var(--color)}
+h1{font-family: 'Righteous'; margin: 0 0 8px; font-size: 2.5rem}
+p{margin: 0}
+h2{margin: 0}

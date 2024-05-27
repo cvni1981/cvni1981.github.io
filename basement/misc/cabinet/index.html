@@ -5,6 +5,34 @@
         <link href="../../../style.css" rel="stylesheet" type="text/css" media="all">
         <link href="../style.css" rel="stylesheet" type="text/css" media="all">
         <title>/ cabinet</title><style>
+            details{border-color: var(--back); margin: 8px 0}
+            details:hover, details[open]{border-color: var(--color); background-color: var(--back);
+                color: var(--text)}
+            details a{color: var(--text)}
+            details a:hover{background-color: var(--color); color: var(--back)}
+            details:hover>summary,details[open] > summary{border-color: var(--color); color: var(--color);}
+            .image img{max-width: 150px; height:auto; margin-right: 16px}
+            .image{display: flex; margin: 16px 0 6px; align-items: start;}
+            .image p{margin-top: -4px}
+            ul img{max-width: 100%}
+            ul{list-style-type: "- ";}
+
+            #i:hover, #i[open]{background-color: #fafbff;
+                color: #080808;
+                --color: #080808}
+            #i a{color: #080808}
+            #i a:hover{color: #fafbff}
+
+            details > details{--color: #47a0ff}
+            details > details > details{--color: #ff0000}
+
+            a.top{display: block; width: fit-content; padding: 4px 6px;margin: 2px; border: solid 1px var(--color);
+                text-decoration: none}
+
+            @media (max-width: 450px) {
+                .image{flex-direction: column}
+                .image p{padding: 8px 0; border-bottom: dotted 1px var(--color)}
+            }
         </style></head>
     <body><header><h1>cabinet</h1>
         <nav><a href="#">↑ top</a> <a href="../../misc">↩ back</a></nav></header>
@@ -15,6 +43,404 @@
                 it might take a bit to load them depending on your connection</b>. as well as
                 that <b>some pages may not be screenreader friendly</b>.
         </p>
+
+        <details id="indexes">
+            <summary>index archive</summary>
+            <p>self-explanatory.</p>
+            <ul>
+                <li><a href="indexes/index">index</a>: the earliest version, with rounded corners.</li>
+                <li><a href="indexes/index2">index2</a>: a version with a sidebar and descriptions for pages.</li>
+                <li><a href="indexes/index3">index3</a>: a simpler version without a sidebar.</li>
+                <li><a href="indexes/index4">index4</a>: an even simpler version designed for mobile first.</li>
+                <li><a href="indexes/index5">index5</a>: a landing page that <i>then</i> led to the main index (index4).</li>
+                <li><a href="indexes/index6">index6</a>: a combination of the simple design with a sidebar and a new font.</li>
+                <li><a href="indexes/index7">index7</a>: another version but with more details like shadows and a blue tint.</li>
+                <li><a href="indexes/index8">index8</a>: yet another verion, but with glowing rectangles and back to dark mode.</li>
+                <li><a href="indexes/index9">index9</a>: a more basic version, following the formula of the pagelist on the right, and with an arrow motif!</li>
+                <li><a href="indexes/arrow">arrow</a>: a possible landing page that led to index8. idk if used it</li>
+            </ul>
+        </details>
+
+        <details id="pages">
+            <summary>page archive</summary>
+            <p>pages that mostly didnt see the light of day, some i just used to practice layout and css.</p>
+            <details id="toki pona v1">
+                <summary>toki pona v1</summary>
+                <p>an attempt at making a toki pona course, using colors to help learning!
+                    It's unfinished ofc, that's why it's here. Kind of a shame but tbh we don't
+                    rlly need <i>another</i> toki pona course. There are already great ones out there.
+                </p>
+                <ul><li><a href="pages/toki-pona-1/intro">intro</a></li>
+                    <li><a href="pages/toki-pona-1/one">#1: the basics</a> (very unfinished)</li></ul>
+                <details id="unused_images"><summary>unused images</summary>
+                    <p>These were to be used in the very unfinished #1 page. The colorcoding: red is the 
+                        subject (preceded by li, after en if there are multiple), yellow is the predicate
+                        (followed by li), blue is the object (after e). Also notice these fit the 2 toki pona
+                        colors, loje (red), jelo (yellow) and laso (blue/green)!</p>
+                    <div class="image"><img src="pages/toki-pona-1/sitelen1/ike.png">
+                        <p>ike! ...idk where this would be used</p></div>
+                    <div class="image"><img src="pages/toki-pona-1/sitelen1/jan.png">
+                        <p>jan (person)</p></div>
+                    <div class="image"><img src="pages/toki-pona-1/sitelen1/lape.png">
+                        <p>lape (sleep)</p></div>
+                    <div class="image"><img src="pages/toki-pona-1/sitelen1/mitoki.png">
+                        <p>mi toki (mi = red = subject, toki = yellow = predicate)</p></div>
+                    <div class="image"><img src="pages/toki-pona-1/sitelen1/moku.png">
+                        <p>moku (food/eating)</p></div>
+                    <div class="image"><img src="pages/toki-pona-1/sitelen1/nom.png">
+                        <p>mi moku... e moku (moku = blue = object)</p></div>
+                    <div class="image"><img src="pages/toki-pona-1/sitelen1/onalitoki.png">
+                        <p>ona li toki</p></div>
+                    <div class="image"><img src="pages/toki-pona-1/sitelen1/pona.png">
+                        <p>pona! ...i have no idea where this went either</p></div>
+                    <div class="image"><img src="pages/toki-pona-1/sitelen1/pro.png">
+                        <p>pronouns: ona, mi, sina</p></div>
+                    <div class="image"><img src="pages/toki-pona-1/sitelen1/suli.png">
+                        <p>suli</p></div>
+                    <div class="image"><img src="pages/toki-pona-1/sitelen1/toki.png">
+                        <p>toki</p></div>
+                    <div class="image"><img src="pages/toki-pona-1/sitelen1/tokipona.png">
+                        <p>toki pona</p></div>
+                    <div class="image"><img src="pages/toki-pona-1/sitelen1/tokisuli.png">
+                        <p>the modifier comes <b>after</b> the word being modified, not before like in english.</p></div>
+                    <a role="navigation" href="#unused_images" class="top">↑ top of folder</a></details>
+                <details id="roadmap_and_part_1_script"><summary>roadmap and part 1 script</summary>
+                    <p>basic sentence structure
+                        <br>adjectives and pi
+                        <br>preverbs
+                        <br>prepositions
+                        <br>o and anu
+                        <br>multiple subjects/pred/objects
+                        <br>names
+                        <br>asking things
+                        <br>taso and la
+                        <br>numbers
+<br>
+                        <br>kili anu kasi la seme li pona tawa sina
+<br>
+                        <br>(add in 'a!' somewhere)
+<br>
+                        <br>Alright! Let's start off with the very absolute basics of saying things in toki pona.
+<br>
+                        <br>In super dumb basic terms, a sentence can be divided into 2 (sometimes 3) main bits:
+<br>
+                        <br>subject (the main actor/object)
+                        <br>predicate:
+                        <br>verb (what the subject is/does)
+                        <br>object (what the subject does to)
+<br>
+                        <br>Let's see an example in English:
+<br>
+                        <br>John eats an apple.
+                        <br>John is the main actor, his action is eating and what he eats is an apple!
+<br>
+                        <br>(btw, the main order used in English is SVO (subject verb object), but other languages (actually most of them!) may use other orders of things)
+<br>
+                        <br>In toki pona, it works much the same way (in SVO order too!), but here, the different phrase bits are separated by 2 particles:
+<br>
+                        <br>li: comes before the predicate
+                        <br>e: comes before the object (if there is one)
+<br>
+                        <br>Since we're just starting, i'll give you some words to start off with, some of them you already know (if you looked at the intro first):
+<br>
+                        <br>1 . mi
+                        <br>2 . sina
+                        <br>3 . ona
+                        <br>4 . li
+                        <br>5 . e
+                        <br>6 . toki
+                        <br>7 . pona
+                        <br>8 . suli
+                        <br>9 . jan
+                        <br>10. lape
+                        <br>11. ike
+                        <br>12. moku
+<br>
+                        <br>Let's do... I'm eating. How would you say that?
+<br>
+                        <br>mi li lape?
+<br>
+                        <br>Actually no, only for mi and sina (when they're on their own) you don't actually use li! It might look like it makes it more ambiguous but it actually works fine.
+<br>
+                        <br>mi moku.
+<br>
+                        <br>Also, notice that moku doesn't have any tense. "mi moku" can mean i eat, i ate, i will eat, i have eaten, i am eating, etc etc etc.
+                        <br>Again, context will tell you which is right.
+<br>
+                        <br>Cool! What else?
+<br>
+                        <br>ona li suli.
+<br>
+                        <br>They are / It is... Big? Important? Old?
+                        <br>Again, context will tell.
+<br>
+                        <br>What about they are talking?
+<br>
+                        <br>ona li toki.
+<br>
+                        <br>Some more examples but with objects this time:
+<br>
+                        <br>moku li pona e mi.
+<br>
+                        <br>toki li suli e jan.
+<br>
+                        <br>Another thing you might have picked up in the intro is how one word can almost act as an adjective and modify the one that comes before it!
+                        <br>Actually that's important: the modifier modifies the word(s) that come *before* it, instead of after it, like in english.
+<br>
+                        <br>Say, "big speech."
+<br>
+                        <br>You wouldn't say suli toki, that would mean something more like greatness that has to do with speech or smth like that.
+<br>
+                        <br>toki suli, on the other hand, can mean big speech, or important language or etc.
+<br>
+                        <br>This is actually how the language's name works!
+<br>
+                        <br>toki pona means good language or "the language of good". How nice!
+<br>
+                        <br>I'll talk more about how modifiers work in the next lesson BUT, before i go, some more thingies!
+<br>
+                        <br>sina pona.
+<br>
+                        <br>This means "you're good". But you can also use it in a conversation to mean "thank you!"
+<br>
+                        <br>"Hey, I made some food"
+                        <br>"Hey, that tastes real good, great job!"
+                        <br>"sina pona!"
+<br>
+                        <br>"... what"
+<br>
+                        <br>Another SUPER DUPER important thing to learn in toki pona is this:
+<br>
+                        <br>jan pona.
+<br>
+                        <br>It means "good person", but is also the main way to say "friend" in toki pona!
+<br>
+                        <br>sina jan pona.
+                        <br>sina pona!
+<br>
+                        <br>So... that's it for now.
+<br>
+                        <br>What??? Already over??
+                        <br>C'mon i only learned twelve words :'(
+<br>
+                        <br>Yeah, but there are still over 100 words left to go, and a bunch more things to learn to say in toki pona so...
+                        <br>That's it for now! 
+                        <br>You now know how to:
+                        <br>Say basic sentences in toki pona
+                        <br>Call someone your friend
+                        <br>Say thank you
+                        <br>(i prob forgot other things too)
+                        <br>in toki pona!
+<br>
+                        <br>Next time, even more words so you can know how to say even more things.
+                        <br>mi tawa!
+                    </p>
+                    <a role="navigation" href="#roadmap_and_part_1_script" class="top">↑ top of text</a>
+                </details>
+            </details>
+
+            <details id="toki pona v2">
+                <summary>toki pona v2</summary>
+                <p>another attempt at a toki pona guide, but now scaled down to just the grammar. unfinished just the same.</p>
+                <ul><li><a href="pages/toki-pona-2/">toki pona v2 index</a></li></ul>
+
+                <details id="roadmap"><summary>roadmap</summary>
+                <p>
+                    pronouns and li
+                    <br>e and modifiers 
+                    <br>    nasin nasa: subjectless phrases and lexicalization
+                    <br>pi and interjections
+                    <br>    nasin nasa(ike): multiple pi
+                    <br>multiple subjects/verbs/objects
+                    <br>preverbs and o
+                    <br>preposition and ni
+                    <br>    nasin nasa(pona): directional ni
+                    <br>numbers and names
+                    <br>    nasin nasa: headless names
+                    <br>questions and anu
+                    <br>taso and LA (most powerful tool in toki pona)
+                </p></details>
+
+            </details>
+
+            <ul>
+                <li><a href="pages/difference">difference</a>: a thing about the importance of difference. Moved it here because it... doesn't really fit. (Also i keep having to change this page every time i change the design of the site.) (and also because i now understand that <b>difference isn't as important as <s>equality</s> equity</b>.) (both are equally important tbh)</li>
+                <li><a href="pages/blips">blips</a>: short poems in pages that, though i like the vibe of them, they don't display properly on mobile.</li>
+                <li><a href="pages/weather">weather</a>: my first thing with css, that uses wttr.in to get the weather where you tell it. It doesnt store your location anywhere, as you can tell by you having to tell it the location every time you open it.</li>
+                <li><a href="pages/zine/0">nameless zine</a>: refer to <a href="journal#zine">journal entry</a>. Also the first time i used Work Sans!</li>
+                <li><a href="pages/lipu-tenpo/">lipu tenpo</a>: a webzine version of lipu tenpo, partially driven by... anger at its new design. Also mainly just to flex my layouting muscles.</li>
+                <li><a href="pages/latex_test.html">latex test</a>: a test for MathJax, a thing that lets you put LaTEX formulas in html! This specifically is some stuff i learned in uni about electron energy levels.</li>
+                <li><a href="pages/nothing">unprobable blog</a>: the sole post in a blog i knew i wouldn't really keep posting on. so here it is.</li>
+                <li><a href="pages/hi">hi</a>: hi</li>
+                <li><a href="pages/ilo_katen">ilo Katen</a>: a toki pona diary entry thing from a future.</li>
+                <li><a href="pages/fuleponhinep">fulepõhiné</a>: a half-done crappy mostly a priori conlang, mostly just css practice.</li>
+            </ul>
+            <a role="navigation" href="#pages" class="top">↑ top of folder</a>
+        </details>
+
+        <details id="images">
+            <summary>image archive</summary>
+    
+            <details id="buttons">
+                <summary>buttons</summary>
+                <p>With (almost) every site redesign came the need for a new button to match.</p>
+                <div class="image"><img src="images/nowhere1.gif">
+                    <p>The first version with the dark theme and old font, Inter (a Helvetica clone).</p></div>
+                <div class="image"><img src="images/nowhere2.gif">
+                    <p>A version with quicker timing and a light theme.</p></div> 
+                <div class="image"><img src="images/nowhere3.gif">
+                    <p>An unrounded version with the font Work Sans.</p></div>
+                <div class="image"><img src="images/nowhere4.gif">
+                    <p>A version corresponding to index 7 with a blue tint and kinda-burned in effect, also with the
+                        new header font, Inconsolata.
+                    </p></div>
+                <div class="image"><img style="max-width: 200px" src="images/nowhere5.gif">
+                    <p>A 200x40 button that took a while to make but looks pleasing!</p></div>
+                <div class="image"><img src="images/nowhere6.gif">
+                    <p>A redone version of the blue button to look like the very first button (!)</p></div>
+            </details>
+    
+            <details id="dingus">
+                <summary>dingus</summary>
+                <p>The images i used in my <a href="/website/about">about me</a> and status.cafe pages.</p><br>
+
+                <div class="image"><img style="background-color: var(--back)" src="images/dingus.png">
+                    <p>The first version, done digitally, probably GIMP.</p></div>
+                <div class="image"><img style="background-color: var(--text); border-radius: 100%;" src="images/dingus3.png">
+                    <p>A version changed to fit the light theme, now handdrawn. 
+                        Though this is not the first light mode one, that is actually the one i'm using right now. This one includes my crappy hair!</p></div>
+                <div class="image"><img style="background-color: var(--text)" src="images/dingusattempts.png">
+                    <p>The attempts at drawing the above thing, trying to get each line right ughh</p></div>
+                <div class="image"><img style="border-radius: 100%;" src="images/dingus4.png">
+                    <p>Yet another realistic version, that i scrapped bc. multiple people. This just doesn't fit.</p></div>
+                <div class="image"><img style="background-color: var(--text)" src="images/dingusattempts2.png">
+                    <p>The attempts at drawing the above thing, again</p></div>
+                <div class="image"><img src="images/redlonely.png">
+                    <p>An unused handdrawn image that was supposed to be used on my status.cafe but it doesn't... look particulalrly good.</p></div>
+                <div class="image"><img src="images/guy.png">
+                    <p>The first image i actually used to kinda represent me in status.cafe.</p></div>
+                <div class="image"><img src="images/guy2.jpg">
+                    <p>The second version, now handdrawn again.</p></div>  
+                <a role="navigation" href="#dingus" class="top">↑ top of folder</a>
+            </details>
+    
+            <div class="image"><img src="images/monsuta.png">
+            <p>i originally put this in the blender page upstairs, but the contrast sucked so i took it out. now it's here.</p></div>
+            <div class="image"><img src="images/square.png">
+            <p>another thing from the blenders, this time removed because it messed up the spacing.</p></div>
+            <div class="image"><img src="images/walking.gif">
+            <p>a neat gif that used to be in the 404 page, but i removed it to keep it Simple.</p></div>
+            <div class="image"><img src="images/walking2.gif">
+            <p>a 3d version shortly used in the first attempt at the 7th redesign.</p></div>
+            <div class="image"><img src="images/building.png">
+            <p>an image that was going to be put in a landing page (index5) that then led to the home page</p></div>
+            <a role="navigation" href="#images" class="top">↑ top of folder</a>
+        </details>
+
+        <details id="text">
+            <summary>text archive</summary>
+            <p>.txt files i found worth putting here. mostly anxiety.</p>
+            <details id="fonts"><summary>fonts to add eventually to the site eventually</summary>
+                <p>gloock
+                <br>tilt warp
+                <br>bree serif
+                <br>libre franklin
+                <br>staatliches
+                <br>anybody</p>
+            </details>
+            <details id="concreto"><summary>concreto</summary>
+            <pre style="font-size: 1.0625rem;">
+me   memo   memória   ria<br>
+                      ia<br>
+pha fálha palha lia   a<br>
+
+ex xis iste tente ente<br>
+
+porém insta tantâneo<br>
+i  i  i  i  i  i  is<br>
+s  ss  sss  ss  s<br>
+e—         não.</pre>
+            </details>
+            <details id="i"><summary>{i} note to webmaster and reader</summary>
+                <ul><li>Note to webmaster:</li></ul>
+                <p>This website can't include anything that can cause any type of problem in the future, 
+                to you or anyone so, take proper caution, however not unnecessarily extreme caution. 
+                Hence, no danger is and will ever present. All is and shall be well.</p>
+                <ul><li>Note to reader:</li></ul>
+                <p>We assure that the purposes of this page (and for that matter, the entire website) do 
+                not include illegalities of any sort, including piracy or copyright infringement.
+                The specific purpose of this section of the website ({i}) is externalizing any thoughts 
+                (of good or bad quality) so that any visitor may or may not read and, therefore, acknowledge it.
+                The pompous language featured in this section of the website ({i}) features no real purpose 
+                other than differentiating it from the remainder of the website and/or a satire/criticism of 
+                the needlessly complicated language featured in a court of law. Also, it may change between 
+                the items here featured.<br>
+                We also want to make it abundantly clear that, may you have any questions regarding anything 
+                contained in this website (related to the language or otherwise), you may contact us through 
+                <a href="http://discordapp.com/users/691348576093077535">discord</a> (where we can be contacted 
+                quickest).
+                Also, please do not take any content of this page personally.</p>
+            </details>
+            <details id="nothing"><summary>nothing</summary>
+            <p>
+                hello there fellow internet enjoyer.
+                <br>nice to have you here. very nice in fact.
+                <br>it's nice to know that someone has taken the time to explore my place to find this.
+                <br>y'know?
+<br>
+                <br>anyways... where was i, i haven't even started this...
+<br>
+                <br>just earlier today i had another idea to redesign the site completely, with a black background (again) and this time based on this circular design.
+                <br>which gave me anxiety, because it hasn't even been a single month since i redesigned this site for the 5th time, if i'm not mistaken.
+                <br>in fact, this reminded me of the whole purpose this site once had: a place for me to make something pretty, no matter how much different or simple or complex it was.
+                <br>and... it kinda lives on in the few differently styled pages. but not much.
+                <br>and i've questioned whether this whole thing of different pages having different styles was a good idea.
+                <br>...even though other sites like nyanseong.neocities.org does this, and very well might i add.
+<br>
+                <br>i suppose every page has their uniquenesses.
+                <br>...uniquenesses. that's a lot of s's.
+                <br>*ahem* anyways, this website.
+<br>
+                <br>it's grown. i don't know really how much it's grown but it has grown.
+                <br>and i've never really liked the idea of keeping a blog, probably because i'd forget about it like i've forgotten about this whole website several times...
+                <br>but, alongside the circular design idea, i had another idea for a list layout that i realized could work for a blog!
+                <br>it's simple and effective.
+                <br>i guess that's what this whole site is about, using little simple things and making the most out of them.
+                <br>and i don't really know how well that's worked tbh.
+<br>
+                <br>...what am i even rambling on about...
+                <br>i guess this blog should start somewhere, and semicoherent ramblings about this site and others seems like a good place to start.
+                <br>one thing that i've learned from making this site is about accessibility.
+                <br>i already had miniscule experience with typography but *just* enough to know that some fonts and color combinations are more legible than others.
+                <br>some times the legibility has taken a back stand to looks but, overall accessibility is one of the main goals of this site.
+<br>
+                <br>the moment it hit me straight in the head was mobile compatibility and responsive layouts.
+                <br>very very big thanks to natalie for teaching many things about this, but before i didn't know the @media rule, em units, min() and max() and many other things that i'm probably forgetting.
+                <br>probably because the way i learned CSS and HTML was just looking up videos and documentation and basically brute force.
+                <br>i guess i just like figuring out and doing things myself.
+                <br>if it worked, it was good enough, good coding practices be damned.
+                <br>mobile just wasn't in my mind when making this site.
+                <br>but with the latest redesign i made it mobile-first (mostly), so that it looks at least decent on mobile.
+<br>
+                <br>i guess that's a strength with simpler layouts, it's more maluable.
+                <br>uhm...
+                <br>i suppose this is it for now.
+                <br>if you want to see more about how this site was made, you can have a look at the misc folder and journal.
+                <br>these are the main places where i'll be talking about this site.
+                <br>this blog is meant to be about other stuff i like. if i ever feel like talking about it here.
+                <br>and i suppose this site is just a place for me to put pretty things i think look nice to the world. maybe someone else likes it too.
+<br>
+                <br>ok it's time to finish this off. thank you for reading this far!
+                <br>have a good day!
+<br>
+                <br>[also, it's just... kinda sad how probably no one will look at these words, or even the words in the words section of the page!
+                <br>well that's a way to kill my motivation instantly...
+                <br>but i guess that's how it goes on the net... *sigh*
+                <br>people putting effort into something everyone (aside from a few) will just look at once and then never visit again unless having a reason to.
+                <br>or maybe not! i don't know how people work.]
+            </p>
+            <a role="navigation" href="#nothing" class="top">↑ top of text</a></details>
+    </details>
     </main>
     </body>
 </html>

@@ -1,0 +1,40 @@
+@font-face{font-family: 'nasin-nanpa';
+  font-weight: normal;
+  src: url("nasin-nanpa-2.5.1.otf")}
+
+body {
+  background-color: #202020;
+  color: #f0f0f0;
+  font-family: 'Work Sans', 'nasin-nanpa', sans-serif;
+  line-height: 1.5;
+  font-size: x-large;
+  margin: 20px;
+  margin-left: 100px}
+
+a{color: #f0f0f0; font-weight: bold;text-decoration-color: #808080; text-decoration-thickness: 2px;}
+a:hover{text-decoration-color: #F0F0F0}
+a.small{font-weight: normal; text-decoration-thickness: 1px}
+
+h1{
+  font-weight: bold;
+  font-size: xxx-large;
+  text-decoration: underline;
+  margin: 0px}
+
+p{max-width: 800px}
+
+.tp, i{margin-left: 70px}
+
+.tp{color: #808080}
+
+u, s{text-decoration-color:#808080;
+text-decoration-thickness: 2px}
+
+.r{text-decoration-color: #e91000}
+.y{text-decoration-color: #ffee00}
+.b{text-decoration-color: #0400f0}
+
+img{float: right;
+  margin-left: 0px;
+  margin-right: -150px;
+  margin-top: -75px}

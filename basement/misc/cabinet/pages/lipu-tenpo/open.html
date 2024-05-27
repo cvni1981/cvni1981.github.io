@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet" type="text/css" media="all">
+        <title>open</title><style>
+            h1{font-size: 2rem}
+            body{max-width: none; margin: 24px max(min(10rem, calc((100vw - 50rem) / 2)), 24px);
+            display: grid; grid-template-columns: 1fr 1fr}
+            details{margin-top: 16px}
+            details p{margin: 4px 4px 8px 1.25rem}
+            summary{font-weight: bold; margin-left: 1em; font-size: 1.25rem;
+            list-style-type: '→ ';list-style-position: outside;}
+            h2{font-family: "Righteous", sans-serif;}
+            h2::before{content: "→ "}
+            h2::before{font-family: "Uncut Sans", sans-serif; font-weight: bold;}
+            details[open] > summary {list-style-type: '↓ ';}
+
+            nav{margin: 0 auto; height: fit-content; width: fit-content;
+                margin-right: 32px; 
+                padding-bottom: 16px}
+
+            #lipu-ale{display: grid; grid-template-columns: auto auto;}
+            #lipu-ale p{text-align: right; margin-top: 16px}
+
+            ul{padding: 0; margin: 0; list-style-type: "→ ";
+                margin-left: 24px; margin-top: 16px}
+            li::marker{font-weight: bold;}
+            li span{color: #101010}
+
+            @media screen and (max-width: 650px)  {
+                body{display: block;}
+                nav{margin: 16px auto; border-bottom: dotted 1px #101010; }
+                
+            }
+        </style></head>
+    <body>
+        <nav id="left-top">
+            <a href="../../../cabinet">poki lipu/back to cabinet</a><br>
+            <h2>jo</h2>
+            <div id="lipu-ale">
+            <p><b style="color: #aa884c">kulupu</b>
+            </p><ul style="color: #aa884c"><li><span>lipu tenpo li kama kulupu</span></li></ul>
+            <p><b style="color: #114444">toki pona</b>
+            </p><ul style="color: #114444">
+                <li><span>kalama pi sitelen nimi</span></li>
+                <li><span>sitelen pona li ken ala ken lon nasin Juniko</span></li>
+            </ul>
+            <p><b style="color: #aa114d">sona</b></p>
+            <ul style="color: #aa114d">
+                <li><span>o mama e kasu moku lon tomo sina</span></li>
+                <li><span>o kepeken ala e ilo ike ni</span></li>
+                <li><span>ilo tenpo poki</span></li>
+            </ul>
+            <p><b style="color: #3333cc">musi</b></p>
+            <ul style="color: #3333cc">
+                <li><span>ale li ale: namako</span></li>
+                <li><span>toki musi pi kijetesantakalu lawa</span></li>
+                <li><span>toki sona: lipu lili pi kasi ma</span></li>
+                <li><span>moli li nanpa</span></li>
+                <li><span>seme li mi</span></li>
+            </ul>
+        </div>
+        </nav>
+
+        <div id="right-bottom">
+            <p id="toki open pi jan Sonatan" style="margin-top: 16px"><b style="color: #3333cc">o kama pona</b> lon lipu tenpo!
+                tenpo … li kama lili li tawa wawa.
+                tenpo sike tu wan pini la lipu tenpo 
+                nanpa wan li kama lon. 
+                ni li tenpo suli! lipu ni la jan Alonola
+                li toki e ilo tenpo. taso lipu ni li jo 
+                e ijo ante suli kin. o kama sona e sin
+                pi lipu tenpo e ken pi toki pona tawa
+                nasin Juniko. o pona o musi kepeken lipu tenpo!<br><br>
+                <b style="color: #3333cc">— jan Sonatan</b></p>
+                <details><summary>jan pali</summary>
+                    <p>jan Alonola
+                        +&nbsp;jan Kapesi Pake
+                        +&nbsp;jan Kasape
+                        +&nbsp;jan Ke Tami
+                        +&nbsp;jan Lapate
+                        +&nbsp;jan pi nimi ala
+                        +&nbsp;jan Sonatan li <b>toki</b>.</p>
+                    <p>jan Juwan
+                        +&nbsp;jan Kasape
+                        +&nbsp;jan Ke Tami
+                        +&nbsp;jan Sonatan
+                        +&nbsp;jan Tepo li <b>alasa e pakala toki</b>.</p>
+                    <p>jan Alonola
+                        +&nbsp;jan Ke Tami
+                        +&nbsp;jan Simo li <b>sitelen</b>.</p>
+                    <p>jan Kasape li <b>sijelo e lipu tenpo</b>.</p>
+                    <p>jan Alonola
+                        +&nbsp;jan Sonatan li <b>lawa kulupu</b>.</p>
+                    <p>mute ante li <b>sijelo e lipu linluwi ni</b>.</p><br>
+                    <p style="color: #808080; text-align: right">lipu ni li tan kulupu <i>lipu tenpo e.V.</i><br>
+                        kulupu ni li lon ma Tosi.<br>
+                        mi pana e lipu ni lon tenpo nanpa 2024.</p>
+                </details>
+        </div>
+
+    </body>
+</html>

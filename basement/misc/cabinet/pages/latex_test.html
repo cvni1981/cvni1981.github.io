@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bohr model equations</title><style>
+            body{font-size: 1.25rem;
+                width: min(50rem, calc(100vw - 48px));
+                margin: 0 auto}
+        </style></head>
+
+    <body>
+        <p><a role=navigation href="../../cabinet/">back to cabinet</a><br>
+        <b><a href="https://en.wikiversity.org/wiki/De_Broglie_wavelength">1924, de Broglie</a>:</b> Electrons act like standing waves in the orbit, and its oscillation wavelength is:<br>
+        \[ \lambda = \frac{h}{mv} \]<br>
+        \(h\): Planck constant (\(\approx 6,626.10^{-34}\))<br>
+        \(m, v\): mass and velocity of the electron<br><br>
+
+        But, if the wave is standing, then a whole number of wavelengths must fit within the orbit's circumference.
+        The first harmonic (\(n=1\)) has 1 oscillation, the second (\(n=2\)) has 2 and so on.<br>
+        \[\therefore\]
+        \[number\;of\;wavelengths = circumference\]
+        \[1\lambda_1=2 \pi r_1\]
+        \[2\lambda_2=2 \pi r_2\]
+        \[3\lambda_3=2 \pi r_3\]
+        \[\vdots\]
+        \[n\lambda_n=2 \pi r_n\]<br>
+
+        Applying the de Broglie wavelength:<br>
+        \[n\left( \frac{h}{mv_n} \right)=2 \pi r_n\]
+        \[{\color{gray} \frac{nh}{mv_n}=2 \pi r_n}\]
+        \[{\color{gray} \frac{nh}{\color{red}mv_n r_n}=2 \pi}\]<br>
+
+        Since angular momentum \(L=mvr\),<br>
+        \[{\color{gray} \frac{nh}{\color{red}L}=2 \pi}\]<br>
+
+        Where \(L\) is now the electron's angular momentum.<br>Solving for \(L\):<br>
+        \[{\color{gray}nh=2 \pi L}\]
+        \[{L=\frac{nh}{2 \pi}}\]<br>
+        Which is Bohr's postulate!<br>
+
+        Another thing we can find from this is the orbit's radius (\(r_n\))!<br>
+        \[{\color{gray} \frac{nh}{mv_n}=2 \pi r_n}\]
+        \[r_n=\frac{nh}{2 \pi mv_n}\]<br>
+        
+        But we don't know the electron's velocity (\(v_n\))...<br>
+        An useful analogy is with planetary orbits, or with artificial satellites:<br>
+        For it to stay in a circular orbit, <u>the centripetal force must equal the gravitational force between the Earth and the satellite</u>:<br>
+        \[F_c=F_g\]<br>
+        
+        Applying the same logic to the eletron and the proton of the hydrogen atom, the centripetal force must equal instead the <u>electrostatic force</u> between them,
+        as given by Coloumb's law:<br>
+        \[|F_e|=k_e \frac{|Qq|}{d²}\]<br>
+        \(Q, q\): charge magnitudes<br>
+        \(d\): distance between the charges (here it's the orbit radius)<br>
+        \(k_e\): Coloumb constant (\(\approx 8,988.10^9\))<br><br>
+
+        We can further define \(k_e\) as:<br>
+        \[|F_e|=\frac{1}{4 \pi \varepsilon_0} \frac{|Qq|}{d²}\]<br>
+        \(\varepsilon_0\): <a href="https://en.wikipedia.org/wiki/Vacuum_permittivity">vacuum electric permittivity</a><br><br>
+
+        Applying the centripetal force equality:<br>
+        \[F_c=F_e\]
+        \[\frac{mv²_n}{r_n}=\frac{1}{4 \pi \varepsilon_0}\frac{|e\cdot -e|}{r²_n}\]
+        \[{\color{gray} mv²_n=\frac{e²}{4 \pi \varepsilon_0 r_n}}\]
+        \[{\color{gray} v²_n=\frac{e²}{4 \pi \varepsilon_0 r_n m}}\]
+        \[v_n=\frac{e}{\sqrt{4 \pi \varepsilon_0 r_n m}}\]<br>
+        
+        Hm, now there's an annoying square root...<br>
+        Well, we'll apply this velocity equation on the previous radius equation (inverted because it's dividing)...<br>
+        \[{\color{gray}r_n=\frac{nh}{2 \pi m{\color{red}v_n}}}\]
+        \[{\color{gray}r_n=\frac{nh}{2 \pi m}} {\color{red}\frac{\sqrt{4 \pi \varepsilon_0 r_n m}}{e}} \]<br>
+
+        And square both sides so the square root goes away!<br>
+        \[{\color{gray}r_n{\color{red}²}=\frac{n²h²}{{\color{red}4} \pi{\color{red}²} m{\color{red}²}}\frac{{\color{red}4 \pi} \varepsilon_0 {\color{red}r_n m}}{e²}}\]
+        \[r_n=\frac{n² h² \varepsilon_0}{\pi me²}\]<br>
+
+        Now we have a way to feasibly calculate the radius!<br>
+        \[{\color{gray} \frac{h² \varepsilon_0}{\pi me²}=0.529 \mathring{A}\;(10^{-10}m)}\]<br>
+
+        so for any value of \(n\):<br>
+        \[r_n=n² \cdot 0.529\mathring{A}\]
+        \[r_1=0.529\mathring{A}\]
+        \[r_2=4r_1=2.116\mathring{A}\]
+        \[r_3=9r_1=4.761\mathring{A}\]
+        \[\vdots\]<br>
+
+        The radius for \(n=1\) is called the Bohr radius, the smallest radius of a hydrogen atom!<br>
+        To figure out the energy of the electron at different levels, we use:<br>
+        \[E_n=K_n+U_n\]<br>
+        \(K_n, U_n\): kinetic and potential energies<br><br>
+
+        Where:<br>
+        \[U_n=-k_e\frac{Qq}{r}\]
+        \[=\frac{1}{4 \pi \varepsilon_0}\frac{-e²}{r}\]
+        \[K_n=\frac{m{\color{red}v²}}{2}\]<br>
+
+        Replacing the velocity with the equation we found:<br>
+        \[K_n=\frac{1}{2}{\color{green}m}{\color{red}\frac{e²}{4 \pi \varepsilon_0 {\color{green}m}r}}\]<br>
+        
+        Rearranging some terms, you might tell some similarities between \(U_n\) and \(K_n\):<br>
+        \[K_n=\frac{1}{2}\left[ \frac{1}{4 \varepsilon_0}\frac{e²}{r_n} \right]\]
+        \[U_n=-\left[ \frac{1}{4 \varepsilon_0}\frac{e²}{r_n} \right]\]<br>
+
+        So we can rearrange \(E_n=K_n+U_n\) as:<br>
+        \[E_n=\left[ \frac{1}{4 \varepsilon_0}\frac{e²}{r_n} \right] \left( \frac{1}{2}-1\right)\]
+        \[E_n=-\frac{1}{2}\left[ \frac{1}{4 \varepsilon_0}\frac{e²}{\color{red}r_n} \right]\]<br>
+
+        And replacing \(r_n\) with our equation (inverted again):<br>
+        \[E_n = \frac{-e²}{8 \pi \varepsilon_0} \cdot {\color{red}\frac{\pi me²}{n²h²\varepsilon_0}}\]
+        \[E_n = \frac{-\pi me⁴}{8\pi \varepsilon²_0 h² n²}\]<br>
+
+        Once again, we can feasibly calculate the total energy for any n!<br>
+        \[\frac{-\pi me⁴}{8\pi \varepsilon²_0 h²}\approx -13,6eV\]
+        \[E_n=\frac{-13,6eV}{n²}\]
+        \[E_1=13,6eV\]
+        \[E_2=\frac{-13,6eV}{4}=-3.4eV\]
+        \[E_3=\frac{-13,6eV}{9}=-1.51eV\]
+        \[\vdots\]<br>
+
+        And thanks to the similarities between the equations for \(E_n\), \(K_n\) and \(U_n\):<br>
+        \[U_n=2E_n=\frac{-27,2eV}{n²}\]
+        \[K_n=-E_n=\frac{+13,6eV}{n²}\]
+        <br><a role=navigation href="../../cabinet/">back to cabinet</a>
+        <br><a role=navigation href="#">back to top</a>
+        </p>
+
+    </body>
+</html>
