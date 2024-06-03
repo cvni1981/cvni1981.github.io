@@ -39,9 +39,9 @@
             @keyframes marquee {
                 from {transform: translateX(30rem)}
                 to   {transform: translateX(-100%)}}
-            .marquee {overflow: hidden; max-width: 30rem;
+            .marquee {overflow: hidden; max-width: 30rem; display: flex;
             margin: 16px 0; border: dotted 1px grey; padding: 8px 0}
-            .marquee > div {animation: linear 16s marquee infinite;
+            .marquee > #moving {animation: linear 16s marquee infinite;
                 white-space: nowrap; display: flex; gap: 8px;
                 width: fit-content}
             .marquee:hover > div{animation-play-state: paused;}
@@ -67,8 +67,11 @@
             There is also a marquee above the entrance door, an info board to your right,
             a pinboard to the left and a computer at the very end.
         </p>
-        <div class="marquee"><div>
-            <p><a href="https://status.cafe/users/cvni81" id="statuscafe_link">latest status</a><b>:</b> </p><div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=cvni81" defer></script>
+        <div class="marquee"><div style=" flex-shrink: 0;">
+            <p style="padding: 0 8px; box-shadow: black 4px 0 4px; background-color: black;">
+                <a href="https://status.cafe/users/cvni81" id="statuscafe_link">latest status</a><b>:</b> </p></div>
+            <div id="moving">
+            <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=cvni81" defer></script>
         </div></div>
         <nav>
             <h2 style="text-align: right;"><a id='about' href="about">about →</a></h2>
