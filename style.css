@@ -66,3 +66,12 @@ a:hover{background-color: var(--color); color: var(--back); text-decoration-colo
 
 @media (max-width: 600px) {
     nav{margin: 16px 0}}
+
+@media (max-width: 600px) {
+    body{display: block}
+    header{height:auto; border-right: none; border-bottom: solid 1px var(--color);
+        background-color: var(--back); text-align: left;
+        max-width: none; position:sticky; top: calc(-2em - 10px); padding: 0 24px}
+    main{max-width: 40rem}
+    nav{display:block; margin: 16px 0}
+    nav a{display: inline}}
