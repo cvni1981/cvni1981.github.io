@@ -30,7 +30,8 @@
     src: url(assets/Fraunces-Italic[SOFT\,WONK\,opsz\,wght].ttf);
 }
 
-body{background-color: var(--back); color: var(--text);
+body{--backtrans: 80%;
+    background-color: var(--back); color: var(--text);
     display: flex; margin: 0; width: 100vw;
     flex-direction: row; align-items: stretch}
 
@@ -70,7 +71,7 @@ a:hover{background-color: var(--color); color: var(--back); text-decoration-colo
 @media (max-width: 600px) {
     body{display: block}
     header{height:auto; border-right: none; border-bottom: solid 1px var(--color);
-        background-color: color-mix(in srgb, var(--back) 80%, transparent); text-align: left;
+        background-color: color-mix(in srgb, var(--back) var(--backtrans), transparent); text-align: left;
         max-width: none; position:sticky; top: calc(-2em - 10px); padding: 0 24px; backdrop-filter: blur(8px);}
     main{max-width: 40rem}
     nav{display:block; margin: 16px 0}
