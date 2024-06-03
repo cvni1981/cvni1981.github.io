@@ -1,0 +1,11 @@
+body{--back: black;
+    --text: ghostwhite;
+    --color: royalblue;
+    font-family: 'Uncut Sans', sans-serif}
+
+.image{display:grid; grid-template-columns: 50% calc(50% - 16px); gap: 16px}
+img{max-width: 100%}
+
+@media only screen and (max-width: 500px) {
+    .image{display: block}
+}
