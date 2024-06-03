@@ -7,6 +7,7 @@
             body{--back: #0d0542;
                 --text: #ffb135;
                 --color: #c3c0ff;
+                --backtrans: 50%;
                 font-family: 'Uncut Sans', sans-serif}
 
             h1::before{content: "→"; color: var(--color)}
@@ -22,15 +23,6 @@
             main{padding-left: max(min(48px, calc((100vw - 30rem) / 2)), 24px);}
 
             ::selection{background-color: var(--color)}
-
-            @media (max-width: 600px) {
-                body{display: block}
-                header{height:auto; border-left: none; border-bottom: solid 1px var(--color);
-                    background-color: var(--back); text-align: right;
-                    max-width: none; position:sticky; top: calc(-2em - 10px); padding: 0 24px}
-                main{max-width: 40rem; padding-left: 24px}
-                nav{display:block;}
-                nav a{display: inline}}
         </style></head>
     <body><header><h1>&nbsp;book&shy;marks</h1>
         <nav><a href="#">↑ top</a> <a href="corridor">← back</a></nav></header>
