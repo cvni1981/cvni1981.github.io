@@ -14,14 +14,6 @@
 body{--back: #040404;
     --text: #f0f0f0;
     --color: #15c405;
+    --backtrans: 50%;
     font-family: 'Space Grotesk', sans-serif}
 ::selection{background-color: var(--color);}
-
-@media (max-width: 600px) {
-    body{display: block}
-    header{height:auto; border-right: none; border-bottom: solid 1px var(--color);
-        background-color: var(--back); text-align: left;
-        max-width: none; position:sticky; top: calc(-2em - 10px); padding: 0 24px}
-    main{max-width: 40rem}
-    nav{display:block;}
-    nav a{display: inline}}
