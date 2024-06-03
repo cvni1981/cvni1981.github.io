@@ -39,8 +39,8 @@
             @keyframes marquee {
                 from {transform: translateX(30rem)}
                 to   {transform: translateX(-100%)}}
-            .marquee {overflow: hidden; max-width: 30rem; display: flex;
-            margin: 16px 0; border: dotted 1px grey; padding: 8px 0}
+            .marquee {overflow: hidden; max-width: 30rem; display: flex; justify-content: flex-end;
+            margin: 16px 0; border: dotted 1px grey; padding: 8px 0; flex-direction: row-reverse;}
             .marquee > #moving {animation: linear 16s marquee infinite;
                 white-space: nowrap; display: flex; gap: 8px;
                 width: fit-content}
@@ -67,12 +67,13 @@
             There is also a marquee above the entrance door, an info board to your right,
             a pinboard to the left and a computer at the very end.
         </p>
-        <div class="marquee"><div style=" flex-shrink: 0;">
-            <p style="padding: 0 8px; box-shadow: black 4px 0 4px; background-color: black;">
-                <a href="https://status.cafe/users/cvni81" id="statuscafe_link">latest status</a><b>:</b> </p></div>
+        <div class="marquee">
             <div id="moving">
-            <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=cvni81" defer></script>
-        </div></div>
+                <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=cvni81" defer></script>
+        </div>
+        <div style=" flex-shrink: 0; z-index: 1">
+            <p style="padding-left: 8px; box-shadow: black 4px 0 4px; background-color: black;">
+                <a href="https://status.cafe/users/cvni81" id="statuscafe_link">latest status</a><b>:</b> </p></div></div>
         <nav>
             <h2 style="text-align: right;"><a id='about' href="about">about →</a></h2>
             <h2 style="text-align: left;"><a id='bookmarks' href="bookmarks">← bookmarks</a></h2>
