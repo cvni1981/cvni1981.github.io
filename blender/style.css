@@ -3,6 +3,8 @@ body{--back: black;
     --color: royalblue;
     font-family: 'Uncut Sans', sans-serif}
 
+a:hover{color: var(--text)}
+
 .image{display:grid; grid-template-columns: 50% calc(50% - 16px); gap: 16px}
 img{max-width: 100%}
 
