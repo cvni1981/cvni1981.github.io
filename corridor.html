@@ -23,14 +23,11 @@
 
             #about:hover{background-color: ghostwhite; color: royalblue}
             #bookmarks:hover{background-color: #0d0542; color: #ffb135; border-color: #ffb135;}
+            #blender:hover{background-color: royalblue; color: ghostwhite;}
             #buttons:hover{background-color: lightsteelblue; color: royalblue;}
             #basement:hover{background-color: aliceblue; color: darkslategray}
             #sitelog:hover{color: orange; border-color: sienna;}
 
-            #note{border: solid 1px white; margin: 24px 0; padding: 8px 12px; 
-                width: fit-content; transition: all .5s cubic-bezier(0,1,0,1)}
-            #note:hover, #note[open]{border-color: yellowgreen; background-color: yellowgreen; color: black}
-            #note > ::selection{color: yellowgreen}
             summary{font-weight: 900; list-style-type: '→ ';}
             details[open] > summary {list-style-type: '↓ ';
                 border-bottom: dotted 1px black; 
@@ -52,20 +49,9 @@
 
         </style></head>
     <body><main>
-        <p>You open the door into a corridor and stumble upon a note tacked on the wall:</p>
-        <details id="note"><summary>look at the note</summary>
-        <p>oh hey! welcome back to my website. it's going through some changes. 
-            again. for the 8th time, by my counts.<br>it's just that i keep coming across
-            new things and my feelings change. as does everything tbh<br>so. i'm redoing and
-            reorganizing things around here. like adding this corridor. makes it more obvious
-            that this is a real place yk<br>
-            and with all the doors you see i plan to add a bunch of stuff, <s>including my stash
-            of OFL fonts!</s><br>ig its a party trick of mine. or a sign of adhd.<br>so yeah. 
-            expect more stuff here in the future!<br><br>-- cvni81
-        </p></details>
-        <p>You see doors on either side of the corridor, all shut and unopenable except for two.
-            There is also a marquee above the entrance door, an info board to your right,
-            a pinboard to the left and a computer at the very end.
+        <p>You open the door into a corridor. <br>
+            You see doors on either side of the corridor. There is a marquee and 2 pinboards.
+            <br>You can faintly see a computer at the very end.
         </p>
         <div class="marquee">
             <div id="moving">
@@ -78,6 +64,7 @@
         <nav>
             <h2 style="text-align: right;"><a id='about' href="about">about →</a></h2>
             <h2 style="text-align: left;"><a id='bookmarks' href="bookmarks">← bookmarks</a></h2>
+            <h2 style="text-align: right;"><a id='blender' href="blender">blender →</a></h2>
             <h2 style="text-align: left;"><a id='buttons' href="buttons">← buttons</a></h2>
             <h2 style="text-align: right;"><a id='basement' href="basement">basement →</a></h2>
             <h2 style="text-align: center;"><a id='sitelog' href="sitelog">sitelog →</a></h2>
