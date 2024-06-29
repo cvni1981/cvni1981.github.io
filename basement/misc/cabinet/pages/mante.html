@@ -2,46 +2,100 @@
 <html>
     <head>
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-        <link href="../../../..//style.css" rel="stylesheet" type="text/css" media="all">
         <title>→ server names</title><style>
-        body{--back: hsl(0, 0%, 3%);
-        --text: #f0f0f0;
-        --color: #5dcbfc; font-family: 'Uncut Sans', sans-serif;}
-        ::selection{background-color: #f6abb6}
-        a::selection{background-color: var(--color)}
+        @font-face {
+            font-family: 'Aspekta';
+            font-weight: normal;
+            font-feature-settings: 'ss02';
+            src: url(../../../../assets/Aspekta_Variable_Regular.ttf);}
+        @font-face {
+            font-family: 'Aspekta';
+            font-weight: bold; font-feature-settings: 'ss02';
+            font-variation-settings: 'wght' 700;
+            src: url(../../../../assets/Aspekta_Variable_Regular.ttf);}
+        body{background-color: #080808;
+        color: #f0f0f0; margin: -0;
+        flex-direction: row-reverse;
+        font-family: 'Aspekta', sans-serif;}
+
+        *{transition: all .5s cubic-bezier(0,1,0,1)}
+
+        main{max-width: 40rem; padding-top: 16px;
+            margin: 0 max(min(10rem, calc((100vw - 40rem) / 2)), 24px);}
+        header{text-align: right; position: sticky; top: calc(-24px - 3rem);
+            margin: 0 0 0 auto; padding: 12px 14px; width: fit-content;}
+        nav.top{margin-top: 12px;}
+        nav.top a{text-decoration: none; border: solid 1px #5dcbfc; background-color: #08080880;
+            backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px; padding: 4px 10px; box-shadow: #5dcbfc00 0px 0px;}
+        nav.top a:hover{border-color: #f6abb6; color: #080808;
+            box-shadow: #5dcbfc 6px 6px; background-color: #f6abb6}
+        h1{margin:0; font-size: 3rem}
+        h1:before{content:"/"; color: #5dcbfc}
+        ::selection{background-color: #f6abb6; color: #080808}
+
+        a::selection{background-color: #5dcbfc}
+        a{color: #f0f0f0; text-decoration-color: #5dcbfc;}
+        a:hover{color: #5dcbfc}
+
         .name{color: #f6abb6}
         .name::selection{background-color: #5dcbfc}
         .tab:hover{background-color: #14052b; color: #23f3ad}
-        details{margin-top:0; border-color: #f6abb6}
+
+        details{margin-top:0; border: solid 1px #f6abb6; width: fit-content;
+        padding: 4px 10px; border-radius: 6px; height: fit-content}
+        details p{margin: 0}
         details[open]{background: linear-gradient(342deg, #5dcbfc 0%, #f6abb6 100%); 
-            border-color: var(--back)}
-        details:hover{background-color: #f6abb6;}
-        nav a{text-decoration-color: #f6abb6;}
-        nav a:hover{background-color: #f6abb6}
+            border-color: var(--back); height: auto}
+        details:hover{background-color: #f6abb6}
+        details:hover, details[open]{color: #080808; border-radius: 12px}
+
+        summary{list-style-type: '→ ';}
+        summary::marker{font-weight: bold;}
+        details[open] summary{border-bottom: dotted 1px #080808; padding-bottom: 5px;
+            list-style-type: '↓ '}
+
+        details[open] summary ~ * {
+            animation: sweep .5s cubic-bezier(0,1,0,1);}
+
+        ul{list-style-type: "- ";}
+        li:nth-child(4n+1)::marker{color: #f6abb6}
+        li:nth-child(4n+1) .name{color: #5dcbfc}
+        li::marker{color: #5dcbfc}
+
+        details li::marker, details li:nth-child(4n+1)::marker{color: #080808}
+
+        @keyframes sweep {
+        from {transform: translateY(-1rem);}
+        to   {transform: translateY(0)}
+        }
+
         </style></head>
     <body><header>
         <h1>mante</h1>
         <nav class="top"><a href="#">back to top</a></nav></header>
     <main>
         <details id="notes"><summary><b>notes</b></summary>
-            <p>These are only the names present in the audit log; there might be other names before june 4th.<br>
+            <p style='margin-top: 5px'>These are only the names present in the audit log; there might be other names before june 4th.<br>
                 Also this is accurate to as long as i can keep updating this and/or discord doesn't implode and mante still stands<br>
                 I don't know why there are 2 🦗 at the start of the july 11 ones, but i can't fix it; probably some RTL thing<br>
-                Also i probably missed some names between 26/4 and 6/5/2024 oops
+                Also i probably missed some names between 26/4 and 6/5/2024 oops<br><br>
                 (name changer) leaderboard:</p>
                 <ul>
                     <li><b>kulupu ko:</b> 141 changes</li>
-                    <li><b>the motan:</b> 80 changes</li>
+                    <li><b>the motan:</b> 81 changes</li>
                     <li><b>The Planet Mercury:</b> 55 changes</li>
                     <li><b>tabby:</b> 40 changes</li>
-                    <li><b>jan Seli:</b> 24 changes</li>
+                    <li><b>jan Seli:</b> 25 changes</li>
                     <li><b>kala Asi:</b> 19 changes</li>
                     <li><b>mu Temi:</b> 6 changes</li>
                     <li><b>mute ante:</b> 2 changes</li>
                 </ul>
-                <p>mute ante li pali e lipu ni</p>
+                <p style="margin-bottom: 5px">mute ante li pali e lipu ni</p>
         </details>
-        <h2>2024</h2><ul id="name list 2024">
+        <h2>2024</h2><ul id="name_list_2024">
+            <li>28/6:<b> ㄇㄚ ㄢㄉㄝ ㄅㄧ ㄧㄛ ㄢㄉㄝ </b><span class="name">the motan</span></li><br>
+            <li>28/5:<b> ipi sin </b><span class="name">jan Seli</span></li><br>
             <li>26/6:<b>  ̀̀ </b><span class="name">the motan</span></li><br>
             <li>26/6:<b> na ante pi ino ante </b><span class="name">the motan</span></li><br>
             <li>26/5:<b> ma ante pi ino ante </b><span class="name">jan Seli</span></li><br>
@@ -116,7 +170,7 @@
             <li>15/1:<b> outtabbied again </b><span class="name">tabby</span></li><br>
             <li>2/1:<b> autism land </b><span class="name">mu Temi</span></li><br>
             <li>1/1:<b> happy 40th, 1984 </b><span class="name">the motan</span></li><br>
-        </ul><h2>2023</h2><ul id="name list 2023">
+        </ul><h2>2023</h2><ul id="name_list_2023">
             <li>31/12:<b> temi's mom's and earth's birthdays </b><span class="name">tabby</span></li><br>
             <li>31/12:<b> temi's mom's birthday </b><span class="name">mu Temi</span></li><br>
             <li>31/12:<b> aspen-misinfo-temi's mom birthday </b><span class="name">mu Temi</span></li><br>
