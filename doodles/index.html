@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet" type="text/css" media="all">
+        <title>{doodles}</title><style>
+        body{--back: white;
+            --text: black;
+            --color: gray;}
+
+        #notebooks a{width: fit-content; display: inline;
+        font-size: 1.5rem; padding: 6px 14px 8px; margin: 0 12px;
+            border: solid 1px var(--color); transition: all 1s cubic-bezier(0,1,0,1);
+            display: inline-block; text-decoration: none;
+        font-weight:bold; font-style: italic;}
+        #notebooks a:hover{border-radius: 24px; border-color: #0000;}
+
+        #_14:hover{
+            background-color: #101010;
+            color: #d0d0d0;
+        }
+        #_15:hover, #_16:hover {
+            background-color: #ccb184;
+            color: #130e02;}
+        #ibispaint:hover {
+        background-color: gray;
+        color: white;}
+        </style></head>
+    <body><header>
+        <h1>buttons</h1>
+        <nav class="top"><a href="../corridor">go back</a></nav></header>
+    <main>
+        <p>You step into a void. You can swim around and see a seat right beside
+            the door and a shelf with numbered notebooks. They also have the number
+            of images in brackets. Drawing captions with parentheses indicate drawings in a series.
+            The white noise is comforting and soothing.
+        </p>
+        <nav id="notebooks">
+            <a href="14" id="_14">14 {70}</a><a href="15" id="_15">15 {33}</a><a href="16" id="_16">16 {32}</a><a href="ibispaint" id="ibispaint">ibisPaint {8}</a>
+        </nav>
+        </main></body>
+</html>

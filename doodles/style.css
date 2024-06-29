@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    src: url(../assets/Fraunces[SOFT\,WONK\,opsz\,wght].ttf);}
+
+    @font-face {
+    font-family: 'Fraunces';
+    font-style: italic;
+    font-variation-settings: 'WONK' 1;
+    src: url(../assets/Fraunces-Italic[SOFT\,WONK\,opsz\,wght].ttf);}
+
+body{background-color: var(--back);
+    color: var(--text); margin: 0;
+    font-variation-settings: 'WONK' 0;
+    font-family: 'Fraunces', serif;}
+
+*{transition: all .5s cubic-bezier(0,1,0,1)}
+
+main{max-width: 40rem; padding-top: 16px;
+    margin: 0 max(min(10rem, calc((100vw - 40rem) / 2)), 24px);}
+header{text-align: right; position: sticky; top: calc(-24px - 3rem);
+    margin: 0 0 0 auto; padding: 12px 14px; width: fit-content;}
+nav.top{margin-top: 12px;}
+
+nav.top a{text-decoration: none; border: solid 1px var(--color); 
+    background-color: color-mix(in srgb, var(--back) 50%, transparent);
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px; padding: 4px 10px; box-shadow: color-mix(in srgb, var(--color) 0%, transparent) 0px 0px;}
+nav.top a:hover{color: var(--back); border-color: var(--text);
+    box-shadow: var(--color) 6px 6px; background-color: var(--text)}
+h1{margin:0; font-size: 3rem; font-style: italic; 
+    font-variation-settings: 'WONK' 1; font-weight: 650}
+h1:before{content:"{"; color: var(--color)}
+h1:after{content:"}"; color: var(--color)}
+
+::selection{background-color: var(--color); color: var(--back)}
+
+p{font-optical-sizing: 9;}
+a{color: var(--text); text-decoration-color: var(--color);}
+a:hover{color: var(--color)}
+
+details{margin-top:0; border: solid 1px var(--color); width: fit-content;
+padding: 4px 10px; border-radius: 6px; height: fit-content}
+details p{margin: 0}
+details[open]{background: var(--color); color: var(--text); height: auto}
+details:hover{background-color: var(--color)}
+details:hover, details[open]{color: var(--text); border-radius: 12px}
+
+summary{list-style-type: '→ ';}
+summary::marker{font-weight: bold;}
+details[open] summary{border-bottom: dotted 1px var(--text); padding-bottom: 5px;
+    list-style-type: '↓ '}
+
+details[open] summary ~ * {
+    animation: sweep .5s cubic-bezier(0,1,0,1);}
+
+ul{list-style-type: "- ";}
+
+@keyframes sweep {
+from {transform: translateY(-1rem);}
+to   {transform: translateY(0)}
+}
+
+.image{break-inside: avoid; margin-bottom: 24px}
+.image img{width: 100%; border-radius: 12px;}
+.image p{margin: 0 0 8px; color: var(--color)}
+#drawings{column-count: 1; column-gap: 16px; margin: 20px 0}
+@media only screen and (min-width: 500px){
+    #drawings{column-count: 2;}}
