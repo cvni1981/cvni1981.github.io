@@ -18,7 +18,8 @@ details{border-color: grey}
 details:hover, details[open]{border-color: var(--color)}
 details[open]> ::selection{background-color: var(--color); color: var(--back);}
 
-.subcategory{border: none; margin-left: 18px;}
+.subcategory{border: none; border-bottom: solid 1px var(--color);margin: 0 0 0 18px;
+width: 100%; padding: 16px 0 18px}
 .subcategory > summary{list-style-position: outside; font-size: 1.5rem;
     text-decoration: underline 2px var(--color)}
 .subcategory > summary h2{transition: all .5s cubic-bezier(0,1,0,1)}
@@ -34,3 +35,10 @@ details[open] > summary, summary{list-style-type: revert;}
 .font img{width: 100%}
 
 details a:hover{background-color: var(--back); color: var(--color)}
+a.back{display: block;
+    width: fit-content;
+    padding: 4px 6px;
+    margin: 8px 0;
+    border: solid 1px var(--color);
+    text-decoration: none;}
+a.back:hover{background-color: var(--color); color: var(--back)}
