@@ -8,7 +8,9 @@
         <title>fonts</title><style>
             details, summary{--color: mediumseagreen}
 
-            h1, h2, b{font-weight: 700;}
+            main{max-width: 40rem}
+            details h2{font-size: 1.5rem}
+            details h2::before{content: "- "; color: #0008}
 
             #fonts-by-type{max-width: 20rem;}
             #fonts-by-type a{text-decoration: none; width: auto;
@@ -21,6 +23,8 @@
             #monospaced a{background-image: url(monospaced/button.png);
                 background-position: right; background-repeat: no-repeat;
                 background-size: contain;}
+
+            #font-sites p{margin: 4px 12px 12px}
             
             ::selection{background-color: var(--color)}
             details[open]> ::selection{background-color: black; color: mediumseagreen}
@@ -47,9 +51,9 @@
             
             This page is basically all the free fonts i've found so far, as well as the people and 
             foundries who made them and other fontful sites so, if you didn't find a font you like here,
-            you'll find them there! Most of the fonts here are under the Open Font License (in super short 
-            terms, you can use it freely, modify and redistribute it but sometimes you need to change the name, 
-            and be credited for your work. please read the 
+            you'll find them there! It's a font shrine basically. Most of the fonts here are under the 
+            Open Font License (in super short terms, you can use it freely, modify and redistribute it but 
+            sometimes you need to change the name, and be credited for your work. please read the 
             <a href="https://openfontlicense.org/open-font-license-official-text/">full license</a> for the actual words.)
             But some fonts are under different licenses, and i'll reference their respective licenses.<b>
                 If i got a font's credit wrong, or the wrong license, or got a translation wrong (which is likely),
@@ -65,6 +69,22 @@
             <nav id="fonts-by-type">
                 <h2 id="monospaced"><a href="monospaced">monospaced</a></h2>
             </nav>
+
+
+            <details id="font-sites"><summary>font sites</summary>
+            <h2><a href="https://uncut.wtf/">UNCUT.wtf</a></h2>
+                <p>It's a collection of free fonts, some are silly, some are hidden gems. A bunch
+                    of the fonts i've found and am showcasing here i found there!</p>
+
+            <h2><a href="https://www.fontsquirrel.com/">Font Squirrel</a></h2>
+            <p>Another big collection of free fonts with tags so it's easy to find one you like. It
+                even has the Matcherator, which identifies the font used in an image!</p>
+
+            <h2><a href="https://fonts.google.com/">Google Fonts</a></h2>
+            <p>It's probably the usual first pick for people looking for free fonts. Not for bad reason,
+                lots of language choices (although most are just Noto fonts), as well as icons!
+            </p>
+        </details>
     </main>
     </body>
 </html>
