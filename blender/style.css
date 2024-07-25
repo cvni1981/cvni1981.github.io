@@ -9,5 +9,8 @@ a:hover{color: var(--text)}
 img{max-width: 100%}
 
 @media only screen and (max-width: 500px) {
-    .image{display: block}
+    .image{
+        display: block; 
+        border-bottom: solid 1px var(--color);
+        padding-bottom: 12px;}
 }
