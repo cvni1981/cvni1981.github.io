@@ -19,7 +19,8 @@
                 background-color: color-mix(in srgb, var(--back) var(--backtrans), transparent); text-align: left;
                 max-width: none; position:sticky; top: 0; padding: 0 24px;
                 -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);}
-            header h1{width: fit-content; margin: 18px auto 14px 0}
+            header h1{width: fit-content; margin: 18px auto 14px max(calc(50vw - 20rem - 24px), 0px)}
+            header nav{margin: 18px max(calc(50vw - 20rem - 24px), 0px) 14px auto}
             main{max-width: 40rem; margin: auto}
             nav{display:block; margin: 16px 0}
             nav a{display: inline}
@@ -43,7 +44,8 @@
 
 
             @media (max-width: 375px) {
-                header{display: block; top: calc(-2em - 6px)}}
+                header{display: block; top: calc(-2em - 6px)}
+                header h1, header nav{width: fit-content; margin: 18px auto 14px}}
         </style></head>
     <body><header><h1>site&shy;log</h1>
         <nav><a href="#">↑ top</a> <a href="corridor">↩ back</a></nav></header>
