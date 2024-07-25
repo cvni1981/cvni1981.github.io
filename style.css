@@ -64,10 +64,6 @@ details[open] > summary {list-style-type: '↓ ';
 a{color: var(--text); transition: all .5s cubic-bezier(0,1,0,1); text-decoration-color: var(--color)}
 a:hover{background-color: var(--color); color: var(--back); text-decoration-color: none}
 
-
-@media (max-width: 600px) {
-    nav{margin: 16px 0}}
-
 @media (max-width: 600px) {
     body{display: block}
     header{height:auto; border-right: none; border-bottom: solid 1px var(--color);

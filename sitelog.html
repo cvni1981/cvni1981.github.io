@@ -15,9 +15,18 @@
                 font-weight: bold;
                 src: url(assets/Iosevka-ExtendedExtraBold.ttf);
             }
+            header{height:auto; border-right: none; border-bottom: solid 1px var(--color); display:flex;
+                background-color: color-mix(in srgb, var(--back) var(--backtrans), transparent); text-align: left;
+                max-width: none; position:sticky; top: 0; padding: 0 24px;
+                -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);}
+            header h1{width: fit-content; margin: 18px auto 14px 0}
+            main{max-width: 40rem; margin: auto}
+            nav{display:block; margin: 16px 0}
+            nav a{display: inline}
+
             body{--back: black;
                 --text: orange;
-                --color: sienna;
+                --color: sienna; display: block;
                 --backtrans: 30%; letter-spacing: -.03rem;
                 font-family: 'Iosevka Extended', monospace}
             
@@ -31,6 +40,10 @@
                 padding-left: 12px;}
 
             a:hover{background-color: orange; text-decoration-color: orange}
+
+
+            @media (max-width: 375px) {
+                header{display: block; top: calc(-2em - 6px)}}
         </style></head>
     <body><header><h1>site&shy;log</h1>
         <nav><a href="#">↑ top</a> <a href="corridor">↩ back</a></nav></header>
