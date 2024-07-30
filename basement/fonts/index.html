@@ -12,7 +12,7 @@
             details h2{font-size: 1.5rem}
             details h2::before{content: "- "; color: #0008}
 
-            #fonts-by-type{max-width: 20rem;}
+            #fonts-by-type{max-width: 40rem; flex-direction: row;}
             #fonts-by-type a{text-decoration: none; width: auto;
                 border: solid 1px grey; padding: 8px 12px}
             #fonts-by-type h2{display: inline-block; width: 100%; 
@@ -31,8 +31,8 @@
             details[open]> ::selection{background-color: black; color: mediumseagreen}
             details a{text-decoration-color: black}
 
-            @media (max-width: 600px) {
-                #fonts-by-type a{display: block}}
+            @media (max-width: 600px) and (min-width: 500px){#fonts-by-type{display:flex; flex-direction: row;}}
+            @media (max-width: 600px){#fonts-by-type a{display: block}}
         </style></head>
     <body><header><h1>fonts</h1>
         <nav><a href="../../basement">↩ back</a></nav></header>
