@@ -10,7 +10,9 @@
             body{font-family: 'Inconsolata'; margin: 0; width: 100vw; height: 100vh;
             display: flex; text-align: right; font-size: min(5vh, 5vw)}
             main{margin: auto; width: fit-content}
-            h1{margin: 0}
+            h1{margin: 0; transition: all .5s cubic-bezier(0,1,0,1)}
+            h1.title{font-variation-settings: 'wdth' 140; font-weight: 400}
+            h1.title:hover{font-weight:900}
             ::selection{background-color: black; color: white}
             a{color: black; transition: all .5s cubic-bezier(0,1,0,1); font-weight: 400;
                 text-decoration: none; border: solid .075em; padding: .125em .25em;}
@@ -18,7 +20,7 @@
                 border-color:black; font-weight: 800}
         </style></head>
     <body><main>
-        <h1 style="font-variation-settings: 'wdth' 140; font-weight: 900">NOWHERE IN<br>PARTICULAR</h1><div style="margin-top: 1em"><h1><a href="corridor" style="font-variation-settings: 'wdth' 112;">enter ↘</a></span></h1></div>
+        <h1 class="title">NOWHERE IN</h1><h1 class="title">PARTICULAR</h1><div style="margin-top: 1em"><h1><a href="corridor" style="font-variation-settings: 'wdth' 112;">enter ↘</a></span></h1></div>
     </main>
     </body>
 </html>
