@@ -5,44 +5,29 @@
         <link href="../style.css" rel="stylesheet" type="text/css" media="all">
         <link href="style.css" rel="stylesheet" type="text/css" media="all">
         <link rel="icon" type="image/x-icon" href="../assets/blender.gif">
-        <title>blender</title><style>
-
-            body{--backtrans: 60%}
-
-            details:hover, details[open]{--back: var(--text)}
-            details:hover::selection, details[open]::selection{
-                background-color: var(--back);
-            }
-
-            #expos a{width: fit-content;
-                font-weight: bold;
-                font-size: 1.5rem; padding: 8px 16px; 
+        <title>words</title><style>
+            #texts a{width: fit-content;
+                font-weight: 650;
+                font-size: 1.25rem; padding: 8px 16px; 
                 display: inline-block; text-decoration: none}
-            #expos a:hover {
+            #texts a:hover {
                 background-color: var(--color);
                 color: var(--back);}
 
-            #expos{display:block}
+            #texts{display:block}
+
+            a#laso-telo:hover{background-color: #0063bb;}
         </style></head>
-    <body><header><h1>blender</h1>
+    <body><header><h1>words</h1>
         <nav><a href="../corridor">↩ back</a></nav></header>
     <main>
-        <p>You enter the room and see many 3d rendered images framed on walls,
-            lit up by lights like a museum exposition. Each is marked by the expo name with
-            the number of images in parentheses. And beside you is an information plaque.</p>
-        <details id="info"><summary>read the plaque</summary>
-            <p>Hi! These are (most) of the things i've done in blender over the last while.
-            The original files are 1920x1080 (bigger even than my own display lol), so 
-            they're 400x225 to save your bandwidth at least a little bit.<br>
-            Also these images (and this site) are licensed under GPLv3.<br>
-            Most of these series weren't made in one sitting, mostly over months of suddenly 
-            wanting to do that one thing again.<br>
-            You can see how many images each page has next to the link, so if your internet 
-            isn't too good, maybe these won't be the fastest loading times...</p></details>
-        <nav id="expos">
-            <a href="icossymetry">icossymetry&nbsp;(40)</a> <a href="glass">glass&nbsp;(50)</a>
+        <p>You approach the shelf, with a couple zines with texts the webmasters wrote. They don't write 
+            much so it's a bit empty, and they don't like what they write anyways. Most of them are written in <a href="https://en.wikipedia.org/wiki/Toki_Pona">toki pona</a>.
+            In parentheses is the amount of words in each text.
+        </p><br>
+        <nav id="texts">
+            <a href="racism">nasin ike pi poki kule/racism (863 + 1091)</a> <a href="jan">jan (308)</a> <a href="diary">diary (690)</a> <a id="laso-telo" href="len-pi-laso-telo">len pi laso telo (647)</a> <a href="ona">ona (41)</a> <a href="concrete">concrete (9)</a> <a href="ona">untitled (87)</a>
         </nav>
-        <img src="shadow.png" alt="a handdrawn sphere casting a shadow" style="margin: 5rem 0 0 ; max-width: 100%; width: auto">
     </main>
     </body>
 </html>

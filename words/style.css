@@ -1,16 +1,13 @@
 body{--back: lightgoldenrodyellow;
     --text: black;
     --color: darkviolet;
+    font-weight: 350; --backtrans: 60%;
     font-family: 'Fraunces', serif}
 
-a:hover{color: var(--text)}
+a:hover{color: var(--back)}
 
 .image{display:grid; grid-template-columns: 50% calc(50% - 16px); gap: 16px}
 img{max-width: 100%}
 
-@media only screen and (max-width: 500px) {
-    .image{
-        display: block; 
-        border-bottom: solid 1px var(--color);
-        padding-bottom: 12px;}
-}
+h1{font-style: italic; font-weight: 650}
+h1::before{content: "..."}
