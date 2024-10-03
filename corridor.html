@@ -51,12 +51,25 @@
             #statuscafe_link:hover{background-color: chocolate; color: black}
             #satuscafe-content a:hover{background-color: var(--color); color: var(--back); text-decoration-color: none}
 
+            details{border: solid 1px var(--color); margin: 24px 0; padding: 8px 12px; 
+                width: fit-content; transition: all .5s cubic-bezier(0,1,0,1)}
+            details:hover, details[open]{background-color: var(--color); color: var(--back)}
+            summary{font-weight: bold; list-style-type: '→ ';}
+            details a{color: var(--back)}
+            details a:hover{color: var(--color); background-color: var(--back);
+                text-decoration-color: var(--back)}
+            details[open] > summary {list-style-type: '↓ ';
+                border-bottom: dotted 1px var(--back); 
+                padding-bottom: 8px; margin-bottom: 8px;}
+
         </style></head>
     <body><main>
         <p>You open the door into a corridor. <br>
             You see doors on either side of the corridor. There is a marquee, pinboards and
-            a shelf with zines.
-            <br>You can faintly see a computer at the very end.
+            a shelf with zines. 
+            <br>You can faintly see a computer at the very end.<br>
+            You also see a bright green note, it seems to possess strong
+            teleportative powers.
         </p>
         <div class="marquee">
             <div id="moving">
@@ -66,7 +79,10 @@
             <p style="padding: 8px; box-shadow: #000a 4px 0 4px; background-color: #0005;
              backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);">
                 <a href="https://status.cafe/users/cvni81" id="statuscafe_link">latest status</a><b>:</b> </p></div></div>
-        <nav>
+                <details style="--color: yellowgreen; --back: black"><summary>read the note</summary>
+                <p>Hi! i'm moving to <a href="https://nowhere.nekoweb.org">nekoweb</a>! Though
+                the process will take a while as you know :3</p></details>
+                <nav>
             <h2 style="text-align: right;"><a id='about' href="about">about →</a></h2>
             <h2 style="text-align: left;"><a id='bookmarks' href="bookmarks">← bookmarks</a></h2>
             <h2 style="text-align: right;"><a id='blender' href="blender">blender →</a></h2>
